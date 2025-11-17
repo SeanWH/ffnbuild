@@ -1,0 +1,17 @@
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\bin\Debug\net10.0\ffnbuild.exe
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\bin\Debug\net10.0\ffnbuild.deps.json
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\bin\Debug\net10.0\ffnbuild.runtimeconfig.json
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\bin\Debug\net10.0\ffnbuild.dll
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\bin\Debug\net10.0\ffnbuild.pdb
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\bin\Debug\net10.0\HtmlAgilityPack.dll
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\ffnbuild.csproj.AssemblyReference.cache
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\ffnbuild.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\ffnbuild.AssemblyInfoInputs.cache
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\ffnbuild.AssemblyInfo.cs
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\ffnbuild.csproj.CoreCompileInputs.cache
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\ffnbuild.csproj.Up2Date
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\ffnbuild.dll
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\refint\ffnbuild.dll
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\ffnbuild.pdb
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\ffnbuild.genruntimeconfig.cache
+C:\Users\SHennessey\OneDrive - State of Nevada\MyStuff\_misc\ffnbuild\ffnbuild\obj\Debug\net10.0\ref\ffnbuild.dll

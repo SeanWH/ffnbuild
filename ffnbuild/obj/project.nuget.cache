@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TKPwSmSvbWs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\SHennessey\\OneDrive - State of Nevada\\MyStuff\\_misc\\ffnbuild\\ffnbuild\\ffnbuild.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SHennessey\\.nuget\\packages\\htmlagilitypack\\1.12.4\\htmlagilitypack.1.12.4.nupkg.sha512"
+  ],
+  "logs": []
+}
