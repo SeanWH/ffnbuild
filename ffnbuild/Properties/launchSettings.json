@@ -2,7 +2,7 @@
   "profiles": {
     "ffnbuild": {
       "commandName": "Project",
-      "commandLineArgs": "br"
+      "commandLineArgs": "tpatw"
     }
   }
 }

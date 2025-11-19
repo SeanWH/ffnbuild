@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/gau.7z
+/sc.7z
+/sc_pt2.7z
+/sgl.7z
+/tpatw.7z
+/.vs/ffnbuild.slnx/DesignTimeBuild/.dtbcache.v2
+/.vs/ffnbuild.slnx/FileContentIndex/2659b532-1b0d-4299-98d6-9baece069216.vsidx
+/.vs/ffnbuild.slnx/FileContentIndex/3366d44b-c524-4039-b29b-045652cd4f96.vsidx
+/.vs/ffnbuild.slnx/FileContentIndex/5b1a9050-cdb2-40c4-aeda-731659e60a0e.vsidx
+/.vs/ffnbuild.slnx/FileContentIndex/6087f62c-4290-44a8-a581-42bd85f8f4e0.vsidx
+/.vs/ffnbuild.slnx/FileContentIndex/831d880b-1c20-4055-b545-68307d46277b.vsidx
+/.vs/ffnbuild.slnx/FileContentIndex/8e9a6c68-9799-4f2e-adc9-96db3edde30a.vsidx
+/.vs/ffnbuild.slnx/FileContentIndex/b38e7613-1f20-4347-9afe-3f22e6043fde.vsidx
+/.vs/ffnbuild.slnx/FileContentIndex/f8b0ee96-2acb-4fee-9bb6-ca0b8b37e2e9.vsidx

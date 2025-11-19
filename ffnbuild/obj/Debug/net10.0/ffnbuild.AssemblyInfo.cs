@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ffnbuild")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1aebb4c2b6cbb89441df27138020f792e6c94546")]
 [assembly: System.Reflection.AssemblyProductAttribute("ffnbuild")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ffnbuild")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

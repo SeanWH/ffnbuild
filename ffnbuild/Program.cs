@@ -7,8 +7,10 @@ using ffnbuild;
 
 using HtmlAgilityPack;
 
-SortedDictionary<string, ChapterData> _chapterData = new SortedDictionary<string, ChapterData>();
-using StreamWriter log = File.CreateText("convert_log.log");
+
+
+SortedDictionary<string, ChapterData> _chapterData = [];
+
 string _storyName = string.Empty;
 
 if (args.Length == 0)
@@ -24,8 +26,9 @@ if (!Directory.Exists(args[0]))
 }
 
 
+using StreamWriter log = File.CreateText($"{args[0]}_convert_log.log");
 
-foreach(var filePath in Directory.EnumerateFiles(args[0]))
+foreach (var filePath in Directory.EnumerateFiles(args[0]))
 {
     var doc = new HtmlDocument();
     doc.Load(filePath);
@@ -46,15 +49,34 @@ void ProcessHtmlFile(HtmlDocument doc)
     var paras = storyText.SelectNodes("//p");
     List<string> lines =  ParseChapterText(paras);
 
-    _chapterData.Add(chapterName, new ChapterData(chapterName, lines));
-
+    if (_chapterData.ContainsKey(chapterName))
+    {
+        AppendStoryData(chapterName, lines);
+    }
+    else
+    {
+        _chapterData.Add(chapterName, new ChapterData(chapterName, lines));
+    }
     
     
 }
 
+void AppendStoryData(string chapterName, List<string> lines)
+{
+    ChapterData existing = _chapterData[chapterName];
+    List<string> existingLines = existing.Paragraphs;
+    foreach(var line in lines)
+    {
+        existingLines.Add(line);
+    }
+
+    _ = _chapterData.Remove(chapterName);
+    _chapterData.Add(chapterName, new ChapterData(chapterName, existingLines));
+}
+
 List<string> ParseChapterText(HtmlNodeCollection nodes)
 {
-    List<string> lines = new List<string>();
+    List<string> lines = [];
     foreach (var para in nodes)
     {
         lines.Add(para.InnerText);
@@ -66,16 +88,16 @@ static string GetChapterTitle(string titleString)
 {
     if (!String.IsNullOrWhiteSpace(titleString))
     {
-        var regex = new Regex(@"Chapter[\w\s:]+");
+        var regex = ChapterTitleRegex();
         var match = regex.Match(titleString);
         if (match.Success)
         {
-            regex = new Regex(@"\d+");
+            regex = ChapterIndexRegex();
             var newMatch = regex.Match(match.Value);
+            string value = "";
 
             if (newMatch.Success)
             {
-                string value = "";
                 if(newMatch.Value.Length == 1)
                 {
                     value = "0" + newMatch.Value;
@@ -85,12 +107,22 @@ static string GetChapterTitle(string titleString)
                     value = newMatch.Value;
                 }
 
-                return $"Chapter {value}";
             }
+            else
+            {
+                value = TextToDigitConverter.Convert(match.Value);
+                if(value == match.Value)
+                {
+                    return value;
+                }
+            }
+
+            return $"Chapter {value}";
+
         }
     }
 
-    return "Chapter X";
+    throw new ArgumentException("Invalid chapter title passed to GetChapterTitle.", nameof(titleString));
 }
 
 void SaveTextFile(string fileName)
@@ -116,5 +148,14 @@ void SaveTextFile(string fileName)
 static string GetStoryTitle(string titleString)
 {
     var index = titleString.IndexOf("Chapter");
-    return titleString.Substring(0, index);
+    return titleString[..index];
+}
+
+partial class Program
+{
+    [GeneratedRegex(@"\d+")]
+    private static partial Regex ChapterIndexRegex();
+
+    [GeneratedRegex(@"Chapter[\w\s:]+")]
+    private static partial Regex ChapterTitleRegex();
 }

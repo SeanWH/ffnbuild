@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\SHennessey\\OneDrive - State of Nevada\\MyStuff\\_misc\\ffnbuild\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2FECBEB5-12D4-4023-850F-F915F3DDCF3C}|ffnbuild\\ffnbuild.csproj|c:\\users\\shennessey\\onedrive - state of nevada\\mystuff\\_misc\\ffnbuild\\ffnbuild\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FECBEB5-12D4-4023-850F-F915F3DDCF3C}|ffnbuild\\ffnbuild.csproj|solutionrelative:ffnbuild\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D29E7BE-75AE-9AD5-0C83-FF76DD37E7E4}|ffnbuild\\ffnbuild.csproj|c:\\users\\shennessey\\onedrive - state of nevada\\mystuff\\_misc\\ffnbuild\\ffnbuild\\texttodigitconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D29E7BE-75AE-9AD5-0C83-FF76DD37E7E4}|ffnbuild\\ffnbuild.csproj|solutionrelative:ffnbuild\\texttodigitconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FECBEB5-12D4-4023-850F-F915F3DDCF3C}|ffnbuild\\ffnbuild.csproj|c:\\users\\shennessey\\onedrive - state of nevada\\mystuff\\_misc\\ffnbuild\\ffnbuild\\chapterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2FECBEB5-12D4-4023-850F-F915F3DDCF3C}|ffnbuild\\ffnbuild.csproj|solutionrelative:ffnbuild\\chapterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D29E7BE-75AE-9AD5-0C83-FF76DD37E7E4}|ffnbuild\\ffnbuild.csproj|c:\\users\\shennessey\\onedrive - state of nevada\\mystuff\\_misc\\ffnbuild\\ffnbuild\\chapterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D29E7BE-75AE-9AD5-0C83-FF76DD37E7E4}|ffnbuild\\ffnbuild.csproj|solutionrelative:ffnbuild\\chapterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D29E7BE-75AE-9AD5-0C83-FF76DD37E7E4}|ffnbuild\\ffnbuild.csproj|c:\\users\\shennessey\\onedrive - state of nevada\\mystuff\\_misc\\ffnbuild\\ffnbuild\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D29E7BE-75AE-9AD5-0C83-FF76DD37E7E4}|ffnbuild\\ffnbuild.csproj|solutionrelative:ffnbuild\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,26 +46,39 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TextToDigitConverter.cs",
+              "DocumentMoniker": "C:\\Users\\SHennessey\\OneDrive - State of Nevada\\MyStuff\\_misc\\ffnbuild\\ffnbuild\\TextToDigitConverter.cs",
+              "RelativeDocumentMoniker": "ffnbuild\\TextToDigitConverter.cs",
+              "ToolTip": "C:\\Users\\SHennessey\\OneDrive - State of Nevada\\MyStuff\\_misc\\ffnbuild\\ffnbuild\\TextToDigitConverter.cs",
+              "RelativeToolTip": "ffnbuild\\TextToDigitConverter.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T17:01:07.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ChapterData.cs",
               "DocumentMoniker": "C:\\Users\\SHennessey\\OneDrive - State of Nevada\\MyStuff\\_misc\\ffnbuild\\ffnbuild\\ChapterData.cs",
               "RelativeDocumentMoniker": "ffnbuild\\ChapterData.cs",
               "ToolTip": "C:\\Users\\SHennessey\\OneDrive - State of Nevada\\MyStuff\\_misc\\ffnbuild\\ffnbuild\\ChapterData.cs",
               "RelativeToolTip": "ffnbuild\\ChapterData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T18:52:59.638Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\SHennessey\\OneDrive - State of Nevada\\MyStuff\\_misc\\ffnbuild\\ffnbuild\\Program.cs",
               "RelativeDocumentMoniker": "ffnbuild\\Program.cs",
               "ToolTip": "C:\\Users\\SHennessey\\OneDrive - State of Nevada\\MyStuff\\_misc\\ffnbuild\\ffnbuild\\Program.cs",
               "RelativeToolTip": "ffnbuild\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAswE8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T16:31:08.463Z",
               "EditorCaption": ""
