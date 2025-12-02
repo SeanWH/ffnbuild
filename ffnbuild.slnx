@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="ffnbuild.Tests/ffnbuild.Tests.csproj" Id="2bcc5d84-580f-446c-9fda-715553b30acb" />
   <Project Path="ffnbuild/ffnbuild.csproj" />
 </Solution>
