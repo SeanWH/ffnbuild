@@ -1,8 +1,0 @@
-{
-  "profiles": {
-    "ffnbuild": {
-      "commandName": "Project",
-      "commandLineArgs": "tpatw"
-    }
-  }
-}

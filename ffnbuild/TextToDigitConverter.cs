@@ -1,15 +1,14 @@
 ﻿namespace ffnbuild;
 
 using System.Collections.Generic;
-using System.Text;
 
 public static class TextToDigitConverter
 {
-    public static string Convert(string input)
+    public static string Convert(string? input)
     {
         if (string.IsNullOrEmpty(input))
         {
-            return input;
+            return string.Empty;
         }
         var digitMap = new Dictionary<string, int>
         {
@@ -42,49 +41,39 @@ public static class TextToDigitConverter
             { "eighty", 80 },
             { "ninety", 90 }
         };
-        
+
         var words = input.Split([' ', '-', ','], StringSplitOptions.RemoveEmptyEntries);
 
         List<string> numberParts = [];
 
-        foreach(var word in words)
+        foreach (var word in words)
         {
             var lowerWord = word.ToLowerInvariant();
             if (digitMap.ContainsKey(lowerWord))
             {
                 numberParts.Add(lowerWord);
             }
-            
         }
 
-        if(numberParts.Count == 0)
+        if (numberParts.Count == 0)
         {
             return input;
         }
 
         int total = 0;
 
-        if(numberParts.Count == 1)
+        if (numberParts.Count == 1)
         {
             total = digitMap[numberParts[0]];
         }
         else
         {
-            
-            foreach (var word in numberParts) 
-            { 
+            foreach (var word in numberParts)
+            {
                 total += digitMap[word];
             }
-
-            return total.ToString();
         }
 
-        if(total < 10)
-        {
-            return "0" + total.ToString();
-        }
-
-        return total.ToString();
-
+        return total.ToString("00");
     }
 }

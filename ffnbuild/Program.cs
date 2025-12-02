@@ -1,13 +1,10 @@
-﻿using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+﻿using System.Text.RegularExpressions;
 
 using ffnbuild;
 
 using HtmlAgilityPack;
 
-
+using Spectre.Console;
 
 SortedDictionary<string, ChapterData> _chapterData = [];
 
@@ -15,18 +12,19 @@ string _storyName = string.Empty;
 
 if (args.Length == 0)
 {
-    Console.WriteLine("Please provide the path to the folder containg the HTML files.");
+    AnsiConsole.Markup("Please provide the path to the folder containg the HTML files.");
     return;
 }
 
 if (!Directory.Exists(args[0]))
 {
-    Console.WriteLine("Specified directory does not exist.");
+    AnsiConsole.Markup("Specified directory does not exist.");
     return;
 }
 
-
 using StreamWriter log = File.CreateText($"{args[0]}_convert_log.log");
+
+AnsiConsole.MarkupLineInterpolated($"Processing HTML files in directory: [green]{args[0]}[/]\n");
 
 foreach (var filePath in Directory.EnumerateFiles(args[0]))
 {
@@ -41,13 +39,11 @@ SaveTextFile(_storyName);
 
 void ProcessHtmlFile(HtmlDocument doc)
 {
-    
-
     var chapterName = GetChapterTitle(doc.DocumentNode.SelectSingleNode("//title").InnerText);
 
     var storyText = doc.DocumentNode.SelectSingleNode("//div[contains(concat(' ', normalize-space(@class), ' '),' storytext ')]");
     var paras = storyText.SelectNodes("//p");
-    List<string> lines =  ParseChapterText(paras);
+    List<string> lines = ParseChapterText(paras);
 
     if (_chapterData.ContainsKey(chapterName))
     {
@@ -57,15 +53,13 @@ void ProcessHtmlFile(HtmlDocument doc)
     {
         _chapterData.Add(chapterName, new ChapterData(chapterName, lines));
     }
-    
-    
 }
 
 void AppendStoryData(string chapterName, List<string> lines)
 {
     ChapterData existing = _chapterData[chapterName];
     List<string> existingLines = existing.Paragraphs;
-    foreach(var line in lines)
+    foreach (var line in lines)
     {
         existingLines.Add(line);
     }
@@ -98,7 +92,7 @@ static string GetChapterTitle(string titleString)
 
             if (newMatch.Success)
             {
-                if(newMatch.Value.Length == 1)
+                if (newMatch.Value.Length == 1)
                 {
                     value = "0" + newMatch.Value;
                 }
@@ -106,19 +100,17 @@ static string GetChapterTitle(string titleString)
                 {
                     value = newMatch.Value;
                 }
-
             }
             else
             {
                 value = TextToDigitConverter.Convert(match.Value);
-                if(value == match.Value)
+                if (value == match.Value)
                 {
                     return value;
                 }
             }
 
             return $"Chapter {value}";
-
         }
     }
 
@@ -129,12 +121,12 @@ void SaveTextFile(string fileName)
 {
     var finalName = fileName + ".txt";
     using var outFile = File.CreateText(finalName);
-    foreach(ChapterData chapterData in _chapterData.Values)
+    foreach (ChapterData chapterData in _chapterData.Values)
     {
         log.WriteLine(chapterData.Title);
         outFile.WriteLine(chapterData.Title);
         outFile.WriteLine();
-        foreach(string line in chapterData.Paragraphs)
+        foreach (string line in chapterData.Paragraphs)
         {
             outFile.WriteLine(line);
             outFile.WriteLine();
@@ -142,7 +134,6 @@ void SaveTextFile(string fileName)
     }
 
     outFile.Flush();
-    
 }
 
 static string GetStoryTitle(string titleString)
@@ -151,7 +142,7 @@ static string GetStoryTitle(string titleString)
     return titleString[..index];
 }
 
-partial class Program
+internal partial class Program
 {
     [GeneratedRegex(@"\d+")]
     private static partial Regex ChapterIndexRegex();
