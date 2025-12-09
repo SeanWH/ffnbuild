@@ -13,7 +13,7 @@ using Spectre.Console.Cli;
 
 public partial class ConvertCommand : Command<ConvertSettings>
 {
-    private readonly SortedDictionary<string, ChapterData> _chapterData = [];
+    private readonly SortedDictionary<string, ChapterData> _chapterData = new SortedDictionary<string, ChapterData>(new NaturalStringComparer());
     private string _storyName = string.Empty;
 
     public override int Execute(CommandContext context, ConvertSettings settings, CancellationToken cancellationToken)
@@ -246,6 +246,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
         }
 
         using var outFile = File.CreateText(finalPath);
+
         foreach (ChapterData chapterData in _chapterData.Values)
         {
             //log.WriteLine(chapterData.Title);
