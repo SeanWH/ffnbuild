@@ -1,5 +1,6 @@
 ﻿namespace ffnbuild.cli;
 
+using System;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -17,27 +18,81 @@ public partial class ConvertCommand : Command<ConvertSettings>
 
     public override int Execute(CommandContext context, ConvertSettings settings, CancellationToken cancellationToken)
     {
-        int returnValue;
-        if (string.IsNullOrEmpty(settings.SourcePath) || !Directory.Exists(settings.SourcePath))
+        int returnValue = 0;
+
+        if (string.IsNullOrWhiteSpace(settings.SourcePath))
         {
             AnsiConsole.MarkupLine("[red]Error:[/] Source path is invalid or does not exist.");
-            returnValue = 1;
+            return 1;
+        }
+
+        if (settings.SourcePath.Contains(","))
+        {
+            string[] paths = settings.SourcePath.Split(",");
+            foreach (var path in paths)
+            {
+                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {path}");
+                var sourcePath = Path.Combine("data", path.Trim());
+                if (ValidatePath(sourcePath))
+                {
+                    returnValue += ProcessFolder(sourcePath);
+                }
+            }
+        }
+        else if (settings.SourcePath == ".")
+        {
+            foreach (string folder in Directory.EnumerateDirectories("data"))
+            {
+                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {folder}");
+                //var sourcePath = Path.Combine("data", path.Trim());
+                if (ValidatePath(folder))
+                {
+                    returnValue += ProcessFolder(folder);
+                }
+            }
         }
         else
         {
-            AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {settings.SourcePath}");
-            returnValue = ConvertDirectory(settings.SourcePath).GetAwaiter().GetResult();
-            if (!string.IsNullOrEmpty(_storyName))
+            var sourcePath = Path.Combine("data", settings.SourcePath);
+            if (ValidatePath(sourcePath))
             {
-                SaveTextFile(_storyName.Trim());
-                AnsiConsole.MarkupLine($"[green]Successfully created text file for story:[/] {_storyName}");
-            }
-            else
-            {
-                AnsiConsole.MarkupLine("[red]Error:[/] Story name could not be determined.");
-                returnValue = 1;
+                returnValue += ProcessFolder(sourcePath);
             }
         }
+
+        if (returnValue > 0)
+        {
+            AnsiConsole.MarkupLine("[red]Error:[/] Error(s) occurred during conversion process.");
+        }
+
+        return returnValue;
+    }
+
+    private bool ValidatePath(string path)
+    {
+        if (string.IsNullOrWhiteSpace(path) || !Directory.Exists(path))
+        {
+            AnsiConsole.MarkupLine("[red]Error:[/] Source path is invalid or does not exist.");
+            return false;
+        }
+
+        return true;
+    }
+
+    private int ProcessFolder(string pathToFolder)
+    {
+        var returnValue = ConvertDirectory(pathToFolder).GetAwaiter().GetResult();
+        if (!string.IsNullOrEmpty(_storyName))
+        {
+            SaveTextFile(_storyName.Trim());
+            AnsiConsole.MarkupLine($"[green]Successfully created text file for story:[/] {_storyName}");
+        }
+        else
+        {
+            AnsiConsole.MarkupLine("[red]Error:[/] Story name could not be determined.");
+            returnValue = 1;
+        }
+
         return returnValue;
     }
 
@@ -63,11 +118,18 @@ public partial class ConvertCommand : Command<ConvertSettings>
             {
                 foreach (var filePath in Directory.EnumerateFiles(sourcePath))
                 {
-                    var doc = new HtmlDocument();
-                    doc.Load(filePath);
-                    _storyName = GetStoryTitle(doc.DocumentNode.SelectSingleNode("//title").InnerText).Trim();
-                    ProcessHtmlFile(doc);
-                    task.Increment(1);
+                    if (Path.GetExtension(filePath).ToLower().Contains(".htm"))
+                    {
+                        var doc = new HtmlDocument();
+                        doc.Load(filePath);
+                        _storyName = GetStoryTitle(doc.DocumentNode.SelectSingleNode("//title").InnerText).Trim();
+                        ProcessHtmlFile(doc);
+                        task.Increment(1);
+                    }
+                    else
+                    {
+                        task.Increment(1);
+                    }
                 }
             }
             catch (Exception ex)
@@ -176,7 +238,14 @@ public partial class ConvertCommand : Command<ConvertSettings>
     private void SaveTextFile(string fileName)
     {
         var finalName = fileName + ".txt";
-        using var outFile = File.CreateText(finalName);
+        var finalPath = Path.Combine("output", finalName);
+
+        if (!Directory.Exists("output"))
+        {
+            Directory.CreateDirectory("output");
+        }
+
+        using var outFile = File.CreateText(finalPath);
         foreach (ChapterData chapterData in _chapterData.Values)
         {
             //log.WriteLine(chapterData.Title);
