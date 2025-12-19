@@ -4,6 +4,9 @@ public static class HtmlStringExtensions
 {
     public static string AddTag(this string target, string? tag)
     {
+        string[] emptyElements = {"area","base","br","col","embed","hr","img","input","link",
+            "meta","param","source","track","wbr" };
+
         if (string.IsNullOrWhiteSpace(tag))
         {
             return target;
@@ -14,6 +17,11 @@ public static class HtmlStringExtensions
         {
             finalTag = finalTag.Replace("<", "");
             finalTag = finalTag.Replace(">", "");
+        }
+
+        if (finalTag.IsIn(emptyElements))
+        {
+            return $"<{finalTag}>{target}";
         }
 
         return $"<{finalTag}>{target}</{finalTag}>";
@@ -62,5 +70,15 @@ public static class HtmlStringExtensions
     public static string Heading6(this string target)
     {
         return target.AddTag("h6");
+    }
+
+    public static string Paragraph(this string target)
+    {
+        return target.AddTag("p");
+    }
+
+    public static string Break(this string target)
+    {
+        return target.AddTag("br");
     }
 }

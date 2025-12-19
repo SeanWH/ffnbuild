@@ -152,4 +152,22 @@ public class HtmlStringExtensionTests
 
         Assert.Equal(expected, target.Heading6());
     }
+
+    [Fact]
+    public void ParagraphReturns_p_Tag()
+    {
+        string target = "testVal";
+        string expected = "<p>testVal</p>";
+
+        Assert.Equal(expected, target.Paragraph());
+    }
+
+    [Fact]
+    public void BreakReturns_br_Tag()
+    {
+        string target = "testVal";
+        string expected = "<br>testVal";
+
+        Assert.Equal(expected, target.Break());
+    }
 }

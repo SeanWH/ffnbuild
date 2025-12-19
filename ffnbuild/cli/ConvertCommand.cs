@@ -15,10 +15,12 @@ public partial class ConvertCommand : Command<ConvertSettings>
 {
     private readonly SortedDictionary<string, ChapterData> _chapterData = new SortedDictionary<string, ChapterData>(new NaturalStringComparer());
     private string _storyName = string.Empty;
+    private bool? _createHtmlVersion = false;
 
     public override int Execute(CommandContext context, ConvertSettings settings, CancellationToken cancellationToken)
     {
         int returnValue = 0;
+        _createHtmlVersion = settings.CreateHtml;
 
         if (string.IsNullOrWhiteSpace(settings.SourcePath))
         {
@@ -86,6 +88,12 @@ public partial class ConvertCommand : Command<ConvertSettings>
         {
             SaveTextFile(_storyName.Trim());
             AnsiConsole.MarkupLine($"[green]Successfully created text file for story:[/] {_storyName}");
+
+            if (_createHtmlVersion is not null && _createHtmlVersion == true)
+            {
+                SaveHtmlConversionFile(_storyName.Trim());
+                AnsiConsole.MarkupLine($"[green]Successfully created html conversion file for story:[/] {_storyName}");
+            }
         }
         else
         {
@@ -94,6 +102,21 @@ public partial class ConvertCommand : Command<ConvertSettings>
         }
 
         return returnValue;
+    }
+
+    private void SaveHtmlConversionFile(string storyTitle)
+    {
+        if (string.IsNullOrWhiteSpace(storyTitle))
+        {
+            return;
+        }
+
+        if (_chapterData is null)
+        {
+            return;
+        }
+
+        HtmlDocBuilder.BuildDocument(storyTitle, _chapterData);
     }
 
     private async Task<int> ConvertDirectory(string sourcePath)
@@ -254,7 +277,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             outFile.WriteLine();
             foreach (string? line in chapterData.Paragraphs)
             {
-                outFile.WriteLine(line);
+                outFile.WriteLine(line?.Trim());
                 outFile.WriteLine();
             }
         }
