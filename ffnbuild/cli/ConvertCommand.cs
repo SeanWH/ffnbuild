@@ -26,7 +26,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             return 1;
         }
 
-        if (settings.SourcePath.Contains(","))
+        if (settings.SourcePath.Contains(','))
         {
             string[] paths = settings.SourcePath.Split(",");
             foreach (var path in paths)
