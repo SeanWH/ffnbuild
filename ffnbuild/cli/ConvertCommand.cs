@@ -41,6 +41,15 @@ public partial class ConvertCommand : Command<ConvertSettings>
                 }
             }
         }
+        else if (Path.IsPathRooted(settings.SourcePath))
+        {
+            var sourcePath = settings.SourcePath;
+            if (ValidatePath(sourcePath))
+            {
+                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {settings.SourcePath}");
+                returnValue += ProcessFolder(sourcePath);
+            }
+        }
         else if (settings.SourcePath == ".")
         {
             foreach (string folder in Directory.EnumerateDirectories("data"))
@@ -58,6 +67,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             var sourcePath = Path.Combine("data", settings.SourcePath);
             if (ValidatePath(sourcePath))
             {
+                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {sourcePath}");
                 returnValue += ProcessFolder(sourcePath);
             }
         }
