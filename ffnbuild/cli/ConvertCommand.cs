@@ -89,6 +89,12 @@ public partial class ConvertCommand : Command<ConvertSettings>
             return false;
         }
 
+        if (Directory.EnumerateFiles(path).Count() == 0)
+        {
+            AnsiConsole.MarkupLine("[red]Error:[/] Source path does not contain any files to process.");
+            return false;
+        }
+
         return true;
     }
 
