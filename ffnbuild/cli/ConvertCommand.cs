@@ -26,7 +26,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             return 1;
         }
 
-        if (settings.SourcePath.Contains(","))
+        if (settings.SourcePath.Contains(','))
         {
             string[] paths = settings.SourcePath.Split(",");
             foreach (var path in paths)
@@ -37,6 +37,16 @@ public partial class ConvertCommand : Command<ConvertSettings>
                 {
                     returnValue += ProcessFolder(sourcePath);
                 }
+                _chapterData.Clear();
+            }
+        }
+        else if (Path.IsPathRooted(settings.SourcePath))
+        {
+            var sourcePath = settings.SourcePath;
+            if (ValidatePath(sourcePath))
+            {
+                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {settings.SourcePath}");
+                returnValue += ProcessFolder(sourcePath);
             }
         }
         else if (settings.SourcePath == ".")
@@ -56,6 +66,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             var sourcePath = Path.Combine("data", settings.SourcePath);
             if (ValidatePath(sourcePath))
             {
+                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {sourcePath}");
                 returnValue += ProcessFolder(sourcePath);
             }
         }
@@ -73,6 +84,12 @@ public partial class ConvertCommand : Command<ConvertSettings>
         if (string.IsNullOrWhiteSpace(path) || !Directory.Exists(path))
         {
             AnsiConsole.MarkupLine("[red]Error:[/] Source path is invalid or does not exist.");
+            return false;
+        }
+
+        if (Directory.EnumerateFiles(path).Count() == 0)
+        {
+            AnsiConsole.MarkupLine("[red]Error:[/] Source path does not contain any files to process.");
             return false;
         }
 
@@ -123,6 +140,10 @@ public partial class ConvertCommand : Command<ConvertSettings>
                         var doc = new HtmlDocument();
                         doc.Load(filePath);
                         _storyName = GetStoryTitle(doc.DocumentNode.SelectSingleNode("//title").InnerText).Trim();
+                        if (string.IsNullOrWhiteSpace(_storyName))
+                        {
+                            throw new GetTitleException($"Story title could not be determined from file: {filePath}");
+                        }
                         ProcessHtmlFile(doc);
                         task.Increment(1);
                     }
@@ -254,7 +275,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             outFile.WriteLine();
             foreach (string? line in chapterData.Paragraphs)
             {
-                outFile.WriteLine(line);
+                outFile.WriteLine(line?.Trim());
                 outFile.WriteLine();
             }
         }
@@ -265,7 +286,19 @@ public partial class ConvertCommand : Command<ConvertSettings>
     private static string GetStoryTitle(string titleString)
     {
         var index = titleString.IndexOf("Chapter");
-        return titleString[..index];
+        string possibleTitle = string.Empty;
+        if (index > 0)
+        {
+            possibleTitle = titleString[..index].Trim();
+            if (!string.IsNullOrWhiteSpace(possibleTitle))
+            {
+                foreach (char c in Path.GetInvalidFileNameChars())
+                {
+                    possibleTitle = possibleTitle.Replace(c, '_');
+                }
+            }
+        }
+        return possibleTitle;
     }
 
     [GeneratedRegex(@"Chapter[\w\s:]+")]

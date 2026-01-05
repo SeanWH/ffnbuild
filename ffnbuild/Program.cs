@@ -7,4 +7,4 @@ Console.Title = "FFN Build Tool";
 AnsiConsole.Write(new FigletText("FFN Build Tool").Centered().Color(Color.Orange1));
 
 var app = new Spectre.Console.Cli.CommandApp<ffnbuild.cli.ConvertCommand>();
-return app.Run(args);
+return await app.RunAsync(args);
