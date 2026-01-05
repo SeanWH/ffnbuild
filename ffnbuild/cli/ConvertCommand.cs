@@ -39,6 +39,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
                 {
                     returnValue += ProcessFolder(sourcePath);
                 }
+                _chapterData.Clear();
             }
         }
         else if (Path.IsPathRooted(settings.SourcePath))
@@ -156,6 +157,11 @@ public partial class ConvertCommand : Command<ConvertSettings>
                         var doc = new HtmlDocument();
                         doc.Load(filePath);
                         _storyName = GetStoryTitle(doc.DocumentNode.SelectSingleNode("//title").InnerText).Trim();
+                        if (string.IsNullOrWhiteSpace(_storyName))
+                        {
+                            throw new GetTitleException($"Story title could not be determined from file: {filePath}");
+                        }
+
                         ProcessHtmlFile(doc);
                         task.Increment(1);
                     }
@@ -298,7 +304,19 @@ public partial class ConvertCommand : Command<ConvertSettings>
     private static string GetStoryTitle(string titleString)
     {
         var index = titleString.IndexOf("Chapter");
-        return titleString[..index];
+        string possibleTitle = string.Empty;
+        if (index > 0)
+        {
+            possibleTitle = titleString[..index].Trim();
+            if (!string.IsNullOrWhiteSpace(possibleTitle))
+            {
+                foreach (char c in Path.GetInvalidFileNameChars())
+                {
+                    possibleTitle = possibleTitle.Replace(c, '_');
+                }
+            }
+        }
+        return possibleTitle;
     }
 
     [GeneratedRegex(@"Chapter[\w\s:]+")]
