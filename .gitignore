@@ -2625,3 +2625,5 @@
 /TestResults/63b5e179-9501-42dc-ac5d-2b7517ad8169
 /.vs/ffnbuild.slnx
 /ffnbuild/obj/Debug/net10.0
+/ffnbuild/bin/Debug/net10.0/data
+/ffnbuild/bin/Debug/net10.0/output

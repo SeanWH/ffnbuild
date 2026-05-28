@@ -16,78 +16,107 @@ public partial class ConvertCommand : Command<ConvertSettings>
     private readonly SortedDictionary<string, ChapterData> _chapterData = new SortedDictionary<string, ChapterData>(new NaturalStringComparer());
     private string _storyName = string.Empty;
 
-    public override int Execute(CommandContext context, ConvertSettings settings, CancellationToken cancellationToken)
+    [GeneratedRegex(@"\d+")]
+    private static partial Regex ChapterIndexRegex();
+
+    [GeneratedRegex(@"Chapter[\w\s:]+")]
+    private static partial Regex ChapterTitleRegex();
+
+    private static string GetChapterIndex(string titleString)
     {
-        int returnValue = 0;
-
-        if (string.IsNullOrWhiteSpace(settings.SourcePath))
+        if( !String.IsNullOrWhiteSpace(titleString) )
         {
-            AnsiConsole.MarkupLine("[red]Error:[/] Source path is invalid or does not exist.");
-            return 1;
-        }
-
-        if (settings.SourcePath.Contains(','))
-        {
-            string[] paths = settings.SourcePath.Split(",");
-            foreach (var path in paths)
+            var regex = ChapterIndexRegex();
+            var match = regex.Match(titleString);
+            if( match.Success )
             {
-                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {path}");
-                var sourcePath = Path.Combine("data", path.Trim());
-                if (ValidatePath(sourcePath))
+                if( match.Value.Length == 1 )
                 {
-                    returnValue += ProcessFolder(sourcePath);
+                    return "0" + match.Value;
                 }
-                _chapterData.Clear();
-            }
-        }
-        else if (Path.IsPathRooted(settings.SourcePath))
-        {
-            var sourcePath = settings.SourcePath;
-            if (ValidatePath(sourcePath))
-            {
-                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {settings.SourcePath}");
-                returnValue += ProcessFolder(sourcePath);
-            }
-        }
-        else if (settings.SourcePath == ".")
-        {
-            foreach (string folder in Directory.EnumerateDirectories("data"))
-            {
-                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {folder}");
-                //var sourcePath = Path.Combine("data", path.Trim());
-                if (ValidatePath(folder))
+                else
                 {
-                    returnValue += ProcessFolder(folder);
+                    return match.Value;
+                }
+            }
+            else
+            {
+                var value = TextToDigitConverter.Convert(match.Value);
+                if( value == match.Value )
+                {
+                    return value;
                 }
             }
         }
-        else
-        {
-            var sourcePath = Path.Combine("data", settings.SourcePath);
-            if (ValidatePath(sourcePath))
-            {
-                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {sourcePath}");
-                returnValue += ProcessFolder(sourcePath);
-            }
-        }
-
-        if (returnValue > 0)
-        {
-            AnsiConsole.MarkupLine("[red]Error:[/] Error(s) occurred during conversion process.");
-        }
-
-        return returnValue;
+        throw new ArgumentException("Invalid chapter title passed to GetChapterIndex.", nameof(titleString));
     }
 
-    private bool ValidatePath(string path)
+    private static string GetChapterTitle(string titleString)
     {
-        if (string.IsNullOrWhiteSpace(path) || !Directory.Exists(path))
+        if( !String.IsNullOrWhiteSpace(titleString) )
+        {
+            var regex = ChapterTitleRegex();
+            var match = regex.Match(titleString);
+            if( match.Success )
+            {
+                string value = GetChapterIndex(match.Value);
+
+                return $"Chapter {value}";
+            }
+            else
+            {
+                return string.Empty;
+            }
+        }
+
+        throw new ArgumentException("Invalid chapter title passed to GetChapterTitle.", nameof(titleString));
+    }
+
+    private static string GetStoryTitle(string titleString)
+    {
+        var index = titleString.IndexOf("Chapter");
+        string possibleTitle = string.Empty;
+        if( index > 0 )
+        {
+            possibleTitle = titleString[..index].Trim();
+            if( !string.IsNullOrWhiteSpace(possibleTitle) )
+            {
+                foreach( char c in Path.GetInvalidFileNameChars() )
+                {
+                    possibleTitle = possibleTitle.Replace(c, '_');
+                }
+            }
+        }
+        if( index == -1 || string.IsNullOrWhiteSpace(possibleTitle) )
+        {
+            possibleTitle = titleString[..(titleString.IndexOf(',') >= 0 ? titleString.IndexOf(',') : titleString.Length)].Trim();
+        }
+        return possibleTitle;
+    }
+
+    private static List<string?> ParseChapterText(HtmlNodeCollection nodes)
+    {
+        List<string?> lines = [];
+        Regex regex = new Regex(@"\r\n|\n|\r");
+        Regex r2 = new Regex(@"\s{2,}");
+        foreach( var para in nodes )
+        {
+            var line = regex.Replace(para.InnerText, " ").Trim();
+            line = r2.Replace(line, " ");
+            lines.Add(line);
+        }
+        return lines;
+    }
+
+    private static bool ValidatePath(string path)
+    {
+        if( string.IsNullOrWhiteSpace(path) || !Directory.Exists(path) )
         {
             AnsiConsole.MarkupLine("[red]Error:[/] Source path is invalid or does not exist.");
             return false;
         }
 
-        if (Directory.EnumerateFiles(path).Count() == 0)
+        if( !Directory.EnumerateFiles(path).Any() )
         {
             AnsiConsole.MarkupLine("[red]Error:[/] Source path does not contain any files to process.");
             return false;
@@ -96,21 +125,27 @@ public partial class ConvertCommand : Command<ConvertSettings>
         return true;
     }
 
-    private int ProcessFolder(string pathToFolder)
+    private void AppendChapterData(string chapterName, List<string?> lines)
     {
-        var returnValue = ConvertDirectory(pathToFolder).GetAwaiter().GetResult();
-        if (!string.IsNullOrEmpty(_storyName))
+        if( lines.Count == 0 || lines == null )
         {
-            SaveTextFile(_storyName.Trim());
-            AnsiConsole.MarkupLine($"[green]Successfully created text file for story:[/] {_storyName}");
-        }
-        else
-        {
-            AnsiConsole.MarkupLine("[red]Error:[/] Story name could not be determined.");
-            returnValue = 1;
+            return;
         }
 
-        return returnValue;
+        _chapterData.Add(chapterName, new ChapterData(chapterName, lines));
+    }
+
+    private void AppendStoryData(string chapterName, List<string?> lines)
+    {
+        ChapterData existing = _chapterData[chapterName];
+        List<string?> existingLines = existing.Paragraphs;
+        foreach( var line in lines )
+        {
+            existingLines.Add(line);
+        }
+
+        _ = _chapterData.Remove(chapterName);
+        _chapterData.Add(chapterName, new ChapterData(chapterName, existingLines));
     }
 
     private async Task<int> ConvertDirectory(string sourcePath)
@@ -133,14 +168,14 @@ public partial class ConvertCommand : Command<ConvertSettings>
             task.MaxValue = Directory.EnumerateFiles(sourcePath).Count();
             try
             {
-                foreach (var filePath in Directory.EnumerateFiles(sourcePath))
+                foreach( var filePath in Directory.EnumerateFiles(sourcePath) )
                 {
-                    if (Path.GetExtension(filePath).ToLower().Contains(".htm"))
+                    if( Path.GetExtension(filePath).ToLower().Contains(".htm") )
                     {
                         var doc = new HtmlDocument();
                         doc.Load(filePath);
                         _storyName = GetStoryTitle(doc.DocumentNode.SelectSingleNode("//title").InnerText).Trim();
-                        if (string.IsNullOrWhiteSpace(_storyName))
+                        if( string.IsNullOrWhiteSpace(_storyName) )
                         {
                             throw new GetTitleException($"Story title could not be determined from file: {filePath}");
                         }
@@ -153,12 +188,29 @@ public partial class ConvertCommand : Command<ConvertSettings>
                     }
                 }
             }
-            catch (Exception ex)
+            catch( Exception ex )
             {
                 AnsiConsole.MarkupLineInterpolated($"[red]Error:[/] An exception occurred while processing files: [yellow]{ex.Message}[/]");
                 returnValue = 1;
             }
         });
+
+        return returnValue;
+    }
+
+    private int ProcessFolder(string pathToFolder)
+    {
+        var returnValue = ConvertDirectory(pathToFolder).GetAwaiter().GetResult();
+        if( !string.IsNullOrEmpty(_storyName) )
+        {
+            SaveTextFile(_storyName.Trim());
+            AnsiConsole.MarkupLine($"[green]Successfully created text file for story:[/] {_storyName}");
+        }
+        else
+        {
+            AnsiConsole.MarkupLine("[red]Error:[/] Story name could not be determined.");
+            returnValue = 1;
+        }
 
         return returnValue;
     }
@@ -171,9 +223,9 @@ public partial class ConvertCommand : Command<ConvertSettings>
         var paras = storyText.SelectNodes("//p");
         List<string?> lines = ParseChapterText(paras);
 
-        if (lines.Count > 0 || lines != null)
+        if( lines.Count > 0 || lines != null )
         {
-            if (_chapterData.ContainsKey(chapterName))
+            if( _chapterData.ContainsKey(chapterName) )
             {
                 AppendStoryData(chapterName, lines);
             }
@@ -184,76 +236,21 @@ public partial class ConvertCommand : Command<ConvertSettings>
         }
     }
 
-    private void AppendChapterData(string chapterName, List<string?> lines)
+    private Task<int> ProcessMultipleFolders(string folderPaths)
     {
-        if (lines.Count == 0 || lines == null)
+        int returnValue = 0;
+        string[] paths = folderPaths == "." ? Directory.EnumerateDirectories("data").ToArray() : folderPaths.Split(",");
+        foreach( var path in paths )
         {
-            return;
-        }
-
-        _chapterData.Add(chapterName, new ChapterData(chapterName, lines));
-    }
-
-    private void AppendStoryData(string chapterName, List<string?> lines)
-    {
-        ChapterData existing = _chapterData[chapterName];
-        List<string?> existingLines = existing.Paragraphs;
-        foreach (var line in lines)
-        {
-            existingLines.Add(line);
-        }
-
-        _ = _chapterData.Remove(chapterName);
-        _chapterData.Add(chapterName, new ChapterData(chapterName, existingLines));
-    }
-
-    private static List<string?> ParseChapterText(HtmlNodeCollection nodes)
-    {
-        List<string?> lines = [];
-        foreach (var para in nodes)
-        {
-            lines.Add(para.InnerText);
-        }
-        return lines;
-    }
-
-    private static string GetChapterTitle(string titleString)
-    {
-        if (!String.IsNullOrWhiteSpace(titleString))
-        {
-            var regex = ChapterTitleRegex();
-            var match = regex.Match(titleString);
-            if (match.Success)
+            AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {path}");
+            var sourcePath = path.Contains("data") ? path : Path.Combine("data", path.Trim());
+            if( ValidatePath(sourcePath) )
             {
-                regex = ChapterIndexRegex();
-                var newMatch = regex.Match(match.Value);
-                string value;
-
-                if (newMatch.Success)
-                {
-                    if (newMatch.Value.Length == 1)
-                    {
-                        value = "0" + newMatch.Value;
-                    }
-                    else
-                    {
-                        value = newMatch.Value;
-                    }
-                }
-                else
-                {
-                    value = TextToDigitConverter.Convert(match.Value);
-                    if (value == match.Value)
-                    {
-                        return value;
-                    }
-                }
-
-                return $"Chapter {value}";
+                returnValue += ProcessFolder(sourcePath);
             }
+            _chapterData.Clear();
         }
-
-        throw new ArgumentException("Invalid chapter title passed to GetChapterTitle.", nameof(titleString));
+        return Task.FromResult(returnValue);
     }
 
     private void SaveTextFile(string fileName)
@@ -261,19 +258,19 @@ public partial class ConvertCommand : Command<ConvertSettings>
         var finalName = fileName + ".txt";
         var finalPath = Path.Combine("output", finalName);
 
-        if (!Directory.Exists("output"))
+        if( !Directory.Exists("output") )
         {
             Directory.CreateDirectory("output");
         }
 
         using var outFile = File.CreateText(finalPath);
 
-        foreach (ChapterData chapterData in _chapterData.Values)
+        foreach( ChapterData chapterData in _chapterData.Values )
         {
             //log.WriteLine(chapterData.Title);
             outFile.WriteLine(chapterData.Title);
             outFile.WriteLine();
-            foreach (string? line in chapterData.Paragraphs)
+            foreach( string? line in chapterData.Paragraphs )
             {
                 outFile.WriteLine(line?.Trim());
                 outFile.WriteLine();
@@ -283,27 +280,44 @@ public partial class ConvertCommand : Command<ConvertSettings>
         outFile.Flush();
     }
 
-    private static string GetStoryTitle(string titleString)
+    public override int Execute(CommandContext context, ConvertSettings settings, CancellationToken cancellationToken)
     {
-        var index = titleString.IndexOf("Chapter");
-        string possibleTitle = string.Empty;
-        if (index > 0)
+        int returnValue = 0;
+
+        if( string.IsNullOrWhiteSpace(settings.SourcePath) )
         {
-            possibleTitle = titleString[..index].Trim();
-            if (!string.IsNullOrWhiteSpace(possibleTitle))
+            AnsiConsole.MarkupLine("[red]Error:[/] Source path is invalid or does not exist.");
+            return 1;
+        }
+
+        if( settings.SourcePath.Contains(',') || settings.SourcePath == "." )
+        {
+            returnValue = ProcessMultipleFolders(settings.SourcePath).GetAwaiter().GetResult();
+        }
+        else if( Path.IsPathRooted(settings.SourcePath) )
+        {
+            var sourcePath = settings.SourcePath;
+            if( ValidatePath(sourcePath) )
             {
-                foreach (char c in Path.GetInvalidFileNameChars())
-                {
-                    possibleTitle = possibleTitle.Replace(c, '_');
-                }
+                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {settings.SourcePath}");
+                returnValue += ProcessFolder(sourcePath);
             }
         }
-        return possibleTitle;
+        else
+        {
+            var sourcePath = Path.Combine("data", settings.SourcePath);
+            if( ValidatePath(sourcePath) )
+            {
+                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {sourcePath}");
+                returnValue += ProcessFolder(sourcePath);
+            }
+        }
+
+        if( returnValue > 0 )
+        {
+            AnsiConsole.MarkupLine("[red]Error:[/] Error(s) occurred during conversion process.");
+        }
+
+        return returnValue;
     }
-
-    [GeneratedRegex(@"Chapter[\w\s:]+")]
-    private static partial Regex ChapterTitleRegex();
-
-    [GeneratedRegex(@"\d+")]
-    private static partial Regex ChapterIndexRegex();
 }
