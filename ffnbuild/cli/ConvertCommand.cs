@@ -157,11 +157,10 @@ public partial class ConvertCommand : Command<ConvertSettings>
             .AutoClear(false)
             .HideCompleted(false)
             .Columns(
-            [
-                new TaskDescriptionColumn(),
-                new ProgressBarColumn(),
-                new PercentageColumn(),
-            ])
+               new TaskDescriptionColumn(),
+                    new ProgressBarColumn(),
+                    new PercentageColumn()
+            )
             .StartAsync(async ctx =>
         {
             var task = ctx.AddTask("Processing HTML files...", autoStart: true);
@@ -170,7 +169,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             {
                 foreach( var filePath in Directory.EnumerateFiles(sourcePath) )
                 {
-                    if( Path.GetExtension(filePath).ToLower().Contains(".htm") )
+                    if( Path.GetExtension(filePath).ToLower().Contains(".htm", StringComparison.OrdinalIgnoreCase) )
                     {
                         var doc = new HtmlDocument();
                         doc.Load(filePath);
