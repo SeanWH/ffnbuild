@@ -1,9 +1,19 @@
 ﻿namespace ffnbuild.Tests;
 
+using ffnbuild.data.model;
+
 using Xunit;
 
 public class ChapterDataTests
 {
+    [Fact]
+    public void ChapterData_EmptyParagraphs_WorksCorrectly()
+    {
+        var chapterData = new ChapterData("Title with No Paragraphs", []);
+        Assert.Equal("Title with No Paragraphs", chapterData.Title);
+        Assert.Empty(chapterData.Paragraphs);
+    }
+
     [Fact]
     public void ChapterData_Initialization_WorksCorrectly()
     {
@@ -12,26 +22,6 @@ public class ChapterDataTests
         var chapterData = new ChapterData(title, paragraphs);
         Assert.Equal(title, chapterData.Title);
         Assert.Equal(paragraphs, chapterData.Paragraphs);
-    }
-
-    [Fact]
-    public void ChapterData_Setters_WorksCorrectly()
-    {
-        var chapterData = new ChapterData("Initial Title", [])
-        {
-            Title = "Updated Title",
-            Paragraphs = ["New Paragraph"]
-        };
-        Assert.Equal("Updated Title", chapterData.Title);
-        Assert.Equal(["New Paragraph"], chapterData.Paragraphs);
-    }
-
-    [Fact]
-    public void ChapterData_EmptyParagraphs_WorksCorrectly()
-    {
-        var chapterData = new ChapterData("Title with No Paragraphs", []);
-        Assert.Equal("Title with No Paragraphs", chapterData.Title);
-        Assert.Empty(chapterData.Paragraphs);
     }
 
     [Fact]
@@ -56,10 +46,27 @@ public class ChapterDataTests
     }
 
     [Fact]
-    public void ChapterData_WhitespaceTitle_WorksCorrectly()
+    public void ChapterData_ParagraphsWithSpecialCharacters_WorksCorrectly()
     {
-        var chapterData = new ChapterData("   ", []);
-        Assert.Equal("   ", chapterData.Title);
+        var paragraphs = new List<string?>
+        {
+            "Paragraph with special characters! @# $%^ &*()",
+            "Another paragraph with numbers 12345"
+        };
+        var chapterData = new ChapterData("Title", paragraphs);
+        Assert.Equal(paragraphs, chapterData.Paragraphs);
+    }
+
+    [Fact]
+    public void ChapterData_Setters_WorksCorrectly()
+    {
+        var chapterData = new ChapterData("Initial Title", [])
+        {
+            Title = "Updated Title",
+            Paragraphs = ["New Paragraph"]
+        };
+        Assert.Equal("Updated Title", chapterData.Title);
+        Assert.Equal(["New Paragraph"], chapterData.Paragraphs);
     }
 
     [Fact]
@@ -71,14 +78,9 @@ public class ChapterDataTests
     }
 
     [Fact]
-    public void ChapterData_ParagraphsWithSpecialCharacters_WorksCorrectly()
+    public void ChapterData_WhitespaceTitle_WorksCorrectly()
     {
-        var paragraphs = new List<string?>
-        {
-            "Paragraph with special characters! @# $%^ &*()",
-            "Another paragraph with numbers 12345"
-        };
-        var chapterData = new ChapterData("Title", paragraphs);
-        Assert.Equal(paragraphs, chapterData.Paragraphs);
+        var chapterData = new ChapterData("   ", []);
+        Assert.Equal("   ", chapterData.Title);
     }
 }

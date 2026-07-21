@@ -1,5 +1,7 @@
 namespace ffnbuild.Tests;
 
+using ffnbuild.data.converters;
+
 using Xunit;
 
 public class TextToDigitConverterTests

@@ -6,7 +6,14 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
+using ffnbuild.data.comparers;
+using ffnbuild.data.exceptions;
+using ffnbuild.data.extensions;
+using ffnbuild.data.model;
+
 using HtmlAgilityPack;
+
+using Serilog;
 
 using Spectre.Console;
 using Spectre.Console.Cli;
@@ -15,84 +22,6 @@ public partial class ConvertCommand : Command<ConvertSettings>
 {
     private readonly SortedDictionary<string, ChapterData> _chapterData = new SortedDictionary<string, ChapterData>(new NaturalStringComparer());
     private string _storyName = string.Empty;
-
-    [GeneratedRegex(@"\d+")]
-    private static partial Regex ChapterIndexRegex();
-
-    [GeneratedRegex(@"Chapter[\w\s:]+")]
-    private static partial Regex ChapterTitleRegex();
-
-    private static string GetChapterIndex(string titleString)
-    {
-        if( !String.IsNullOrWhiteSpace(titleString) )
-        {
-            var regex = ChapterIndexRegex();
-            var match = regex.Match(titleString);
-            if( match.Success )
-            {
-                if( match.Value.Length == 1 )
-                {
-                    return "0" + match.Value;
-                }
-                else
-                {
-                    return match.Value;
-                }
-            }
-            else
-            {
-                var value = TextToDigitConverter.Convert(match.Value);
-                if( value == match.Value )
-                {
-                    return value;
-                }
-            }
-        }
-        throw new ArgumentException("Invalid chapter title passed to GetChapterIndex.", nameof(titleString));
-    }
-
-    private static string GetChapterTitle(string titleString)
-    {
-        if( !String.IsNullOrWhiteSpace(titleString) )
-        {
-            var regex = ChapterTitleRegex();
-            var match = regex.Match(titleString);
-            if( match.Success )
-            {
-                string value = GetChapterIndex(match.Value);
-
-                return $"Chapter {value}";
-            }
-            else
-            {
-                return string.Empty;
-            }
-        }
-
-        throw new ArgumentException("Invalid chapter title passed to GetChapterTitle.", nameof(titleString));
-    }
-
-    private static string GetStoryTitle(string titleString)
-    {
-        var index = titleString.IndexOf("Chapter");
-        string possibleTitle = string.Empty;
-        if( index > 0 )
-        {
-            possibleTitle = titleString[..index].Trim();
-            if( !string.IsNullOrWhiteSpace(possibleTitle) )
-            {
-                foreach( char c in Path.GetInvalidFileNameChars() )
-                {
-                    possibleTitle = possibleTitle.Replace(c, '_');
-                }
-            }
-        }
-        if( index == -1 || string.IsNullOrWhiteSpace(possibleTitle) )
-        {
-            possibleTitle = titleString[..(titleString.IndexOf(',') >= 0 ? titleString.IndexOf(',') : titleString.Length)].Trim();
-        }
-        return possibleTitle;
-    }
 
     private static List<string?> ParseChapterText(HtmlNodeCollection nodes)
     {
@@ -129,6 +58,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
     {
         if( lines.Count == 0 || lines == null )
         {
+            Log.Debug("Count of lines in chapter is null or 0.");
             return;
         }
 
@@ -157,11 +87,11 @@ public partial class ConvertCommand : Command<ConvertSettings>
             .AutoClear(false)
             .HideCompleted(false)
             .Columns(
-            [
+
                 new TaskDescriptionColumn(),
                 new ProgressBarColumn(),
-                new PercentageColumn(),
-            ])
+                new PercentageColumn()
+            )
             .StartAsync(async ctx =>
         {
             var task = ctx.AddTask("Processing HTML files...", autoStart: true);
@@ -170,13 +100,16 @@ public partial class ConvertCommand : Command<ConvertSettings>
             {
                 foreach( var filePath in Directory.EnumerateFiles(sourcePath) )
                 {
-                    if( Path.GetExtension(filePath).ToLower().Contains(".htm") )
+                    if( Path.GetExtension(filePath).ToLower().Contains(".htm", StringComparison.OrdinalIgnoreCase) )
                     {
+                        Log.Information("Processing file: {FilePath}", filePath);
                         var doc = new HtmlDocument();
                         doc.Load(filePath);
-                        _storyName = GetStoryTitle(doc.DocumentNode.SelectSingleNode("//title").InnerText).Trim();
+                        _storyName = doc.DocumentNode.SelectSingleNode("//title").InnerText.GetStoryTitle().Trim();
+                        Log.Information("StoryName: {StoryName}", _storyName);
                         if( string.IsNullOrWhiteSpace(_storyName) )
                         {
+                            Log.Error("Could not determine storytitle from file: {FilePath}", filePath);
                             throw new GetTitleException($"Story title could not be determined from file: {filePath}");
                         }
                         ProcessHtmlFile(doc);
@@ -217,7 +150,8 @@ public partial class ConvertCommand : Command<ConvertSettings>
 
     private void ProcessHtmlFile(HtmlDocument doc)
     {
-        var chapterName = GetChapterTitle(doc.DocumentNode.SelectSingleNode("//title").InnerText);
+        var chapterName = doc.DocumentNode.SelectSingleNode("//title").InnerText.GetChapterTitle();
+        Log.Information("Chapter name: {ChapterName}", chapterName);
 
         var storyText = doc.DocumentNode.SelectSingleNode("//div[contains(concat(' ', normalize-space(@class), ' '),' storytext ')]");
         var paras = storyText.SelectNodes("//p");
@@ -242,6 +176,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
         string[] paths = folderPaths == "." ? Directory.EnumerateDirectories("data").ToArray() : folderPaths.Split(",");
         foreach( var path in paths )
         {
+            Log.Information("Processing Folder: {FolderPath}", path);
             AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {path}");
             var sourcePath = path.Contains("data") ? path : Path.Combine("data", path.Trim());
             if( ValidatePath(sourcePath) )
@@ -280,7 +215,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
         outFile.Flush();
     }
 
-    public override int Execute(CommandContext context, ConvertSettings settings, CancellationToken cancellationToken)
+    protected override int Execute(CommandContext context, ConvertSettings settings, CancellationToken cancellationToken)
     {
         int returnValue = 0;
 
@@ -290,8 +225,15 @@ public partial class ConvertCommand : Command<ConvertSettings>
             return 1;
         }
 
+        Log.Logger = new LoggerConfiguration()
+           .MinimumLevel.Verbose()
+           .WriteTo.File("ffnbuild.log", rollingInterval: RollingInterval.Minute)
+           .CreateLogger();
+        Serilog.Debugging.SelfLog.Enable(Console.Error);
+
         if( settings.SourcePath.Contains(',') || settings.SourcePath == "." )
         {
+            Log.Information("Processing multiple files:");
             returnValue = ProcessMultipleFolders(settings.SourcePath).GetAwaiter().GetResult();
         }
         else if( Path.IsPathRooted(settings.SourcePath) )
@@ -299,6 +241,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             var sourcePath = settings.SourcePath;
             if( ValidatePath(sourcePath) )
             {
+                Log.Information("Processing from rooted source path: {SourcePath}", settings.SourcePath);
                 AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {settings.SourcePath}");
                 returnValue += ProcessFolder(sourcePath);
             }
@@ -308,6 +251,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             var sourcePath = Path.Combine("data", settings.SourcePath);
             if( ValidatePath(sourcePath) )
             {
+                Log.Information("Processing from non-rooted source path: {SourcePath}", settings.SourcePath);
                 AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {sourcePath}");
                 returnValue += ProcessFolder(sourcePath);
             }
