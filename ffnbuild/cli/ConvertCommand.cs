@@ -83,7 +83,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
         int returnValue = 0;
 
         await AnsiConsole.Progress()
-            .AutoRefresh(false)
+            .AutoRefresh(true)
             .AutoClear(false)
             .HideCompleted(false)
             .Columns(
@@ -94,22 +94,25 @@ public partial class ConvertCommand : Command<ConvertSettings>
             )
             .StartAsync(async ctx =>
         {
+            var files = Directory.EnumerateFiles(sourcePath).Where(f => Path.GetExtension(f).ToLower().Contains(".htm", StringComparison.OrdinalIgnoreCase)).ToList();
+
             var task = ctx.AddTask("Processing HTML files...", autoStart: true);
-            task.MaxValue = Directory.EnumerateFiles(sourcePath).Count();
+            task.MaxValue = files.Count;
             try
             {
-                foreach( var filePath in Directory.EnumerateFiles(sourcePath) )
+                foreach( var filePath in files )
                 {
                     if( Path.GetExtension(filePath).ToLower().Contains(".htm", StringComparison.OrdinalIgnoreCase) )
                     {
-                        Log.Information("Processing file: {FilePath}", filePath);
+                        //Log.Information("Processing file: {FilePath}", filePath);
                         var doc = new HtmlDocument();
                         doc.Load(filePath);
                         _storyName = doc.DocumentNode.SelectSingleNode("//title").InnerText.GetStoryTitle().Trim();
-                        Log.Information("StoryName: {StoryName}", _storyName);
+                        //Log.Information("StoryName: {StoryName}", _storyName);
                         if( string.IsNullOrWhiteSpace(_storyName) )
                         {
-                            Log.Error("Could not determine storytitle from file: {FilePath}", filePath);
+                            //Log.Error("Could not determine storytitle from file: {FilePath}", filePath);
+                            AnsiConsole.MarkupLineInterpolated($"[red]Error:[/] Story title could not be determined from file: [yellow]{filePath}[/]");
                             throw new GetTitleException($"Story title could not be determined from file: {filePath}");
                         }
                         ProcessHtmlFile(doc);
@@ -119,6 +122,8 @@ public partial class ConvertCommand : Command<ConvertSettings>
                     {
                         task.Increment(1);
                     }
+
+                    await Task.Delay(1);
                 }
             }
             catch( Exception ex )
