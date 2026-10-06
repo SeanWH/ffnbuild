@@ -1,5 +1,7 @@
 ﻿namespace ffnbuild.data.extensions;
 
+using System.Security.Cryptography;
+using System.Text;
 using System.Text.RegularExpressions;
 
 using ffnbuild.data.converters;
@@ -84,5 +86,52 @@ public static class StringExtensions
             possibleTitle = chapterTitle[..(chapterTitle.IndexOf(',') >= 0 ? chapterTitle.IndexOf(',') : chapterTitle.Length)].Trim();
         }
         return possibleTitle;
+    }
+
+    public static int StringHash256(this string val)
+    {
+        using var algo = SHA256.Create();
+        algo.ComputeHash(Encoding.UTF8.GetBytes(val));
+        var result = algo.Hash;
+        return BitConverter.ToInt32(result, 0);
+    }
+
+    public static string TranslateHtmlCode(this string text)
+    {
+        Regex regex = new(@"&\w+;");
+        var symbol = regex.Match(text);
+
+        while( symbol.Success )
+        {
+            switch( symbol.Value )
+            {
+                case "&amp;":
+                    text = text.Replace(symbol.Value, "&");
+                    break;
+
+                case "&lt;":
+                    text = text.Replace(symbol.Value, "<");
+                    break;
+
+                case "&gt;":
+                    text = text.Replace(symbol.Value, ">");
+                    break;
+
+                case "&quot;":
+                    text = text.Replace(symbol.Value, "\"");
+                    break;
+
+                case "&apos;":
+                    text = text.Replace(symbol.Value, "'");
+                    break;
+
+                default:
+                    text = text.Replace(symbol.Value, "-");
+                    break;
+            }
+            symbol = regex.Match(text);
+        }
+
+        return text;
     }
 }

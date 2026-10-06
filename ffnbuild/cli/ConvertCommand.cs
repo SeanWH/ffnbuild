@@ -2,16 +2,12 @@
 
 using System;
 using System.IO;
-using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
 using ffnbuild.data.comparers;
 using ffnbuild.data.exceptions;
-using ffnbuild.data.extensions;
 using ffnbuild.data.model;
-
-using HtmlAgilityPack;
 
 using Serilog;
 
@@ -21,21 +17,8 @@ using Spectre.Console.Cli;
 public partial class ConvertCommand : Command<ConvertSettings>
 {
     private readonly SortedDictionary<string, ChapterData> _chapterData = new SortedDictionary<string, ChapterData>(new NaturalStringComparer());
+    private StoryMetaData _storyMetaData = new StoryMetaData();
     private string _storyName = string.Empty;
-
-    private static List<string?> ParseChapterText(HtmlNodeCollection nodes)
-    {
-        List<string?> lines = [];
-        Regex regex = new Regex(@"\r\n|\n|\r");
-        Regex r2 = new Regex(@"\s{2,}");
-        foreach( var para in nodes )
-        {
-            var line = regex.Replace(para.InnerText, " ").Trim();
-            line = r2.Replace(line, " ");
-            lines.Add(line);
-        }
-        return lines;
-    }
 
     private static bool ValidatePath(string path)
     {
@@ -67,6 +50,12 @@ public partial class ConvertCommand : Command<ConvertSettings>
 
     private void AppendStoryData(string chapterName, List<string?> lines)
     {
+        if( lines == null || lines.Count == 0 )
+        {
+            Log.Debug("Count of lines in chapter is null or 0.");
+            return;
+        }
+
         ChapterData existing = _chapterData[chapterName];
         List<string?> existingLines = existing.Paragraphs;
         foreach( var line in lines )
@@ -104,18 +93,38 @@ public partial class ConvertCommand : Command<ConvertSettings>
                 {
                     if( Path.GetExtension(filePath).ToLower().Contains(".htm", StringComparison.OrdinalIgnoreCase) )
                     {
-                        //Log.Information("Processing file: {FilePath}", filePath);
-                        var doc = new HtmlDocument();
-                        doc.Load(filePath);
-                        _storyName = doc.DocumentNode.SelectSingleNode("//title").InnerText.GetStoryTitle().Trim();
-                        //Log.Information("StoryName: {StoryName}", _storyName);
+                        HtmlProcessor htmlProcessor = new HtmlProcessor(filePath);
+                        _storyName = htmlProcessor.GetStoryTitle().Trim();
                         if( string.IsNullOrWhiteSpace(_storyName) )
                         {
-                            //Log.Error("Could not determine storytitle from file: {FilePath}", filePath);
                             AnsiConsole.MarkupLineInterpolated($"[red]Error:[/] Story title could not be determined from file: [yellow]{filePath}[/]");
                             throw new GetTitleException($"Story title could not be determined from file: {filePath}");
                         }
-                        ProcessHtmlFile(doc);
+                        _storyMetaData = new StoryMetaData
+                        {
+                            AuthorUrl = htmlProcessor.GetAuthorAddress()!.Address,
+                            Author = htmlProcessor.GetAuthorName(),
+                            StoryUrl = htmlProcessor.GetUrl(),
+                            Title = _storyName
+                        };
+
+                        var chapterName = htmlProcessor.GetChapterTitle();
+                        Log.Information("Chapter name: {ChapterName}", chapterName);
+
+                        var lines = htmlProcessor.GetChapterText();
+
+                        if( lines != null && lines.Count > 0 )
+                        {
+                            if( _chapterData.ContainsKey(chapterName) )
+                            {
+                                AppendStoryData(chapterName, lines);
+                            }
+                            else
+                            {
+                                AppendChapterData(chapterName, lines);
+                            }
+                        }
+
                         task.Increment(1);
                     }
                     else
@@ -141,7 +150,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
         var returnValue = ConvertDirectory(pathToFolder).GetAwaiter().GetResult();
         if( !string.IsNullOrEmpty(_storyName) )
         {
-            SaveTextFile(_storyName.Trim());
+            SaveTextFile(_storyName.Trim(), _storyMetaData);
             AnsiConsole.MarkupLine($"[green]Successfully created text file for story:[/] {_storyName}");
         }
         else
@@ -151,28 +160,6 @@ public partial class ConvertCommand : Command<ConvertSettings>
         }
 
         return returnValue;
-    }
-
-    private void ProcessHtmlFile(HtmlDocument doc)
-    {
-        var chapterName = doc.DocumentNode.SelectSingleNode("//title").InnerText.GetChapterTitle();
-        Log.Information("Chapter name: {ChapterName}", chapterName);
-
-        var storyText = doc.DocumentNode.SelectSingleNode("//div[contains(concat(' ', normalize-space(@class), ' '),' storytext ')]");
-        var paras = storyText.SelectNodes("//p");
-        List<string?> lines = ParseChapterText(paras);
-
-        if( lines.Count > 0 || lines != null )
-        {
-            if( _chapterData.ContainsKey(chapterName) )
-            {
-                AppendStoryData(chapterName, lines);
-            }
-            else
-            {
-                AppendChapterData(chapterName, lines);
-            }
-        }
     }
 
     private Task<int> ProcessMultipleFolders(string folderPaths)
@@ -193,7 +180,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
         return Task.FromResult(returnValue);
     }
 
-    private void SaveTextFile(string fileName)
+    private void SaveTextFile(string fileName, StoryMetaData storyMetaData)
     {
         var finalName = fileName + ".txt";
         var finalPath = Path.Combine("output", finalName);
@@ -205,9 +192,13 @@ public partial class ConvertCommand : Command<ConvertSettings>
 
         using var outFile = File.CreateText(finalPath);
 
+        outFile.WriteLine($"Title: {storyMetaData.Title}");
+        outFile.WriteLine($"Author: {storyMetaData.Author} ({storyMetaData.AuthorUrl})");
+        outFile.WriteLine($"Story URL: {storyMetaData.StoryUrl}");
+        outFile.WriteLine();
+
         foreach( ChapterData chapterData in _chapterData.Values )
         {
-            //log.WriteLine(chapterData.Title);
             outFile.WriteLine(chapterData.Title);
             outFile.WriteLine();
             foreach( string? line in chapterData.Paragraphs )
