@@ -93,38 +93,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
                 {
                     if( Path.GetExtension(filePath).ToLower().Contains(".htm", StringComparison.OrdinalIgnoreCase) )
                     {
-                        HtmlProcessor htmlProcessor = new HtmlProcessor(filePath);
-                        _storyName = htmlProcessor.GetStoryTitle().Trim();
-                        if( string.IsNullOrWhiteSpace(_storyName) )
-                        {
-                            AnsiConsole.MarkupLineInterpolated($"[red]Error:[/] Story title could not be determined from file: [yellow]{filePath}[/]");
-                            throw new GetTitleException($"Story title could not be determined from file: {filePath}");
-                        }
-                        _storyMetaData = new StoryMetaData
-                        {
-                            AuthorUrl = htmlProcessor.GetAuthorAddress()!.Address,
-                            Author = htmlProcessor.GetAuthorName(),
-                            StoryUrl = htmlProcessor.GetUrl(),
-                            Title = _storyName
-                        };
-
-                        var chapterName = htmlProcessor.GetChapterTitle();
-                        Log.Information("Chapter name: {ChapterName}", chapterName);
-
-                        var lines = htmlProcessor.GetChapterText();
-
-                        if( lines != null && lines.Count > 0 )
-                        {
-                            if( _chapterData.ContainsKey(chapterName) )
-                            {
-                                AppendStoryData(chapterName, lines);
-                            }
-                            else
-                            {
-                                AppendChapterData(chapterName, lines);
-                            }
-                        }
-
+                        ProcessFile(filePath);
                         task.Increment(1);
                     }
                     else
@@ -143,6 +112,41 @@ public partial class ConvertCommand : Command<ConvertSettings>
         });
 
         return returnValue;
+    }
+
+    private void ProcessFile(string filePath)
+    {
+        HtmlProcessor htmlProcessor = new HtmlProcessor(filePath);
+        _storyName = htmlProcessor.GetStoryTitle().Trim();
+        if( string.IsNullOrWhiteSpace(_storyName) )
+        {
+            AnsiConsole.MarkupLineInterpolated($"[red]Error:[/] Story title could not be determined from file: [yellow]{filePath}[/]");
+            throw new GetTitleException($"Story title could not be determined from file: {filePath}");
+        }
+        _storyMetaData = new StoryMetaData
+        {
+            AuthorUrl = htmlProcessor.GetAuthorAddress()!.Address,
+            Author = htmlProcessor.GetAuthorName(),
+            StoryUrl = htmlProcessor.GetUrl(),
+            Title = _storyName
+        };
+
+        var chapterName = htmlProcessor.GetChapterTitle();
+        Log.Information("Chapter name: {ChapterName}", chapterName);
+
+        var lines = htmlProcessor.GetChapterText();
+
+        if( lines != null && lines.Count > 0 )
+        {
+            if( _chapterData.ContainsKey(chapterName) )
+            {
+                AppendStoryData(chapterName, lines);
+            }
+            else
+            {
+                AppendChapterData(chapterName, lines);
+            }
+        }
     }
 
     private int ProcessFolder(string pathToFolder)
@@ -169,7 +173,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
         foreach( var path in paths )
         {
             Log.Information("Processing Folder: {FolderPath}", path);
-            AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {path}");
+            AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {path}\n");
             var sourcePath = path.Contains("data") ? path : Path.Combine("data", path.Trim());
             if( ValidatePath(sourcePath) )
             {
@@ -238,7 +242,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             if( ValidatePath(sourcePath) )
             {
                 Log.Information("Processing from rooted source path: {SourcePath}", settings.SourcePath);
-                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {settings.SourcePath}");
+                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {settings.SourcePath}\n");
                 returnValue += ProcessFolder(sourcePath);
             }
         }
@@ -248,14 +252,14 @@ public partial class ConvertCommand : Command<ConvertSettings>
             if( ValidatePath(sourcePath) )
             {
                 Log.Information("Processing from non-rooted source path: {SourcePath}", settings.SourcePath);
-                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {sourcePath}");
+                AnsiConsole.MarkupLine($"[green]Building project from source path:[/] {sourcePath}\n");
                 returnValue += ProcessFolder(sourcePath);
             }
         }
 
         if( returnValue > 0 )
         {
-            AnsiConsole.MarkupLine("[red]Error:[/] Error(s) occurred during conversion process.");
+            AnsiConsole.MarkupLine("[red]Error:[/] Error(s) occurred during conversion process.\n");
         }
 
         return returnValue;
