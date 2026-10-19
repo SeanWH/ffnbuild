@@ -24,7 +24,7 @@ public interface IFfnUrl : IComparable<IFfnUrl>, IEquatable<IFfnUrl>
         return Address.StringHash256() ^ LinkedId.StringHash256() ^ LinkTarget.StringHash256();
     }
 
-    virtual string ToString()
+    virtual string? ToString()
     {
         return $"Address: {Address}, LinkedId: {LinkedId}, LinkTarget: {LinkTarget}, Text: {Text}";
     }

@@ -1,0 +1,916 @@
+2026-10-19 08:58:35.407 -07:00 [INF] Processing multiple files:
+2026-10-19 08:58:35.435 -07:00 [INF] Processing Folder: data\1of1
+2026-10-19 08:58:35.462 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter  01_ Memories.html
+2026-10-19 08:58:35.866 -07:00 [INF] Chapter name: 001: Memories
+2026-10-19 08:58:35.891 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter  02_ Scorpion.html
+2026-10-19 08:58:36.059 -07:00 [INF] Chapter name: 002: Scorpion
+2026-10-19 08:58:36.071 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter  03_ The Gift.html
+2026-10-19 08:58:36.243 -07:00 [INF] Chapter name: 003: The Gift
+2026-10-19 08:58:36.251 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter  04_ Voyeur.html
+2026-10-19 08:58:36.430 -07:00 [INF] Chapter name: 004: Voyeur
+2026-10-19 08:58:36.446 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter  05_ Revulsion.html
+2026-10-19 08:58:36.632 -07:00 [INF] Chapter name: 005: Revulsion
+2026-10-19 08:58:36.643 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter  06_ Despair.html
+2026-10-19 08:58:36.816 -07:00 [INF] Chapter name: 006: Despair
+2026-10-19 08:58:36.823 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter  07_ Brig.html
+2026-10-19 08:58:36.988 -07:00 [INF] Chapter name: 007: Brig
+2026-10-19 08:58:37.003 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter  08_ Prey.html
+2026-10-19 08:58:37.172 -07:00 [INF] Chapter name: 008: Prey
+2026-10-19 08:58:37.184 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter  09_ Loophole.html
+2026-10-19 08:58:37.351 -07:00 [INF] Chapter name: 009: Loophole
+2026-10-19 08:58:37.364 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 10_ Decisions.html
+2026-10-19 08:58:37.535 -07:00 [INF] Chapter name: 010: Decisions
+2026-10-19 08:58:37.545 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 11_ Hunters - Part 1.html
+2026-10-19 08:58:37.711 -07:00 [INF] Chapter name: 011: Hunters - Part 1
+2026-10-19 08:58:37.725 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 12_ Hunters - Part II.html
+2026-10-19 08:58:37.890 -07:00 [INF] Chapter name: 012: Hunters - Part II
+2026-10-19 08:58:37.905 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 13_ Hope & Fear.html
+2026-10-19 08:58:38.091 -07:00 [INF] Chapter name: 013: Hope & Fear
+2026-10-19 08:58:38.101 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 14_ Counterpoint.html
+2026-10-19 08:58:38.281 -07:00 [INF] Chapter name: 014: Counterpoint
+2026-10-19 08:58:38.297 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 15_ Scythe.html
+2026-10-19 08:58:38.477 -07:00 [INF] Chapter name: 015: Scythe
+2026-10-19 08:58:38.494 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 16_ Gravity - Pt 1.html
+2026-10-19 08:58:38.666 -07:00 [INF] Chapter name: 016: Gravity - Pt 1
+2026-10-19 08:58:38.675 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 17_ Gravity - Pt 2.html
+2026-10-19 08:58:38.835 -07:00 [INF] Chapter name: 017: Gravity - Pt 2
+2026-10-19 08:58:38.841 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 18_ Gravity - Pt 3.html
+2026-10-19 08:58:39.015 -07:00 [INF] Chapter name: 018: Gravity - Pt 3
+2026-10-19 08:58:39.022 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 19_ Life Line.html
+2026-10-19 08:58:39.222 -07:00 [INF] Chapter name: 019: Life Line
+2026-10-19 08:58:39.233 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 20_ Gravity - Pt 4.html
+2026-10-19 08:58:39.409 -07:00 [INF] Chapter name: 020: Gravity - Pt 4
+2026-10-19 08:58:39.413 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 21_ Gravity - Pt 5.html
+2026-10-19 08:58:39.590 -07:00 [INF] Chapter name: 021: Gravity - Pt 5
+2026-10-19 08:58:39.594 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 22_ Generations.html
+2026-10-19 08:58:39.774 -07:00 [INF] Chapter name: 022: Generations
+2026-10-19 08:58:39.775 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 23_ Relativity.html
+2026-10-19 08:58:39.949 -07:00 [INF] Chapter name: 023: Relativity
+2026-10-19 08:58:39.956 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 24_ Warhead.html
+2026-10-19 08:58:40.098 -07:00 [INF] Chapter name: 024: Warhead
+2026-10-19 08:58:40.107 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 25_ Survival Instinct.html
+2026-10-19 08:58:40.260 -07:00 [INF] Chapter name: 025: Survival Instinct
+2026-10-19 08:58:40.274 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 26_ Conspiracy.html
+2026-10-19 08:58:40.429 -07:00 [INF] Chapter name: 026: Conspiracy
+2026-10-19 08:58:40.429 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 27_ Pathfinder.html
+2026-10-19 08:58:40.579 -07:00 [INF] Chapter name: 027: Pathfinder
+2026-10-19 08:58:40.592 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 28_ Relics.html
+2026-10-19 08:58:40.735 -07:00 [INF] Chapter name: 028: Relics
+2026-10-19 08:58:40.744 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 29_ Infection.html
+2026-10-19 08:58:40.899 -07:00 [INF] Chapter name: 029: Infection
+2026-10-19 08:58:40.910 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 30_ Prophecy - Part 1.html
+2026-10-19 08:58:41.051 -07:00 [INF] Chapter name: 030: Prophecy - Part 1
+2026-10-19 08:58:41.062 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 31_ Prophecy - Part 2.html
+2026-10-19 08:58:41.223 -07:00 [INF] Chapter name: 031: Prophecy - Part 2
+2026-10-19 08:58:41.234 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 32_ Collective.html
+2026-10-19 08:58:41.381 -07:00 [INF] Chapter name: 032: Collective
+2026-10-19 08:58:41.393 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 33_ V is for _.html
+2026-10-19 08:58:41.555 -07:00 [INF] Chapter name: 033: V is for ?
+2026-10-19 08:58:41.565 -07:00 [DBG] Currently processing file: data\1of1\One of One Chapter 34_ Orphans - Part 1.html
+2026-10-19 08:58:41.817 -07:00 [INF] Chapter name: 034: Orphans - Part 1
+2026-10-19 08:58:41.843 -07:00 [INF] Processing Folder: data\aa
+2026-10-19 08:58:41.844 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 1, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:41.983 -07:00 [INF] Chapter name: 001: Chapter 1
+2026-10-19 08:58:41.990 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 10, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:42.152 -07:00 [INF] Chapter name: 011: Chapter 10
+2026-10-19 08:58:42.165 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 11, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:42.343 -07:00 [INF] Chapter name: 012: Chapter 11
+2026-10-19 08:58:42.348 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 12, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:42.523 -07:00 [INF] Chapter name: 013: Chapter 12
+2026-10-19 08:58:42.528 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 13, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:42.736 -07:00 [INF] Chapter name: 014: Chapter 13
+2026-10-19 08:58:42.740 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 14, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:42.963 -07:00 [INF] Chapter name: 015: Chapter 14
+2026-10-19 08:58:42.966 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 15, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:43.200 -07:00 [INF] Chapter name: 016: Chapter 15
+2026-10-19 08:58:43.207 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 16, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:43.416 -07:00 [INF] Chapter name: 017: Chapter 16
+2026-10-19 08:58:43.418 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 17, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:43.606 -07:00 [INF] Chapter name: 018: Chapter 17
+2026-10-19 08:58:43.613 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 2, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:43.767 -07:00 [INF] Chapter name: 002: Chapter 2
+2026-10-19 08:58:43.780 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 3, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:43.906 -07:00 [INF] Chapter name: 004: Chapter 3
+2026-10-19 08:58:43.916 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 3_ Non-canon Omake_ Futures, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:44.076 -07:00 [INF] Chapter name: 003: Non-canon Omake: Futures
+2026-10-19 08:58:44.087 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 4, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:44.274 -07:00 [INF] Chapter name: 005: Chapter 4
+2026-10-19 08:58:44.276 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 5, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:44.444 -07:00 [INF] Chapter name: 006: Chapter 5
+2026-10-19 08:58:44.450 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 6, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:44.551 -07:00 [INF] Chapter name: 007: Chapter 6
+2026-10-19 08:58:44.559 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 7, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:44.715 -07:00 [INF] Chapter name: 008: Chapter 7
+2026-10-19 08:58:44.719 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 8, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:44.873 -07:00 [INF] Chapter name: 009: Chapter 8
+2026-10-19 08:58:44.878 -07:00 [DBG] Currently processing file: data\aa\All Alone Chapter 9, a worm fanfic _ FanFiction.html
+2026-10-19 08:58:45.037 -07:00 [INF] Chapter name: 010: Chapter 9
+2026-10-19 08:58:45.054 -07:00 [INF] Processing Folder: data\abc
+2026-10-19 08:58:45.055 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 10_ Union, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:45.172 -07:00 [INF] Chapter name: 010: Union
+2026-10-19 08:58:45.186 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 11_ Time Flies, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:45.345 -07:00 [INF] Chapter name: 011: Time Flies
+2026-10-19 08:58:45.352 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 1_ Magic of Beltane, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:45.509 -07:00 [INF] Chapter name: 001: Magic of Beltane
+2026-10-19 08:58:45.518 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 2_ Battle Aftermath, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:45.675 -07:00 [INF] Chapter name: 002: Battle Aftermath
+2026-10-19 08:58:45.684 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 3_ Shocking Revelation, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:45.849 -07:00 [INF] Chapter name: 003: Shocking Revelation
+2026-10-19 08:58:45.851 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 4_ Telling Hermione, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:46.018 -07:00 [INF] Chapter name: 004: Telling Hermione
+2026-10-19 08:58:46.031 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 5_ Discussion with Daphne, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:46.188 -07:00 [INF] Chapter name: 005: Discussion with Daphne
+2026-10-19 08:58:46.197 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 6_ Arrival, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:46.356 -07:00 [INF] Chapter name: 006: Arrival
+2026-10-19 08:58:46.363 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 7_ Announcing Happiness, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:46.491 -07:00 [INF] Chapter name: 007: Announcing Happiness
+2026-10-19 08:58:46.499 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 8_ Reactions, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:46.652 -07:00 [INF] Chapter name: 008: Reactions
+2026-10-19 08:58:46.664 -07:00 [DBG] Currently processing file: data\abc\Beltane Child Chapter 9_ Joys of Being a Parent, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:46.816 -07:00 [INF] Chapter name: 009: Joys of Being a Parent
+2026-10-19 08:58:46.834 -07:00 [INF] Processing Folder: data\abns
+2026-10-19 08:58:46.834 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 10_ Bringing in Remus, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:46.986 -07:00 [INF] Chapter name: 010: Bringing in Remus
+2026-10-19 08:58:46.997 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 11_ Fun With Blocks and Letters Answered, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:47.162 -07:00 [INF] Chapter name: 011: Fun With Blocks and Letters Answered
+2026-10-19 08:58:47.163 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 12_ Stressful Days, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:47.356 -07:00 [INF] Chapter name: 012: Stressful Days
+2026-10-19 08:58:47.359 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 13_ Moving Along, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:47.537 -07:00 [INF] Chapter name: 013: Moving Along
+2026-10-19 08:58:47.540 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 14_ Swift Changes, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:47.733 -07:00 [INF] Chapter name: 014: Swift Changes
+2026-10-19 08:58:47.738 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 15_ Two down, One to go, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:47.914 -07:00 [INF] Chapter name: 015: Two down, One to go
+2026-10-19 08:58:47.918 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 16_ Solving a Few Things, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:48.090 -07:00 [INF] Chapter name: 016: Solving a Few Things
+2026-10-19 08:58:48.099 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 17_ Some Time With Harry, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:48.268 -07:00 [INF] Chapter name: 017: Some Time With Harry
+2026-10-19 08:58:48.280 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 18_ Treasures Found, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:48.424 -07:00 [INF] Chapter name: 018: Treasures Found
+2026-10-19 08:58:48.431 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 19_ The Party, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:48.598 -07:00 [INF] Chapter name: 019: The Party
+2026-10-19 08:58:48.612 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 1_ The Tide Turned Again, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:48.811 -07:00 [INF] Chapter name: 001: The Tide Turned Again
+2026-10-19 08:58:48.823 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 20_ Resolutions, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:49.034 -07:00 [INF] Chapter name: 020: Resolutions
+2026-10-19 08:58:49.048 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 21_ Mind Games, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:49.251 -07:00 [INF] Chapter name: 021: Mind Games
+2026-10-19 08:58:49.259 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 22_ Christmas and Boxing Day, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:49.448 -07:00 [INF] Chapter name: 022: Christmas and Boxing Day
+2026-10-19 08:58:49.455 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 23_ It's Not Over Yet, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:49.631 -07:00 [INF] Chapter name: 023: It's Not Over Yet
+2026-10-19 08:58:49.635 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 24_ No! Not Her!, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:49.810 -07:00 [INF] Chapter name: 024: No! Not Her!
+2026-10-19 08:58:49.816 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 25_ It All Works Out, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:49.987 -07:00 [INF] Chapter name: 025: It All Works Out
+2026-10-19 08:58:49.997 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 26_ The Next Great Adventure, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:50.172 -07:00 [INF] Chapter name: 026: The Next Great Adventure
+2026-10-19 08:58:50.177 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 2_ Changes and Plans, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:50.347 -07:00 [INF] Chapter name: 002: Changes and Plans
+2026-10-19 08:58:50.356 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 3_ A Talk With Friends and More Research, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:50.528 -07:00 [INF] Chapter name: 003: A Talk With Friends and More Research
+2026-10-19 08:58:50.538 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 4_ A Little Help and a Bit of Payback, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:50.711 -07:00 [INF] Chapter name: 004: A Little Help and a Bit of Payback
+2026-10-19 08:58:50.718 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 5_ The Break Up of the Golden Trio, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:50.890 -07:00 [INF] Chapter name: 005: The Break Up of the Golden Trio
+2026-10-19 08:58:50.899 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 6_ Finally Some Headway, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:51.065 -07:00 [INF] Chapter name: 006: Finally Some Headway
+2026-10-19 08:58:51.079 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 7_ It Is Time, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:51.247 -07:00 [INF] Chapter name: 007: It Is Time
+2026-10-19 08:58:51.259 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 8_ The Plans That Didn't Survive First Cont, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:51.433 -07:00 [INF] Chapter name: 008: The Plans That Didn't Survive First Cont
+2026-10-19 08:58:51.439 -07:00 [DBG] Currently processing file: data\abns\A Brand New Start Chapter 9_ Calmer Conversations, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:58:51.626 -07:00 [INF] Chapter name: 009: Calmer Conversations
+2026-10-19 08:58:51.640 -07:00 [INF] Processing Folder: data\acf
+2026-10-19 08:58:51.641 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 01_ At the End of the Civil War.htm
+2026-10-19 08:58:51.818 -07:00 [INF] Chapter name: 001: At the End of the Civil War
+2026-10-19 08:58:51.831 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 02_ Cleaning Out the Colonies.htm
+2026-10-19 08:58:52.001 -07:00 [INF] Chapter name: 002: Cleaning Out the Colonies
+2026-10-19 08:58:52.011 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 03_ Emergency Stop.htm
+2026-10-19 08:58:52.183 -07:00 [INF] Chapter name: 003: Emergency Stop
+2026-10-19 08:58:52.190 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 04_ Flexing Muscles.htm
+2026-10-19 08:58:52.355 -07:00 [INF] Chapter name: 004: Flexing Muscles
+2026-10-19 08:58:52.356 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 05_ Terra and Earth.htm
+2026-10-19 08:58:52.520 -07:00 [INF] Chapter name: 005: Terra and Earth
+2026-10-19 08:58:52.522 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 06_ Contemplating the Future.htm
+2026-10-19 08:58:52.683 -07:00 [INF] Chapter name: 006: Contemplating the Future
+2026-10-19 08:58:52.686 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 07_ Requests and Meetings.htm
+2026-10-19 08:58:52.855 -07:00 [INF] Chapter name: 007: Requests and Meetings
+2026-10-19 08:58:52.866 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 08_ Seeking Asylum.htm
+2026-10-19 08:58:53.038 -07:00 [INF] Chapter name: 008: Seeking Asylum
+2026-10-19 08:58:53.047 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 09_ Bester Visits.htm
+2026-10-19 08:58:53.215 -07:00 [INF] Chapter name: 009: Bester Visits, Day of the Dead
+2026-10-19 08:58:53.227 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 10_ Day of the Dead Aftermath.htm
+2026-10-19 08:58:53.392 -07:00 [INF] Chapter name: 010: Day of the Dead Aftermath
+2026-10-19 08:58:53.408 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 11_ Centauri Prime.htm
+2026-10-19 08:58:53.567 -07:00 [INF] Chapter name: 011: Centauri Prime, New Kobol
+2026-10-19 08:58:53.573 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 12_ Information.htm
+2026-10-19 08:58:53.743 -07:00 [INF] Chapter name: 012: Information, Public and Secret
+2026-10-19 08:58:53.753 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 13_ Playing Spy.htm
+2026-10-19 08:58:53.918 -07:00 [INF] Chapter name: 013: Playing Spy
+2026-10-19 08:58:53.933 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 14_ Intelligence Gathering.htm
+2026-10-19 08:58:54.096 -07:00 [INF] Chapter name: 014: Intelligence Gathering
+2026-10-19 08:58:54.099 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 15_ The Tragedy of Telepaths.htm
+2026-10-19 08:58:54.279 -07:00 [INF] Chapter name: 015: The Tragedy of Telepaths
+2026-10-19 08:58:54.286 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 16_ Confirmation.htm
+2026-10-19 08:58:54.463 -07:00 [INF] Chapter name: 016: Confirmation
+2026-10-19 08:58:54.473 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 17_ Resolution.htm
+2026-10-19 08:58:54.635 -07:00 [INF] Chapter name: 017: Resolution
+2026-10-19 08:58:54.648 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 18_ Plagues and other Conundrums.htm
+2026-10-19 08:58:54.810 -07:00 [INF] Chapter name: 018: Plagues and other Conundrums
+2026-10-19 08:58:54.821 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 19_ Attack.htm
+2026-10-19 08:58:54.989 -07:00 [INF] Chapter name: 019: Attack
+2026-10-19 08:58:54.993 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 20_ In the Aftermath.htm
+2026-10-19 08:58:55.167 -07:00 [INF] Chapter name: 020: In the Aftermath
+2026-10-19 08:58:55.183 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 21_ Living Less Urgently.htm
+2026-10-19 08:58:55.354 -07:00 [INF] Chapter name: 021: Living Less Urgently
+2026-10-19 08:58:55.363 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 22_ The Cylon Rebels.htm
+2026-10-19 08:58:55.526 -07:00 [INF] Chapter name: 022: The Cylon Rebels, Mars
+2026-10-19 08:58:55.529 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 23_ Future Plans.htm
+2026-10-19 08:58:55.689 -07:00 [INF] Chapter name: 023: Future Plans
+2026-10-19 08:58:55.694 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 24_ The Proposition.htm
+2026-10-19 08:58:55.855 -07:00 [INF] Chapter name: 024: The Proposition
+2026-10-19 08:58:55.861 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 25_ Answering the Cylon Response.htm
+2026-10-19 08:58:56.021 -07:00 [INF] Chapter name: 025: Answering the Cylon Response
+2026-10-19 08:58:56.026 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 26_ Preparing to Meet.htm
+2026-10-19 08:58:56.190 -07:00 [INF] Chapter name: 026: Preparing to Meet
+2026-10-19 08:58:56.192 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 27_ Rebel and Loyalist Cylons.htm
+2026-10-19 08:58:56.356 -07:00 [INF] Chapter name: 027: Rebel and Loyalist Cylons
+2026-10-19 08:58:56.358 -07:00 [DBG] Currently processing file: data\acf\A Changed Future Chapter 28_ The End of the Cylon War.htm
+2026-10-19 08:58:56.532 -07:00 [INF] Chapter name: 028: The End of the Cylon War
+2026-10-19 08:58:56.542 -07:00 [INF] Processing Folder: data\acm
+2026-10-19 08:58:56.542 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 10_ Longer Term Plans, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:56.707 -07:00 [INF] Chapter name: 010: Longer Term Plans
+2026-10-19 08:58:56.719 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 11_ Proper Military Procedure, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:56.886 -07:00 [INF] Chapter name: 011: Proper Military Procedure
+2026-10-19 08:58:56.886 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 12_ Diplomatic Snafu, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:57.046 -07:00 [INF] Chapter name: 012: Diplomatic Snafu
+2026-10-19 08:58:57.050 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 13_ The Quorum, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:57.211 -07:00 [INF] Chapter name: 013: The Quorum
+2026-10-19 08:58:57.215 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 14_ Diplomatic Mission, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:57.382 -07:00 [INF] Chapter name: 014: Diplomatic Mission
+2026-10-19 08:58:57.395 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 15_ Babylon 5 meets the Twelve Colonies, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:57.564 -07:00 [INF] Chapter name: 015: Babylon 5 meets the Twelve Colonies
+2026-10-19 08:58:57.575 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 16_ League Meets the Twelve Tribes, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:57.732 -07:00 [INF] Chapter name: 016: League Meets the Twelve Tribes
+2026-10-19 08:58:57.739 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 17_ Hyperspace vs Jump Drive, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:57.902 -07:00 [INF] Chapter name: 017: Hyperspace vs Jump Drive
+2026-10-19 08:58:57.904 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 18_ Arrival at Io, Earth Alliance Space, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:58.068 -07:00 [INF] Chapter name: 018: Arrival at Io, Earth Alliance Space
+2026-10-19 08:58:58.069 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 19_ Earth Alliance meets the Twelve Tribes, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:58.236 -07:00 [INF] Chapter name: 019: Earth Alliance meets the Twelve Tribes
+2026-10-19 08:58:58.249 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 1_ A Chance Meeting, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:58.415 -07:00 [INF] Chapter name: 001: A Chance Meeting
+2026-10-19 08:58:58.430 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 20_ Getting Back to Business, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:58.594 -07:00 [INF] Chapter name: 020: Getting Back to Business
+2026-10-19 08:58:58.610 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 21_ Delenn Enters, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:58.762 -07:00 [INF] Chapter name: 021: Delenn Enters
+2026-10-19 08:58:58.776 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 22_ The Psi Corps and Telepaths, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:58.938 -07:00 [INF] Chapter name: 022: The Psi Corps and Telepaths
+2026-10-19 08:58:58.942 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 23_ Meeting the Grey Council, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:59.108 -07:00 [INF] Chapter name: 023: Meeting the Grey Council
+2026-10-19 08:58:59.123 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 24_ Launching Pegasus, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:59.285 -07:00 [INF] Chapter name: 024: Launching Pegasus
+2026-10-19 08:58:59.288 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 25_ First Rescues, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:59.463 -07:00 [INF] Chapter name: 025: First Rescues
+2026-10-19 08:58:59.468 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 26_ Death of Personality, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:59.642 -07:00 [INF] Chapter name: 026: Death of Personality
+2026-10-19 08:58:59.650 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 27_ Visiting a Hospital, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:59.828 -07:00 [INF] Chapter name: 027: Visiting a Hospital
+2026-10-19 08:58:59.832 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 28_ Shakiri Battles for Understanding, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:58:59.995 -07:00 [INF] Chapter name: 028: Shakiri Battles for Understanding
+2026-10-19 08:58:59.997 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 29_ Finding Battlestars, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:00.166 -07:00 [INF] Chapter name: 029: Finding Battlestars
+2026-10-19 08:59:00.179 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 2_ Scrambling Resources, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:00.333 -07:00 [INF] Chapter name: 002: Scrambling Resources
+2026-10-19 08:59:00.344 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 30_ The Two Fleets, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:00.512 -07:00 [INF] Chapter name: 030: The Two Fleets
+2026-10-19 08:59:00.525 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 31_ Reporting Back, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:00.685 -07:00 [INF] Chapter name: 031: Reporting Back
+2026-10-19 08:59:00.691 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 32_ Debate over New Kobol, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:00.842 -07:00 [INF] Chapter name: 032: Debate over New Kobol
+2026-10-19 08:59:00.856 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 33_ Hurrying Things Along, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:00.996 -07:00 [INF] Chapter name: 033: Hurrying Things Along
+2026-10-19 08:59:01.006 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 34_ Ordering of New Kobol Fleet, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:01.177 -07:00 [INF] Chapter name: 034: Ordering of New Kobol Fleet
+2026-10-19 08:59:01.186 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 35_ The Admiral and the Teacher, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:01.344 -07:00 [INF] Chapter name: 035: The Admiral and the Teacher
+2026-10-19 08:59:01.352 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 3_ Prepare to Jump!, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:01.516 -07:00 [INF] Chapter name: 003: Prepare to Jump!
+2026-10-19 08:59:01.517 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 4_ Trouble on the Journey, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:01.680 -07:00 [INF] Chapter name: 004: Trouble on the Journey
+2026-10-19 08:59:01.683 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 6_ Scans and other Things, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:01.844 -07:00 [INF] Chapter name: 006: Scans and other Things
+2026-10-19 08:59:01.848 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 7_ Final Preparations, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:02.010 -07:00 [INF] Chapter name: 007: Final Preparations
+2026-10-19 08:59:02.015 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 8_ Interrogating a One, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:02.186 -07:00 [INF] Chapter name: 008: Interrogating a One
+2026-10-19 08:59:02.197 -07:00 [DBG] Currently processing file: data\acm\A Chance Meeting Chapter 9_ Origin of Kobol, a Babylon 5 + Battlestar Galactica_ 2003 Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:02.360 -07:00 [INF] Chapter name: 009: Origin of Kobol
+2026-10-19 08:59:02.367 -07:00 [INF] Processing Folder: data\adp
+2026-10-19 08:59:02.368 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 1, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:02.538 -07:00 [INF] Chapter name: 001: Chapter 1
+2026-10-19 08:59:02.543 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 10, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:02.733 -07:00 [INF] Chapter name: 010: Chapter 10
+2026-10-19 08:59:02.739 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 100, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:02.919 -07:00 [INF] Chapter name: 100: Chapter 100
+2026-10-19 08:59:02.935 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 101, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:03.108 -07:00 [INF] Chapter name: 101: Chapter 101
+2026-10-19 08:59:03.115 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 102, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:03.295 -07:00 [INF] Chapter name: 102: Chapter 102
+2026-10-19 08:59:03.310 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 103, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:03.479 -07:00 [INF] Chapter name: 103: Chapter 103
+2026-10-19 08:59:03.490 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 104, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:03.668 -07:00 [INF] Chapter name: 104: Chapter 104
+2026-10-19 08:59:03.671 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 105, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:03.848 -07:00 [INF] Chapter name: 105: Chapter 105
+2026-10-19 08:59:03.851 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 106, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:03.996 -07:00 [INF] Chapter name: 106: Chapter 106
+2026-10-19 08:59:04.002 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 107, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:04.176 -07:00 [INF] Chapter name: 107: Chapter 107
+2026-10-19 08:59:04.182 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 108, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:04.314 -07:00 [INF] Chapter name: 108: Chapter 108
+2026-10-19 08:59:04.318 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 11, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:04.485 -07:00 [INF] Chapter name: 011: Chapter 11
+2026-10-19 08:59:04.499 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 12, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:04.634 -07:00 [INF] Chapter name: 012: Chapter 12
+2026-10-19 08:59:04.650 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 13, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:04.810 -07:00 [INF] Chapter name: 013: Chapter 13
+2026-10-19 08:59:04.816 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 14, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:04.998 -07:00 [INF] Chapter name: 014: Chapter 14
+2026-10-19 08:59:05.012 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 15, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:05.176 -07:00 [INF] Chapter name: 015: Chapter 15
+2026-10-19 08:59:05.180 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 16, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:05.333 -07:00 [INF] Chapter name: 016: Chapter 16
+2026-10-19 08:59:05.345 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 17, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:05.527 -07:00 [INF] Chapter name: 017: Chapter 17
+2026-10-19 08:59:05.532 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 18, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:05.736 -07:00 [INF] Chapter name: 018: Chapter 18
+2026-10-19 08:59:05.752 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 19, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:05.965 -07:00 [INF] Chapter name: 019: Chapter 19
+2026-10-19 08:59:05.975 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 2, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:06.188 -07:00 [INF] Chapter name: 002: Chapter 2
+2026-10-19 08:59:06.196 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 20, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:06.373 -07:00 [INF] Chapter name: 020: Chapter 20
+2026-10-19 08:59:06.373 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 21, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:06.531 -07:00 [INF] Chapter name: 021: Chapter 21
+2026-10-19 08:59:06.540 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 22, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:06.711 -07:00 [INF] Chapter name: 022: Chapter 22
+2026-10-19 08:59:06.714 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 23, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:06.862 -07:00 [INF] Chapter name: 023: Chapter 23
+2026-10-19 08:59:06.869 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 24, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:07.040 -07:00 [INF] Chapter name: 024: Chapter 24
+2026-10-19 08:59:07.050 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 25, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:07.224 -07:00 [INF] Chapter name: 025: Chapter 25
+2026-10-19 08:59:07.231 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 26, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:07.395 -07:00 [INF] Chapter name: 026: Chapter 26
+2026-10-19 08:59:07.397 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 27, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:07.561 -07:00 [INF] Chapter name: 027: Chapter 27
+2026-10-19 08:59:07.579 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 28, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:07.761 -07:00 [INF] Chapter name: 028: Chapter 28
+2026-10-19 08:59:07.774 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 29, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:07.938 -07:00 [INF] Chapter name: 029: Chapter 29
+2026-10-19 08:59:07.939 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 3, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:08.072 -07:00 [INF] Chapter name: 003: Chapter 3
+2026-10-19 08:59:08.076 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 30, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:08.262 -07:00 [INF] Chapter name: 030: Chapter 30
+2026-10-19 08:59:08.271 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 31, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:08.468 -07:00 [INF] Chapter name: 031: Chapter 31
+2026-10-19 08:59:08.482 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 32, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:08.736 -07:00 [INF] Chapter name: 032: Chapter 32
+2026-10-19 08:59:08.738 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 33, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:08.943 -07:00 [INF] Chapter name: 033: Chapter 33
+2026-10-19 08:59:08.944 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 34, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:09.129 -07:00 [INF] Chapter name: 034: Chapter 34
+2026-10-19 08:59:09.144 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 35, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:09.344 -07:00 [INF] Chapter name: 035: Chapter 35
+2026-10-19 08:59:09.355 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 36, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:09.541 -07:00 [INF] Chapter name: 036: Chapter 36
+2026-10-19 08:59:09.551 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 37, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:09.742 -07:00 [INF] Chapter name: 037: Chapter 37
+2026-10-19 08:59:09.747 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 38, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:09.930 -07:00 [INF] Chapter name: 038: Chapter 38
+2026-10-19 08:59:09.943 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 39, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:10.162 -07:00 [INF] Chapter name: 039: Chapter 39
+2026-10-19 08:59:10.169 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 4, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:10.398 -07:00 [INF] Chapter name: 004: Chapter 4
+2026-10-19 08:59:10.411 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 40, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:10.624 -07:00 [INF] Chapter name: 040: Chapter 40
+2026-10-19 08:59:10.638 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 41, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:10.843 -07:00 [INF] Chapter name: 041: Chapter 41
+2026-10-19 08:59:10.855 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 42, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:11.050 -07:00 [INF] Chapter name: 042: Chapter 42
+2026-10-19 08:59:11.062 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 43, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:11.242 -07:00 [INF] Chapter name: 043: Chapter 43
+2026-10-19 08:59:11.242 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 44, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:11.415 -07:00 [INF] Chapter name: 044: Chapter 44
+2026-10-19 08:59:11.425 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 45, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:11.626 -07:00 [INF] Chapter name: 045: Chapter 45
+2026-10-19 08:59:11.632 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 46, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:11.823 -07:00 [INF] Chapter name: 046: Chapter 46
+2026-10-19 08:59:11.836 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 47, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:12.032 -07:00 [INF] Chapter name: 047: Chapter 47
+2026-10-19 08:59:12.043 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 48, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:12.238 -07:00 [INF] Chapter name: 048: Chapter 48
+2026-10-19 08:59:12.249 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 49, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:12.441 -07:00 [INF] Chapter name: 049: Chapter 49
+2026-10-19 08:59:12.455 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 5, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:12.642 -07:00 [INF] Chapter name: 005: Chapter 5
+2026-10-19 08:59:12.646 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 50, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:12.852 -07:00 [INF] Chapter name: 050: Chapter 50
+2026-10-19 08:59:12.866 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 51, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:13.086 -07:00 [INF] Chapter name: 051: Chapter 51
+2026-10-19 08:59:13.086 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 52, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:13.259 -07:00 [INF] Chapter name: 052: Chapter 52
+2026-10-19 08:59:13.275 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 53, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:13.484 -07:00 [INF] Chapter name: 053: Chapter 53
+2026-10-19 08:59:13.495 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 54, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:13.698 -07:00 [INF] Chapter name: 054: Chapter 54
+2026-10-19 08:59:13.701 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 55, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:13.888 -07:00 [INF] Chapter name: 055: Chapter 55
+2026-10-19 08:59:13.889 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 56, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:14.084 -07:00 [INF] Chapter name: 056: Chapter 56
+2026-10-19 08:59:14.094 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 57, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:14.284 -07:00 [INF] Chapter name: 057: Chapter 57
+2026-10-19 08:59:14.285 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 58, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:14.512 -07:00 [INF] Chapter name: 058: Chapter 58
+2026-10-19 08:59:14.523 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 59, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:14.764 -07:00 [INF] Chapter name: 059: Chapter 59
+2026-10-19 08:59:14.776 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 6, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:15.013 -07:00 [INF] Chapter name: 006: Chapter 6
+2026-10-19 08:59:15.028 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 60, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:15.272 -07:00 [INF] Chapter name: 060: Chapter 60
+2026-10-19 08:59:15.282 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 61, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:15.512 -07:00 [INF] Chapter name: 061: Chapter 61
+2026-10-19 08:59:15.520 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 62, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:15.740 -07:00 [INF] Chapter name: 062: Chapter 62
+2026-10-19 08:59:15.752 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 63, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:16.010 -07:00 [INF] Chapter name: 063: Chapter 63
+2026-10-19 08:59:16.018 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 64, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:16.251 -07:00 [INF] Chapter name: 064: Chapter 64
+2026-10-19 08:59:16.255 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 65, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:16.477 -07:00 [INF] Chapter name: 065: Chapter 65
+2026-10-19 08:59:16.493 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 66, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:16.651 -07:00 [INF] Chapter name: 066: Chapter 66
+2026-10-19 08:59:16.667 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 67, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:16.828 -07:00 [INF] Chapter name: 067: Chapter 67
+2026-10-19 08:59:16.842 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 68, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:17.034 -07:00 [INF] Chapter name: 068: Chapter 68
+2026-10-19 08:59:17.048 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 69, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:17.240 -07:00 [INF] Chapter name: 069: Chapter 69
+2026-10-19 08:59:17.254 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 7, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:17.445 -07:00 [INF] Chapter name: 007: Chapter 7
+2026-10-19 08:59:17.446 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 70, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:17.639 -07:00 [INF] Chapter name: 070: Chapter 70
+2026-10-19 08:59:17.651 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 71, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:17.869 -07:00 [INF] Chapter name: 071: Chapter 71
+2026-10-19 08:59:17.884 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 72, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:18.104 -07:00 [INF] Chapter name: 072: Chapter 72
+2026-10-19 08:59:18.119 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 73, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:18.329 -07:00 [INF] Chapter name: 073: Chapter 73
+2026-10-19 08:59:18.341 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 74, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:18.548 -07:00 [INF] Chapter name: 074: Chapter 74
+2026-10-19 08:59:18.563 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 75, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:18.741 -07:00 [INF] Chapter name: 075: Chapter 75
+2026-10-19 08:59:18.752 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 76, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:18.972 -07:00 [INF] Chapter name: 076: Chapter 76
+2026-10-19 08:59:18.973 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 77, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:19.191 -07:00 [INF] Chapter name: 077: Chapter 77
+2026-10-19 08:59:19.194 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 78, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:19.447 -07:00 [INF] Chapter name: 078: Chapter 78
+2026-10-19 08:59:19.462 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 79, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:19.672 -07:00 [INF] Chapter name: 079: Chapter 79
+2026-10-19 08:59:19.684 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 8, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:19.914 -07:00 [INF] Chapter name: 008: Chapter 8
+2026-10-19 08:59:19.930 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 80, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:20.182 -07:00 [INF] Chapter name: 080: Chapter 80
+2026-10-19 08:59:20.196 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 81, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:20.495 -07:00 [INF] Chapter name: 081: Chapter 81
+2026-10-19 08:59:20.511 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 82, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:20.776 -07:00 [INF] Chapter name: 082: Chapter 82
+2026-10-19 08:59:20.780 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 83, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:21.237 -07:00 [INF] Chapter name: 083: Chapter 83
+2026-10-19 08:59:21.250 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 84, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:21.502 -07:00 [INF] Chapter name: 084: Chapter 84
+2026-10-19 08:59:21.502 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 85, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:21.741 -07:00 [INF] Chapter name: 085: Chapter 85
+2026-10-19 08:59:21.756 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 86, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:21.975 -07:00 [INF] Chapter name: 086: Chapter 86
+2026-10-19 08:59:21.978 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 87, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:22.173 -07:00 [INF] Chapter name: 087: Chapter 87
+2026-10-19 08:59:22.184 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 88, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:22.376 -07:00 [INF] Chapter name: 088: Chapter 88
+2026-10-19 08:59:22.391 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 89, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:22.587 -07:00 [INF] Chapter name: 089: Chapter 89
+2026-10-19 08:59:22.599 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 9, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:22.794 -07:00 [INF] Chapter name: 009: Chapter 9
+2026-10-19 08:59:22.806 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 90, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:22.993 -07:00 [INF] Chapter name: 090: Chapter 90
+2026-10-19 08:59:22.999 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 91, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:23.175 -07:00 [INF] Chapter name: 091: Chapter 91
+2026-10-19 08:59:23.189 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 92, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:23.398 -07:00 [INF] Chapter name: 092: Chapter 92
+2026-10-19 08:59:23.413 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 93, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:23.605 -07:00 [INF] Chapter name: 093: Chapter 93
+2026-10-19 08:59:23.619 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 94, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:23.812 -07:00 [INF] Chapter name: 094: Chapter 94
+2026-10-19 08:59:23.827 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 95, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:24.016 -07:00 [INF] Chapter name: 095: Chapter 95
+2026-10-19 08:59:24.020 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 96, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:24.234 -07:00 [INF] Chapter name: 096: Chapter 96
+2026-10-19 08:59:24.243 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 97, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:24.480 -07:00 [INF] Chapter name: 097: Chapter 97
+2026-10-19 08:59:24.482 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 98, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:24.702 -07:00 [INF] Chapter name: 098: Chapter 98
+2026-10-19 08:59:24.704 -07:00 [DBG] Currently processing file: data\adp\A Darker Path Chapter 99, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:24.905 -07:00 [INF] Chapter name: 099: Chapter 99
+2026-10-19 08:59:24.920 -07:00 [INF] Processing Folder: data\adtob
+2026-10-19 08:59:24.921 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 10 - Burning of the Ring, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:25.076 -07:00 [INF] Chapter name: 010: Chapter 10 - Burning of the Ring
+2026-10-19 08:59:25.088 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 11 - Dragon Den, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:25.289 -07:00 [INF] Chapter name: 011: Chapter 11 - Dragon Den
+2026-10-19 08:59:25.312 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 12 - The Boy's Will Talk, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:25.472 -07:00 [INF] Chapter name: 012: Chapter 12 - The Boy's Will Talk
+2026-10-19 08:59:25.486 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 13 - Happy Valentines Days, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:25.684 -07:00 [INF] Chapter name: 013: Chapter 13 - Happy Valentines Days
+2026-10-19 08:59:25.692 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 14 - Flosifors, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:25.882 -07:00 [INF] Chapter name: 014: Chapter 14 - Flosifors
+2026-10-19 08:59:25.883 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 15 - The Defence Club, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:26.060 -07:00 [INF] Chapter name: 015: Chapter 15 - The Defence Club
+2026-10-19 08:59:26.076 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 16 - Malfoy and the Goblins, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:26.246 -07:00 [INF] Chapter name: 016: Chapter 16 - Malfoy and the Goblins
+2026-10-19 08:59:26.252 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 17 - I don't really want to, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:26.429 -07:00 [INF] Chapter name: 017: Chapter 17 - I don't really want to
+2026-10-19 08:59:26.442 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 18 - We are going to be aunts_, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:26.653 -07:00 [INF] Chapter name: 018: Chapter 18 - We are going to be aunts?
+2026-10-19 08:59:26.664 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 19- The Will of the Greengrasses, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:26.870 -07:00 [INF] Chapter name: 019: Chapter 19- The Will of the Greengrasses
+2026-10-19 08:59:26.871 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 1_ The Fall from the Astronomy Tower, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:27.070 -07:00 [INF] Chapter name: 001: The Fall from the Astronomy Tower
+2026-10-19 08:59:27.091 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 2 - The Wards of Grimmauld Place, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:27.268 -07:00 [INF] Chapter name: 002: Chapter 2 - The Wards of Grimmauld Place
+2026-10-19 08:59:27.279 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 20 - The Diadem of Ravenclaw, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:27.473 -07:00 [INF] Chapter name: 020: Chapter 20 - The Diadem of Ravenclaw
+2026-10-19 08:59:27.484 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 21 - The start of a new era, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:27.683 -07:00 [INF] Chapter name: 021: Chapter 21 - The start of a new era
+2026-10-19 08:59:27.691 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 22 - The birth of a Potter-Black, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:27.872 -07:00 [INF] Chapter name: 022: Chapter 22 - The birth of a Potter-Black
+2026-10-19 08:59:27.883 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 3 - Christmas 1995, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:28.078 -07:00 [INF] Chapter name: 003: Chapter 3 - Christmas 1995
+2026-10-19 08:59:28.092 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 4 - Life-Debts, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:28.272 -07:00 [INF] Chapter name: 004: Chapter 4 - Life-Debts
+2026-10-19 08:59:28.284 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 5 - The Ward of Lord Black, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:28.457 -07:00 [INF] Chapter name: 005: Chapter 5 - The Ward of Lord Black
+2026-10-19 08:59:28.460 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 6 - New Year's Eve 1995, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:28.640 -07:00 [INF] Chapter name: 006: Chapter 6 - New Year's Eve 1995
+2026-10-19 08:59:28.652 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 7 - The Confrontation, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:28.828 -07:00 [INF] Chapter name: 007: Chapter 7 - The Confrontation
+2026-10-19 08:59:28.842 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 8 - First Day Back, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:29.011 -07:00 [INF] Chapter name: 008: Chapter 8 - First Day Back
+2026-10-19 08:59:29.019 -07:00 [DBG] Currently processing file: data\adtob\A Different Type of Bond Chapter 9 - The fall of House Umbridge, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:29.211 -07:00 [INF] Chapter name: 009: Chapter 9 - The fall of House Umbridge
+2026-10-19 08:59:29.229 -07:00 [INF] Processing Folder: data\afl
+2026-10-19 08:59:29.230 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 10_ A Revealing Conversation, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:29.407 -07:00 [INF] Chapter name: 010: A Revealing Conversation
+2026-10-19 08:59:29.414 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 11_ What I'm Fighting For, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:29.589 -07:00 [INF] Chapter name: 011: What I'm Fighting For
+2026-10-19 08:59:29.605 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 12_ What Happened to Prongs_, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:29.782 -07:00 [INF] Chapter name: 012: What Happened to Prongs?
+2026-10-19 08:59:29.797 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 13_ Bug Repelling Wards_, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:29.999 -07:00 [INF] Chapter name: 013: Bug Repelling Wards?
+2026-10-19 08:59:30.004 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 14_ Dangerous Discussions, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:30.221 -07:00 [INF] Chapter name: 014: Dangerous Discussions
+2026-10-19 08:59:30.228 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 15_ Social Niceties Must Be Observed, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:30.454 -07:00 [INF] Chapter name: 015: Social Niceties Must Be Observed
+2026-10-19 08:59:30.468 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 16_ A Meeting of Draconian and Lunar Minds, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:30.653 -07:00 [INF] Chapter name: 016: A Meeting of Draconian and Lunar Minds
+2026-10-19 08:59:30.659 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 1_ Meet the Reaper, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:30.850 -07:00 [INF] Chapter name: 001: Meet the Reaper
+2026-10-19 08:59:30.852 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 2_ Hello, 1994, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:31.031 -07:00 [INF] Chapter name: 002: Hello, 1994
+2026-10-19 08:59:31.044 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 4_ Harleen Janine Potter, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:31.222 -07:00 [INF] Chapter name: 004: Harleen Janine Potter
+2026-10-19 08:59:31.235 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 5_ Step One, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:31.406 -07:00 [INF] Chapter name: 005: Step One
+2026-10-19 08:59:31.411 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 6_ Arguments and Shopping Trips, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:31.592 -07:00 [INF] Chapter name: 006: Arguments and Shopping Trips
+2026-10-19 08:59:31.603 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 7_ The Next Great Adventure, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:31.799 -07:00 [INF] Chapter name: 007: The Next Great Adventure
+2026-10-19 08:59:31.809 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 8_ Of Struggles and Foxes, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:32.011 -07:00 [INF] Chapter name: 008: Of Struggles and Foxes
+2026-10-19 08:59:32.015 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Chapter 9_ Confrontations and Surprises, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:32.226 -07:00 [INF] Chapter name: 009: Confrontations and Surprises
+2026-10-19 08:59:32.237 -07:00 [DBG] Currently processing file: data\afl\A Fair Life Crouch Down, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:32.442 -07:00 [INF] Chapter name: 003: Crouch Down
+2026-10-19 08:59:32.465 -07:00 [INF] Processing Folder: data\aftime
+2026-10-19 08:59:32.466 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 1, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:32.668 -07:00 [INF] Chapter name: 001: Chapter 1
+2026-10-19 08:59:32.675 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 10, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:32.895 -07:00 [INF] Chapter name: 010: Chapter 10
+2026-10-19 08:59:32.911 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 11, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:33.116 -07:00 [INF] Chapter name: 011: Chapter 11
+2026-10-19 08:59:33.135 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 12, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:33.347 -07:00 [INF] Chapter name: 012: Chapter 12
+2026-10-19 08:59:33.359 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 13_ Last Minute Warnings Are So Last Year, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:33.546 -07:00 [INF] Chapter name: 013: Last Minute Warnings Are So Last Year
+2026-10-19 08:59:33.551 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 14, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:33.743 -07:00 [INF] Chapter name: 014: Chapter 14
+2026-10-19 08:59:33.757 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 15, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:33.952 -07:00 [INF] Chapter name: 015: Chapter 15
+2026-10-19 08:59:33.965 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 16, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:34.168 -07:00 [INF] Chapter name: 016: Chapter 16
+2026-10-19 08:59:34.171 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 17, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:34.352 -07:00 [INF] Chapter name: 017: Chapter 17
+2026-10-19 08:59:34.361 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 18, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:34.534 -07:00 [INF] Chapter name: 018: Chapter 18
+2026-10-19 08:59:34.535 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 19, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:34.714 -07:00 [INF] Chapter name: 019: Chapter 19
+2026-10-19 08:59:34.726 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 2, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:34.911 -07:00 [INF] Chapter name: 002: Chapter 2
+2026-10-19 08:59:34.916 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 20, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:35.109 -07:00 [INF] Chapter name: 020: Chapter 20
+2026-10-19 08:59:35.122 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 21, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:35.315 -07:00 [INF] Chapter name: 021: Chapter 21
+2026-10-19 08:59:35.328 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 22, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:35.535 -07:00 [INF] Chapter name: 022: Chapter 22
+2026-10-19 08:59:35.550 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 23, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:35.752 -07:00 [INF] Chapter name: 023: Chapter 23
+2026-10-19 08:59:35.756 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 24, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:35.963 -07:00 [INF] Chapter name: 024: Chapter 24
+2026-10-19 08:59:35.978 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 25, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:36.161 -07:00 [INF] Chapter name: 025: Chapter 25
+2026-10-19 08:59:36.168 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 26, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:36.367 -07:00 [INF] Chapter name: 026: Chapter 26
+2026-10-19 08:59:36.374 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 27, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:36.518 -07:00 [INF] Chapter name: 027: Chapter 27
+2026-10-19 08:59:36.532 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 28, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:36.725 -07:00 [INF] Chapter name: 028: Chapter 28
+2026-10-19 08:59:36.738 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 3, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:36.947 -07:00 [INF] Chapter name: 003: Chapter 3
+2026-10-19 08:59:36.960 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 4, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:37.146 -07:00 [INF] Chapter name: 004: Chapter 4
+2026-10-19 08:59:37.150 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 5, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:37.355 -07:00 [INF] Chapter name: 005: Chapter 5
+2026-10-19 08:59:37.356 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 6, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:37.539 -07:00 [INF] Chapter name: 006: Chapter 6
+2026-10-19 08:59:37.547 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 7, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:37.726 -07:00 [INF] Chapter name: 007: Chapter 7
+2026-10-19 08:59:37.737 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 8, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:37.925 -07:00 [INF] Chapter name: 008: Chapter 8
+2026-10-19 08:59:37.926 -07:00 [DBG] Currently processing file: data\aftime\A Fate Touched in Middle Earth Chapter 9, a Harry Potter + Hobbit Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:38.129 -07:00 [INF] Chapter name: 009: Chapter 9
+2026-10-19 08:59:38.157 -07:00 [INF] Processing Folder: data\afy
+2026-10-19 08:59:38.158 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 00_ Prologue, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:38.313 -07:00 [INF] Chapter name: 001: Prologue
+2026-10-19 08:59:38.320 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 01, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:38.517 -07:00 [INF] Chapter name: 002: Chapter One
+2026-10-19 08:59:38.526 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 02, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:38.716 -07:00 [INF] Chapter name: 003: Chapter Two
+2026-10-19 08:59:38.731 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 03, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:38.883 -07:00 [INF] Chapter name: 004: Chapter Three
+2026-10-19 08:59:38.890 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 04, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:39.063 -07:00 [INF] Chapter name: 005: Chapter Four
+2026-10-19 08:59:39.064 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 05, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:39.236 -07:00 [INF] Chapter name: 006: Chapter Five
+2026-10-19 08:59:39.238 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 06, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:39.417 -07:00 [INF] Chapter name: 007: Chapter Six
+2026-10-19 08:59:39.429 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 07, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:39.606 -07:00 [INF] Chapter name: 008: Chapter Seven
+2026-10-19 08:59:39.619 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 08, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:39.806 -07:00 [INF] Chapter name: 009: Chapter Eight
+2026-10-19 08:59:39.808 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 09, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:39.986 -07:00 [INF] Chapter name: 010: Chapter Nine
+2026-10-19 08:59:39.998 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 10, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:40.171 -07:00 [INF] Chapter name: 011: Chapter Ten
+2026-10-19 08:59:40.172 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 11, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:40.353 -07:00 [INF] Chapter name: 012: Chapter Eleven
+2026-10-19 08:59:40.362 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 12, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:40.540 -07:00 [INF] Chapter name: 013: Chapter Twelve
+2026-10-19 08:59:40.552 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 13, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:40.732 -07:00 [INF] Chapter name: 014: Chapter Thirteen
+2026-10-19 08:59:40.743 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 14, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:40.925 -07:00 [INF] Chapter name: 015: Chapter Fourteen
+2026-10-19 08:59:40.932 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 15, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:41.116 -07:00 [INF] Chapter name: 016: Chapter Fifteen
+2026-10-19 08:59:41.123 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 16, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:41.302 -07:00 [INF] Chapter name: 017: Chapter Sixteen
+2026-10-19 08:59:41.313 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 17, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:41.493 -07:00 [INF] Chapter name: 018: Chapter Seventeen
+2026-10-19 08:59:41.503 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 18, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:41.675 -07:00 [INF] Chapter name: 019: Chapter Eighteen
+2026-10-19 08:59:41.677 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 19, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:41.859 -07:00 [INF] Chapter name: 020: Chapter Nineteen
+2026-10-19 08:59:41.868 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 20, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:42.040 -07:00 [INF] Chapter name: 021: Chapter Twenty
+2026-10-19 08:59:42.043 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 21 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:42.217 -07:00 [INF] Chapter name: 022: Chapter Twenty-one
+2026-10-19 08:59:42.233 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 22 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:42.414 -07:00 [INF] Chapter name: 023: Chapter Twenty-Two
+2026-10-19 08:59:42.423 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 23 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:42.593 -07:00 [INF] Chapter name: 024: Chapter Twenty-Three
+2026-10-19 08:59:42.597 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 24 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:42.763 -07:00 [INF] Chapter name: 025: Chapter Twenty-Four
+2026-10-19 08:59:42.772 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 25 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:42.948 -07:00 [INF] Chapter name: 026: Chapter Twenty-Five
+2026-10-19 08:59:42.962 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 26 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:43.131 -07:00 [INF] Chapter name: 027: Chapter Twenty-Six
+2026-10-19 08:59:43.135 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 27 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:43.328 -07:00 [INF] Chapter name: 028: Chapter Twenty-Seven
+2026-10-19 08:59:43.338 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 28 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:43.521 -07:00 [INF] Chapter name: 029: Chapter Twenty-Eight
+2026-10-19 08:59:43.526 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 29 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:43.714 -07:00 [INF] Chapter name: 030: Chapter Twenty-Nine
+2026-10-19 08:59:43.717 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 30, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:43.899 -07:00 [INF] Chapter name: 031: Chapter Thirty
+2026-10-19 08:59:43.907 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 31 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:44.068 -07:00 [INF] Chapter name: 032: Chapter Thirty-One
+2026-10-19 08:59:44.081 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 32 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:44.256 -07:00 [INF] Chapter name: 033: Chapter Thirty-Two
+2026-10-19 08:59:44.272 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 33 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:44.432 -07:00 [INF] Chapter name: 034: Chapter Thirty-Three
+2026-10-19 08:59:44.445 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 34 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:44.602 -07:00 [INF] Chapter name: 035: Chapter Thirty-Four
+2026-10-19 08:59:44.619 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 35 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:44.779 -07:00 [INF] Chapter name: 036: Chapter Thirty-Five
+2026-10-19 08:59:44.793 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 36 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:44.948 -07:00 [INF] Chapter name: 037: Chapter Thirty-Six
+2026-10-19 08:59:44.953 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 37 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:45.121 -07:00 [INF] Chapter name: 038: Chapter Thirty-Seven
+2026-10-19 08:59:45.129 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 38 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:45.329 -07:00 [INF] Chapter name: 039: Chapter Thirty-Eight
+2026-10-19 08:59:45.334 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 39 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:45.502 -07:00 [INF] Chapter name: 040: Chapter Thirty-Nine
+2026-10-19 08:59:45.508 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 40, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:45.664 -07:00 [INF] Chapter name: 041: Chapter Forty
+2026-10-19 08:59:45.669 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 41 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:45.824 -07:00 [INF] Chapter name: 042: Chapter Forty-One
+2026-10-19 08:59:45.827 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 42 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:45.992 -07:00 [INF] Chapter name: 043: Chapter Forty-Two
+2026-10-19 08:59:46.001 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 43 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:46.168 -07:00 [INF] Chapter name: 044: Chapter Forty-Three
+2026-10-19 08:59:46.177 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 44 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:46.341 -07:00 [INF] Chapter name: 045: Chapter Forty-Four
+2026-10-19 08:59:46.354 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 45 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:46.522 -07:00 [INF] Chapter name: 046: Chapter Forty-Five
+2026-10-19 08:59:46.530 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 46 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:46.678 -07:00 [INF] Chapter name: 047: Chapter Forty-Six
+2026-10-19 08:59:46.689 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 47 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:46.828 -07:00 [INF] Chapter name: 048: Chapter Forty-Seven
+2026-10-19 08:59:46.829 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 48 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:46.970 -07:00 [INF] Chapter name: 049: Chapter Forty-Eight
+2026-10-19 08:59:46.972 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 49 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:47.101 -07:00 [INF] Chapter name: 050: Chapter Forty-Nine
+2026-10-19 08:59:47.115 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 50, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:47.261 -07:00 [INF] Chapter name: 051: Chapter Fifty
+2026-10-19 08:59:47.272 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 52 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:47.435 -07:00 [INF] Chapter name: 053: Chapter Fifty-Two
+2026-10-19 08:59:47.449 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 53 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:47.618 -07:00 [INF] Chapter name: 054: Chapter Fifty-Three
+2026-10-19 08:59:47.624 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 54 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:47.780 -07:00 [INF] Chapter name: 055: Chapter Fifty-Four
+2026-10-19 08:59:47.783 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 55 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:47.972 -07:00 [INF] Chapter name: 056: Chapter Fifty-Five
+2026-10-19 08:59:47.973 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 56 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:48.111 -07:00 [INF] Chapter name: 057: Chapter Fifty-Six
+2026-10-19 08:59:48.116 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 57 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:48.275 -07:00 [INF] Chapter name: 058: Chapter Fifty-Seven
+2026-10-19 08:59:48.277 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 58 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:48.443 -07:00 [INF] Chapter name: 059: Chapter Fifty-Eight
+2026-10-19 08:59:48.452 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 59 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:48.626 -07:00 [INF] Chapter name: 060: Chapter Fifty-Nine
+2026-10-19 08:59:48.640 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 60, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:48.850 -07:00 [INF] Chapter name: 061: Chapter Sixty
+2026-10-19 08:59:48.861 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 61 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:49.068 -07:00 [INF] Chapter name: 062: Chapter Sixty-One
+2026-10-19 08:59:49.083 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 62 a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:49.264 -07:00 [INF] Chapter name: 063: Chapter Sixty-Two
+2026-10-19 08:59:49.273 -07:00 [DBG] Currently processing file: data\afy\All For You Chapter 64_ Epilogue, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:49.477 -07:00 [INF] Chapter name: 064: Epilogue
+2026-10-19 08:59:49.486 -07:00 [INF] Processing Folder: data\aie
+2026-10-19 08:59:49.486 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 1, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:49.636 -07:00 [INF] Chapter name: 001: Chapter 1
+2026-10-19 08:59:49.638 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 10, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:49.795 -07:00 [INF] Chapter name: 010: Chapter 10
+2026-10-19 08:59:49.798 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 11, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:49.954 -07:00 [INF] Chapter name: 011: Chapter 11
+2026-10-19 08:59:49.958 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 12, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:50.116 -07:00 [INF] Chapter name: 012: Chapter 12
+2026-10-19 08:59:50.133 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 13, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:50.288 -07:00 [INF] Chapter name: 013: Chapter 13
+2026-10-19 08:59:50.291 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 14, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:50.457 -07:00 [INF] Chapter name: 014: Chapter 14
+2026-10-19 08:59:50.468 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 15, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:50.624 -07:00 [INF] Chapter name: 015: Chapter 15
+2026-10-19 08:59:50.627 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 16, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:50.783 -07:00 [INF] Chapter name: 016: Chapter 16
+2026-10-19 08:59:50.787 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 17, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:50.948 -07:00 [INF] Chapter name: 017: Chapter 17
+2026-10-19 08:59:50.963 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 18, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:51.126 -07:00 [INF] Chapter name: 018: Chapter 18
+2026-10-19 08:59:51.137 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 19, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:51.296 -07:00 [INF] Chapter name: 019: Chapter 19
+2026-10-19 08:59:51.298 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 2, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:51.453 -07:00 [INF] Chapter name: 002: Chapter 2
+2026-10-19 08:59:51.458 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 20, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:51.614 -07:00 [INF] Chapter name: 020: Chapter 20
+2026-10-19 08:59:51.618 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 21, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:51.779 -07:00 [INF] Chapter name: 021: Chapter 21
+2026-10-19 08:59:51.794 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 22, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:51.953 -07:00 [INF] Chapter name: 022: Chapter 22
+2026-10-19 08:59:51.954 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 23, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:52.116 -07:00 [INF] Chapter name: 023: Chapter 23
+2026-10-19 08:59:52.129 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 24, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:52.285 -07:00 [INF] Chapter name: 024: Chapter 24
+2026-10-19 08:59:52.289 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 25, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:52.449 -07:00 [INF] Chapter name: 025: Chapter 25
+2026-10-19 08:59:52.464 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 26, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:52.598 -07:00 [INF] Chapter name: 026: Chapter 26
+2026-10-19 08:59:52.607 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 3, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:52.763 -07:00 [INF] Chapter name: 003: Chapter 3
+2026-10-19 08:59:52.765 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 4, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:52.928 -07:00 [INF] Chapter name: 004: Chapter 4
+2026-10-19 08:59:52.941 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 5, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:53.104 -07:00 [INF] Chapter name: 005: Chapter 5
+2026-10-19 08:59:53.115 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 6, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:53.269 -07:00 [INF] Chapter name: 006: Chapter 6
+2026-10-19 08:59:53.273 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 7, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:53.432 -07:00 [INF] Chapter name: 007: Chapter 7
+2026-10-19 08:59:53.447 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 8, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:53.610 -07:00 [INF] Chapter name: 008: Chapter 8
+2026-10-19 08:59:53.621 -07:00 [DBG] Currently processing file: data\aie\Alea Iacta Est Chapter 9, a worm fanfic _ FanFiction.html
+2026-10-19 08:59:53.758 -07:00 [INF] Chapter name: 009: Chapter 9
+2026-10-19 08:59:53.772 -07:00 [INF] Processing Folder: data\alcslt
+2026-10-19 08:59:53.773 -07:00 [DBG] Currently processing file: data\alcslt\A Little Child Shall Lead Them Chapter 1, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:53.923 -07:00 [INF] Chapter name: 001: Chapter 1
+2026-10-19 08:59:53.936 -07:00 [DBG] Currently processing file: data\alcslt\A Little Child Shall Lead Them Chapter 2, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:54.110 -07:00 [INF] Chapter name: 002: Chapter 2
+2026-10-19 08:59:54.125 -07:00 [DBG] Currently processing file: data\alcslt\A Little Child Shall Lead Them Chapter 3, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:54.277 -07:00 [INF] Chapter name: 003: Chapter 3
+2026-10-19 08:59:54.283 -07:00 [DBG] Currently processing file: data\alcslt\A Little Child Shall Lead Them Chapter 4, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:54.436 -07:00 [INF] Chapter name: 004: Chapter 4
+2026-10-19 08:59:54.441 -07:00 [DBG] Currently processing file: data\alcslt\A Little Child Shall Lead Them Chapter 5, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:54.595 -07:00 [INF] Chapter name: 005: Chapter 5
+2026-10-19 08:59:54.600 -07:00 [DBG] Currently processing file: data\alcslt\A Little Child Shall Lead Them Chapter 6_ Epilogue, a harry potter fanfic _ FanFiction.html
+2026-10-19 08:59:54.749 -07:00 [INF] Chapter name: 006: Epilogue
+2026-10-19 08:59:54.761 -07:00 [INF] Processing Folder: data\atp
+2026-10-19 08:59:54.762 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 10_ I'll Put out Your Fire, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:54.907 -07:00 [INF] Chapter name: 010: I'll Put out Your Fire
+2026-10-19 08:59:54.916 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 11_ We're Going to do This the Easy Way, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:55.072 -07:00 [INF] Chapter name: 011: We're Going to do This the Easy Way
+2026-10-19 08:59:55.074 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 12_ You To Are Human, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:55.230 -07:00 [INF] Chapter name: 012: You To Are Human
+2026-10-19 08:59:55.249 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 13_ Do I Speak to a Subject or a King_, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:55.415 -07:00 [INF] Chapter name: 013: Do I Speak to a Subject or a King?
+2026-10-19 08:59:55.439 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 14_ Fiddly Bits, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:55.586 -07:00 [INF] Chapter name: 014: Fiddly Bits
+2026-10-19 08:59:55.597 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 15_ What's A Trip To The Orient Without, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:55.752 -07:00 [INF] Chapter name: 015: What's A Trip To The Orient Without
+2026-10-19 08:59:55.756 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 16_ A Good Day, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:55.928 -07:00 [INF] Chapter name: 016: A Good Day
+2026-10-19 08:59:55.930 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 17_ Where Do I Sign Up, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:56.088 -07:00 [INF] Chapter name: 017: Where Do I Sign Up
+2026-10-19 08:59:56.104 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 18_ Very Well, I, Victor Von Doom, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:56.245 -07:00 [INF] Chapter name: 018: Very Well, I, Victor Von Doom
+2026-10-19 08:59:56.262 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 19_ I Will Give Him Something to Fear, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:56.427 -07:00 [INF] Chapter name: 019: I Will Give Him Something to Fear
+2026-10-19 08:59:56.437 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 1_ A Stranger in an even Stranger Land, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:56.588 -07:00 [INF] Chapter name: 001: A Stranger in an even Stranger Land
+2026-10-19 08:59:56.596 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 20_ There's gonna be a rumble, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:56.754 -07:00 [INF] Chapter name: 020: There's gonna be a rumble
+2026-10-19 08:59:56.770 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 21_ That's a Wrap Ladies and Gentlemen!, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:56.945 -07:00 [INF] Chapter name: 021: That's a Wrap Ladies and Gentlemen!
+2026-10-19 08:59:56.959 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 22_ Attack of the Spandex Dilemma, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:57.103 -07:00 [INF] Chapter name: 022: Attack of the Spandex Dilemma
+2026-10-19 08:59:57.117 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 23_ Want To Go On A Bug Hunt_, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:57.272 -07:00 [INF] Chapter name: 023: Want To Go On A Bug Hunt?
+2026-10-19 08:59:57.291 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 24_ Paranoia In Our Line Of Work Is, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:57.453 -07:00 [INF] Chapter name: 024: Paranoia In Our Line Of Work Is
+2026-10-19 08:59:57.465 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 25_ Congratulations, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:57.639 -07:00 [INF] Chapter name: 025: Congratulations
+2026-10-19 08:59:57.654 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 26_ Irony Has Bite, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:57.819 -07:00 [INF] Chapter name: 026: Irony Has Bite
+2026-10-19 08:59:57.828 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 27_ Doesn't Rain, But it Pours, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:57.991 -07:00 [INF] Chapter name: 027: Doesn't Rain, But it Pours
+2026-10-19 08:59:58.002 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 28_ Stronger Together, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:58.168 -07:00 [INF] Chapter name: 028: Stronger Together
+2026-10-19 08:59:58.176 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 29_ Heavy is the Head, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:58.334 -07:00 [INF] Chapter name: 029: Heavy is the Head
+2026-10-19 08:59:58.350 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 2_ A Step Heard Round the Universe, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:58.504 -07:00 [INF] Chapter name: 002: A Step Heard Round the Universe
+2026-10-19 08:59:58.524 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 30_ Stepping Into The Unknown, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:58.667 -07:00 [INF] Chapter name: 030: Stepping Into The Unknown
+2026-10-19 08:59:58.682 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 31_ Welcome!, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:58.850 -07:00 [INF] Chapter name: 031: Welcome!
+2026-10-19 08:59:58.856 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 32_ Road to Kingship, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:59.017 -07:00 [INF] Chapter name: 032: Road to Kingship
+2026-10-19 08:59:59.030 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 33_ Drowning in Meetings, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:59.207 -07:00 [INF] Chapter name: 033: Drowning in Meetings
+2026-10-19 08:59:59.218 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 34_ Choice, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:59.401 -07:00 [INF] Chapter name: 034: Choice
+2026-10-19 08:59:59.407 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 35, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:59.574 -07:00 [INF] Chapter name: 035: Chapter 35
+2026-10-19 08:59:59.581 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 36_ Slow Progress New Enemies Playing, Old, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:59.738 -07:00 [INF] Chapter name: 036: Slow Progress New Enemies Playing, Old
+2026-10-19 08:59:59.739 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 37_ A Hot, Cold War, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html
+2026-10-19 08:59:59.899 -07:00 [INF] Chapter name: 037: A Hot, Cold War
+2026-10-19 08:59:59.913 -07:00 [DBG] Currently processing file: data\atp\A Third Path to the Future Chapter 38_ A Whirlwind, Reaped, a Harry Potter + Marvel Crossover fanfic _ FanFiction.html

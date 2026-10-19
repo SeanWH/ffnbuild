@@ -34,15 +34,14 @@ public sealed class PageAddress : IFfnUrl
         return left.Equals(right);
     }
 
-    public static bool operator >(PageAddress left, PageAddress right) => left is not null && left.CompareTo(right) > 0;
+    public static bool operator >(PageAddress left, PageAddress right) => left?.CompareTo(right) > 0;
 
     public static bool operator >=(PageAddress left, PageAddress right) => left is null ? right is null : left.CompareTo(right) >= 0;
 
     public int CompareTo(IFfnUrl? other)
     {
         int val = string.CompareOrdinal(LinkTarget, other?.LinkTarget);
-        val = val == 0 ? string.CompareOrdinal(Address, other?.Address) : val;
-        return val;
+        return val == 0 ? string.CompareOrdinal(Address, other?.Address) : val;
     }
 
     public bool Equals(IFfnUrl? other)

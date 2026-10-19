@@ -1,0 +1,566 @@
+2026-10-16 11:08:54.604 -07:00 [INF] Processing multiple files:
+2026-10-16 11:08:54.641 -07:00 [INF] Processing Folder: aw
+2026-10-16 11:08:54.684 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.721 -07:00 [INF] Chapter name: 005: Chapter 1
+2026-10-16 11:08:54.731 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 10, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.736 -07:00 [INF] Chapter name: 014: Chapter 10
+2026-10-16 11:08:54.744 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 11, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.748 -07:00 [INF] Chapter name: 015: Chapter 11
+2026-10-16 11:08:54.759 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 12, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.766 -07:00 [INF] Chapter name: 016: Chapter 12
+2026-10-16 11:08:54.775 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 13, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.782 -07:00 [INF] Chapter name: 017: Chapter 13
+2026-10-16 11:08:54.790 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 14, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.795 -07:00 [INF] Chapter name: 018: Chapter 14
+2026-10-16 11:08:54.806 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 15, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.812 -07:00 [INF] Chapter name: 019: Chapter 15
+2026-10-16 11:08:54.821 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 16, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.825 -07:00 [INF] Chapter name: 020: Chapter 16
+2026-10-16 11:08:54.837 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 17, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.840 -07:00 [INF] Chapter name: 022: Chapter 17
+2026-10-16 11:08:54.853 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 18, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.859 -07:00 [INF] Chapter name: 023: Chapter 18
+2026-10-16 11:08:54.868 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 19, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.874 -07:00 [INF] Chapter name: 024: Chapter 19
+2026-10-16 11:08:54.884 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1_ Prologue, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.887 -07:00 [INF] Chapter name: 001: Prologue
+2026-10-16 11:08:54.900 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.904 -07:00 [INF] Chapter name: 006: Chapter 2
+2026-10-16 11:08:54.916 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 20, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.920 -07:00 [INF] Chapter name: 025: Chapter 20
+2026-10-16 11:08:54.931 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.935 -07:00 [INF] Chapter name: 026: Chapter 21
+2026-10-16 11:08:54.946 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21_ Intermission, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.949 -07:00 [INF] Chapter name: 021: Intermission
+2026-10-16 11:08:54.963 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 22, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.966 -07:00 [INF] Chapter name: 027: Chapter 22
+2026-10-16 11:08:54.979 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 23, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.982 -07:00 [INF] Chapter name: 028: Chapter 23
+2026-10-16 11:08:54.995 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 24, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:54.998 -07:00 [INF] Chapter name: 029: Chapter 24
+2026-10-16 11:08:55.010 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 25, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.013 -07:00 [INF] Chapter name: 030: Chapter 25
+2026-10-16 11:08:55.025 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 26, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.030 -07:00 [INF] Chapter name: 031: Chapter 26
+2026-10-16 11:08:55.032 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 27, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.039 -07:00 [INF] Chapter name: 032: Chapter 27
+2026-10-16 11:08:55.057 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 28, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.063 -07:00 [INF] Chapter name: 033: Chapter 28
+2026-10-16 11:08:55.073 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 29, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.077 -07:00 [INF] Chapter name: 034: Chapter 29
+2026-10-16 11:08:55.089 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2_ Prologue_ Part Two, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.093 -07:00 [INF] Chapter name: 002: Prologue: Part Two
+2026-10-16 11:08:55.105 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.108 -07:00 [INF] Chapter name: 007: Chapter 3
+2026-10-16 11:08:55.120 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 30, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.124 -07:00 [INF] Chapter name: 035: Chapter 30
+2026-10-16 11:08:55.135 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 31, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.139 -07:00 [INF] Chapter name: 036: Chapter 31
+2026-10-16 11:08:55.151 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 32, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.161 -07:00 [INF] Chapter name: 037: Chapter 32
+2026-10-16 11:08:55.167 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 33, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.172 -07:00 [INF] Chapter name: 038: Chapter 33
+2026-10-16 11:08:55.183 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 34, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.187 -07:00 [INF] Chapter name: 039: Chapter 34
+2026-10-16 11:08:55.199 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 35, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.203 -07:00 [INF] Chapter name: 040: Chapter 35
+2026-10-16 11:08:55.215 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 36, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.222 -07:00 [INF] Chapter name: 041: Chapter 36
+2026-10-16 11:08:55.231 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 37, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.235 -07:00 [INF] Chapter name: 042: Chapter 37
+2026-10-16 11:08:55.246 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 38, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.250 -07:00 [INF] Chapter name: 043: Chapter 38
+2026-10-16 11:08:55.262 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3_ Prologue_ Part Three, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.265 -07:00 [INF] Chapter name: 003: Prologue: Part Three
+2026-10-16 11:08:55.278 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.284 -07:00 [INF] Chapter name: 008: Chapter 4
+2026-10-16 11:08:55.293 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4_ Prologue_ Part Four, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.298 -07:00 [INF] Chapter name: 004: Prologue: Part Four
+2026-10-16 11:08:55.309 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 5, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.313 -07:00 [INF] Chapter name: 009: Chapter 5
+2026-10-16 11:08:55.324 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 6, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.328 -07:00 [INF] Chapter name: 010: Chapter 6
+2026-10-16 11:08:55.340 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 7, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.345 -07:00 [INF] Chapter name: 011: Chapter 7
+2026-10-16 11:08:55.356 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 8, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.361 -07:00 [INF] Chapter name: 012: Chapter 8
+2026-10-16 11:08:55.372 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 9, a worm fanfic _ FanFiction.html
+2026-10-16 11:08:55.383 -07:00 [INF] Chapter name: 013: Chapter 9
+2026-10-16 11:08:55.407 -07:00 [INF] Processing Folder: ayotd
+2026-10-16 11:09:31.618 -07:00 [INF] Processing multiple files:
+2026-10-16 11:09:31.642 -07:00 [INF] Processing Folder: aw
+2026-10-16 11:09:31.672 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.705 -07:00 [INF] Chapter name: 005: Chapter 1
+2026-10-16 11:09:31.717 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 10, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.721 -07:00 [INF] Chapter name: 014: Chapter 10
+2026-10-16 11:09:31.730 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 11, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.734 -07:00 [INF] Chapter name: 015: Chapter 11
+2026-10-16 11:09:31.746 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 12, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.749 -07:00 [INF] Chapter name: 016: Chapter 12
+2026-10-16 11:09:31.762 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 13, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.765 -07:00 [INF] Chapter name: 017: Chapter 13
+2026-10-16 11:09:31.777 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 14, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.781 -07:00 [INF] Chapter name: 018: Chapter 14
+2026-10-16 11:09:31.793 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 15, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.796 -07:00 [INF] Chapter name: 019: Chapter 15
+2026-10-16 11:09:31.809 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 16, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.812 -07:00 [INF] Chapter name: 020: Chapter 16
+2026-10-16 11:09:31.825 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 17, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.828 -07:00 [INF] Chapter name: 022: Chapter 17
+2026-10-16 11:09:31.841 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 18, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.845 -07:00 [INF] Chapter name: 023: Chapter 18
+2026-10-16 11:09:31.857 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 19, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.860 -07:00 [INF] Chapter name: 024: Chapter 19
+2026-10-16 11:09:31.873 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1_ Prologue, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.875 -07:00 [INF] Chapter name: 001: Prologue
+2026-10-16 11:09:31.889 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.892 -07:00 [INF] Chapter name: 006: Chapter 2
+2026-10-16 11:09:31.905 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 20, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.908 -07:00 [INF] Chapter name: 025: Chapter 20
+2026-10-16 11:09:31.921 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.924 -07:00 [INF] Chapter name: 026: Chapter 21
+2026-10-16 11:09:31.936 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21_ Intermission, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.939 -07:00 [INF] Chapter name: 021: Intermission
+2026-10-16 11:09:31.952 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 22, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.955 -07:00 [INF] Chapter name: 027: Chapter 22
+2026-10-16 11:09:31.968 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 23, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.971 -07:00 [INF] Chapter name: 028: Chapter 23
+2026-10-16 11:09:31.984 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 24, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:31.986 -07:00 [INF] Chapter name: 029: Chapter 24
+2026-10-16 11:09:32.000 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 25, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.002 -07:00 [INF] Chapter name: 030: Chapter 25
+2026-10-16 11:09:32.016 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 26, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.019 -07:00 [INF] Chapter name: 031: Chapter 26
+2026-10-16 11:09:32.032 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 27, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.039 -07:00 [INF] Chapter name: 032: Chapter 27
+2026-10-16 11:09:32.048 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 28, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.051 -07:00 [INF] Chapter name: 033: Chapter 28
+2026-10-16 11:09:32.063 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 29, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.066 -07:00 [INF] Chapter name: 034: Chapter 29
+2026-10-16 11:09:32.079 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2_ Prologue_ Part Two, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.082 -07:00 [INF] Chapter name: 002: Prologue: Part Two
+2026-10-16 11:09:32.095 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.098 -07:00 [INF] Chapter name: 007: Chapter 3
+2026-10-16 11:09:32.111 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 30, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.114 -07:00 [INF] Chapter name: 035: Chapter 30
+2026-10-16 11:09:32.127 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 31, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.131 -07:00 [INF] Chapter name: 036: Chapter 31
+2026-10-16 11:09:32.143 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 32, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.150 -07:00 [INF] Chapter name: 037: Chapter 32
+2026-10-16 11:09:32.159 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 33, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.163 -07:00 [INF] Chapter name: 038: Chapter 33
+2026-10-16 11:09:32.175 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 34, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.178 -07:00 [INF] Chapter name: 039: Chapter 34
+2026-10-16 11:09:32.191 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 35, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.194 -07:00 [INF] Chapter name: 040: Chapter 35
+2026-10-16 11:09:32.207 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 36, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.211 -07:00 [INF] Chapter name: 041: Chapter 36
+2026-10-16 11:09:32.223 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 37, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.226 -07:00 [INF] Chapter name: 042: Chapter 37
+2026-10-16 11:09:32.239 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 38, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.242 -07:00 [INF] Chapter name: 043: Chapter 38
+2026-10-16 11:09:32.255 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3_ Prologue_ Part Three, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.258 -07:00 [INF] Chapter name: 003: Prologue: Part Three
+2026-10-16 11:09:32.272 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.276 -07:00 [INF] Chapter name: 008: Chapter 4
+2026-10-16 11:09:32.288 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4_ Prologue_ Part Four, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.290 -07:00 [INF] Chapter name: 004: Prologue: Part Four
+2026-10-16 11:09:32.304 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 5, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.306 -07:00 [INF] Chapter name: 009: Chapter 5
+2026-10-16 11:09:32.320 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 6, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.323 -07:00 [INF] Chapter name: 010: Chapter 6
+2026-10-16 11:09:32.336 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 7, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.339 -07:00 [INF] Chapter name: 011: Chapter 7
+2026-10-16 11:09:32.352 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 8, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.355 -07:00 [INF] Chapter name: 012: Chapter 8
+2026-10-16 11:09:32.367 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 9, a worm fanfic _ FanFiction.html
+2026-10-16 11:09:32.374 -07:00 [INF] Chapter name: 013: Chapter 9
+2026-10-16 11:09:32.393 -07:00 [INF] Processing Folder: ayotd
+2026-10-16 11:10:21.089 -07:00 [INF] Processing multiple files:
+2026-10-16 11:10:47.758 -07:00 [INF] Processing Folder: aw
+2026-10-16 11:11:11.369 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.419 -07:00 [INF] Chapter name: 005: Chapter 1
+2026-10-16 11:11:11.437 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 10, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.443 -07:00 [INF] Chapter name: 014: Chapter 10
+2026-10-16 11:11:11.451 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 11, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.457 -07:00 [INF] Chapter name: 015: Chapter 11
+2026-10-16 11:11:11.466 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 12, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.472 -07:00 [INF] Chapter name: 016: Chapter 12
+2026-10-16 11:11:11.482 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 13, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.489 -07:00 [INF] Chapter name: 017: Chapter 13
+2026-10-16 11:11:11.498 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 14, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.507 -07:00 [INF] Chapter name: 018: Chapter 14
+2026-10-16 11:11:11.514 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 15, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.517 -07:00 [INF] Chapter name: 019: Chapter 15
+2026-10-16 11:11:11.530 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 16, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.534 -07:00 [INF] Chapter name: 020: Chapter 16
+2026-10-16 11:11:11.546 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 17, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.550 -07:00 [INF] Chapter name: 022: Chapter 17
+2026-10-16 11:11:11.562 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 18, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.566 -07:00 [INF] Chapter name: 023: Chapter 18
+2026-10-16 11:11:11.578 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 19, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.582 -07:00 [INF] Chapter name: 024: Chapter 19
+2026-10-16 11:11:11.594 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1_ Prologue, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.597 -07:00 [INF] Chapter name: 001: Prologue
+2026-10-16 11:11:11.609 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.615 -07:00 [INF] Chapter name: 006: Chapter 2
+2026-10-16 11:11:11.625 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 20, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.637 -07:00 [INF] Chapter name: 025: Chapter 20
+2026-10-16 11:11:11.656 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.659 -07:00 [INF] Chapter name: 026: Chapter 21
+2026-10-16 11:11:11.671 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21_ Intermission, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.674 -07:00 [INF] Chapter name: 021: Intermission
+2026-10-16 11:11:11.687 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 22, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.690 -07:00 [INF] Chapter name: 027: Chapter 22
+2026-10-16 11:11:11.702 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 23, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.705 -07:00 [INF] Chapter name: 028: Chapter 23
+2026-10-16 11:11:11.717 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 24, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.720 -07:00 [INF] Chapter name: 029: Chapter 24
+2026-10-16 11:11:11.732 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 25, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.736 -07:00 [INF] Chapter name: 030: Chapter 25
+2026-10-16 11:11:11.747 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 26, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.751 -07:00 [INF] Chapter name: 031: Chapter 26
+2026-10-16 11:11:11.762 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 27, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.768 -07:00 [INF] Chapter name: 032: Chapter 27
+2026-10-16 11:11:11.778 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 28, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.783 -07:00 [INF] Chapter name: 033: Chapter 28
+2026-10-16 11:11:11.794 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 29, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.797 -07:00 [INF] Chapter name: 034: Chapter 29
+2026-10-16 11:11:11.809 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2_ Prologue_ Part Two, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.813 -07:00 [INF] Chapter name: 002: Prologue: Part Two
+2026-10-16 11:11:11.825 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.827 -07:00 [INF] Chapter name: 007: Chapter 3
+2026-10-16 11:11:11.840 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 30, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.843 -07:00 [INF] Chapter name: 035: Chapter 30
+2026-10-16 11:11:11.855 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 31, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.858 -07:00 [INF] Chapter name: 036: Chapter 31
+2026-10-16 11:11:11.870 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 32, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.881 -07:00 [INF] Chapter name: 037: Chapter 32
+2026-10-16 11:11:11.885 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 33, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.891 -07:00 [INF] Chapter name: 038: Chapter 33
+2026-10-16 11:11:11.900 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 34, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.906 -07:00 [INF] Chapter name: 039: Chapter 34
+2026-10-16 11:11:11.916 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 35, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.922 -07:00 [INF] Chapter name: 040: Chapter 35
+2026-10-16 11:11:11.931 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 36, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.936 -07:00 [INF] Chapter name: 041: Chapter 36
+2026-10-16 11:11:11.946 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 37, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.951 -07:00 [INF] Chapter name: 042: Chapter 37
+2026-10-16 11:11:11.961 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 38, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.965 -07:00 [INF] Chapter name: 043: Chapter 38
+2026-10-16 11:11:11.976 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3_ Prologue_ Part Three, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.979 -07:00 [INF] Chapter name: 003: Prologue: Part Three
+2026-10-16 11:11:11.992 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:11.997 -07:00 [INF] Chapter name: 008: Chapter 4
+2026-10-16 11:11:12.008 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4_ Prologue_ Part Four, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:12.011 -07:00 [INF] Chapter name: 004: Prologue: Part Four
+2026-10-16 11:11:12.023 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 5, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:12.027 -07:00 [INF] Chapter name: 009: Chapter 5
+2026-10-16 11:11:12.038 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 6, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:12.043 -07:00 [INF] Chapter name: 010: Chapter 6
+2026-10-16 11:11:12.053 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 7, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:12.057 -07:00 [INF] Chapter name: 011: Chapter 7
+2026-10-16 11:11:12.069 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 8, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:12.072 -07:00 [INF] Chapter name: 012: Chapter 8
+2026-10-16 11:11:12.086 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 9, a worm fanfic _ FanFiction.html
+2026-10-16 11:11:12.092 -07:00 [INF] Chapter name: 013: Chapter 9
+2026-10-16 11:11:29.750 -07:00 [INF] Processing Folder: ayotd
+2026-10-16 11:12:58.928 -07:00 [INF] Processing multiple files:
+2026-10-16 11:13:00.148 -07:00 [INF] Processing Folder: aw
+2026-10-16 11:13:00.179 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.217 -07:00 [INF] Chapter name: 005: Chapter 1
+2026-10-16 11:13:00.262 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 10, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.268 -07:00 [INF] Chapter name: 014: Chapter 10
+2026-10-16 11:13:00.274 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 11, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.279 -07:00 [INF] Chapter name: 015: Chapter 11
+2026-10-16 11:13:00.288 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 12, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.294 -07:00 [INF] Chapter name: 016: Chapter 12
+2026-10-16 11:13:00.304 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 13, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.308 -07:00 [INF] Chapter name: 017: Chapter 13
+2026-10-16 11:13:00.320 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 14, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.327 -07:00 [INF] Chapter name: 018: Chapter 14
+2026-10-16 11:13:00.335 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 15, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.338 -07:00 [INF] Chapter name: 019: Chapter 15
+2026-10-16 11:13:00.350 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 16, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.354 -07:00 [INF] Chapter name: 020: Chapter 16
+2026-10-16 11:13:00.365 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 17, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.369 -07:00 [INF] Chapter name: 022: Chapter 17
+2026-10-16 11:13:00.381 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 18, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.385 -07:00 [INF] Chapter name: 023: Chapter 18
+2026-10-16 11:13:00.396 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 19, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.401 -07:00 [INF] Chapter name: 024: Chapter 19
+2026-10-16 11:13:00.411 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1_ Prologue, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.415 -07:00 [INF] Chapter name: 001: Prologue
+2026-10-16 11:13:00.427 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.431 -07:00 [INF] Chapter name: 006: Chapter 2
+2026-10-16 11:13:00.443 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 20, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.450 -07:00 [INF] Chapter name: 025: Chapter 20
+2026-10-16 11:13:00.458 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.464 -07:00 [INF] Chapter name: 026: Chapter 21
+2026-10-16 11:13:00.473 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21_ Intermission, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.476 -07:00 [INF] Chapter name: 021: Intermission
+2026-10-16 11:13:00.489 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 22, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.494 -07:00 [INF] Chapter name: 027: Chapter 22
+2026-10-16 11:13:00.504 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 23, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.508 -07:00 [INF] Chapter name: 028: Chapter 23
+2026-10-16 11:13:00.520 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 24, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.525 -07:00 [INF] Chapter name: 029: Chapter 24
+2026-10-16 11:13:00.535 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 25, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.540 -07:00 [INF] Chapter name: 030: Chapter 25
+2026-10-16 11:13:00.551 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 26, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.555 -07:00 [INF] Chapter name: 031: Chapter 26
+2026-10-16 11:13:00.567 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 27, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.581 -07:00 [INF] Chapter name: 032: Chapter 27
+2026-10-16 11:13:00.599 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 28, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.608 -07:00 [INF] Chapter name: 033: Chapter 28
+2026-10-16 11:13:00.615 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 29, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.622 -07:00 [INF] Chapter name: 034: Chapter 29
+2026-10-16 11:13:00.630 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2_ Prologue_ Part Two, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.636 -07:00 [INF] Chapter name: 002: Prologue: Part Two
+2026-10-16 11:13:00.646 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.650 -07:00 [INF] Chapter name: 007: Chapter 3
+2026-10-16 11:13:00.662 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 30, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.667 -07:00 [INF] Chapter name: 035: Chapter 30
+2026-10-16 11:13:00.678 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 31, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.683 -07:00 [INF] Chapter name: 036: Chapter 31
+2026-10-16 11:13:00.694 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 32, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.703 -07:00 [INF] Chapter name: 037: Chapter 32
+2026-10-16 11:13:00.709 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 33, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.716 -07:00 [INF] Chapter name: 038: Chapter 33
+2026-10-16 11:13:00.724 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 34, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.728 -07:00 [INF] Chapter name: 039: Chapter 34
+2026-10-16 11:13:00.740 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 35, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.743 -07:00 [INF] Chapter name: 040: Chapter 35
+2026-10-16 11:13:00.755 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 36, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.760 -07:00 [INF] Chapter name: 041: Chapter 36
+2026-10-16 11:13:00.771 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 37, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.775 -07:00 [INF] Chapter name: 042: Chapter 37
+2026-10-16 11:13:00.786 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 38, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.789 -07:00 [INF] Chapter name: 043: Chapter 38
+2026-10-16 11:13:00.802 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3_ Prologue_ Part Three, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.805 -07:00 [INF] Chapter name: 003: Prologue: Part Three
+2026-10-16 11:13:00.818 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.824 -07:00 [INF] Chapter name: 008: Chapter 4
+2026-10-16 11:13:00.833 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4_ Prologue_ Part Four, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.836 -07:00 [INF] Chapter name: 004: Prologue: Part Four
+2026-10-16 11:13:00.848 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 5, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.853 -07:00 [INF] Chapter name: 009: Chapter 5
+2026-10-16 11:13:00.864 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 6, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.870 -07:00 [INF] Chapter name: 010: Chapter 6
+2026-10-16 11:13:00.880 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 7, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.884 -07:00 [INF] Chapter name: 011: Chapter 7
+2026-10-16 11:13:00.895 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 8, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.899 -07:00 [INF] Chapter name: 012: Chapter 8
+2026-10-16 11:13:00.911 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 9, a worm fanfic _ FanFiction.html
+2026-10-16 11:13:00.922 -07:00 [INF] Chapter name: 013: Chapter 9
+2026-10-16 11:13:00.944 -07:00 [INF] Processing Folder: ayotd
+2026-10-16 11:13:44.886 -07:00 [INF] Processing multiple files:
+2026-10-16 11:13:54.303 -07:00 [INF] Processing Folder: aw
+2026-10-16 11:14:30.283 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.324 -07:00 [INF] Chapter name: 005: Chapter 1
+2026-10-16 11:14:30.339 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 10, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.343 -07:00 [INF] Chapter name: 014: Chapter 10
+2026-10-16 11:14:30.355 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 11, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.359 -07:00 [INF] Chapter name: 015: Chapter 11
+2026-10-16 11:14:30.370 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 12, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.373 -07:00 [INF] Chapter name: 016: Chapter 12
+2026-10-16 11:14:30.385 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 13, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.389 -07:00 [INF] Chapter name: 017: Chapter 13
+2026-10-16 11:14:30.400 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 14, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.409 -07:00 [INF] Chapter name: 018: Chapter 14
+2026-10-16 11:14:30.416 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 15, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.419 -07:00 [INF] Chapter name: 019: Chapter 15
+2026-10-16 11:14:30.432 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 16, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.435 -07:00 [INF] Chapter name: 020: Chapter 16
+2026-10-16 11:14:30.447 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 17, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.450 -07:00 [INF] Chapter name: 022: Chapter 17
+2026-10-16 11:14:30.462 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 18, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.465 -07:00 [INF] Chapter name: 023: Chapter 18
+2026-10-16 11:14:30.477 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 19, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.480 -07:00 [INF] Chapter name: 024: Chapter 19
+2026-10-16 11:14:30.493 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1_ Prologue, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.495 -07:00 [INF] Chapter name: 001: Prologue
+2026-10-16 11:14:30.508 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.512 -07:00 [INF] Chapter name: 006: Chapter 2
+2026-10-16 11:14:30.524 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 20, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.529 -07:00 [INF] Chapter name: 025: Chapter 20
+2026-10-16 11:14:30.539 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.542 -07:00 [INF] Chapter name: 026: Chapter 21
+2026-10-16 11:14:30.544 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21_ Intermission, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.546 -07:00 [INF] Chapter name: 021: Intermission
+2026-10-16 11:14:30.555 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 22, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.558 -07:00 [INF] Chapter name: 027: Chapter 22
+2026-10-16 11:14:30.571 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 23, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.573 -07:00 [INF] Chapter name: 028: Chapter 23
+2026-10-16 11:14:30.586 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 24, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.589 -07:00 [INF] Chapter name: 029: Chapter 24
+2026-10-16 11:14:30.602 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 25, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.605 -07:00 [INF] Chapter name: 030: Chapter 25
+2026-10-16 11:14:30.617 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 26, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.620 -07:00 [INF] Chapter name: 031: Chapter 26
+2026-10-16 11:14:30.632 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 27, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.638 -07:00 [INF] Chapter name: 032: Chapter 27
+2026-10-16 11:14:30.647 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 28, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.650 -07:00 [INF] Chapter name: 033: Chapter 28
+2026-10-16 11:14:30.662 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 29, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.665 -07:00 [INF] Chapter name: 034: Chapter 29
+2026-10-16 11:14:30.678 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2_ Prologue_ Part Two, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.681 -07:00 [INF] Chapter name: 002: Prologue: Part Two
+2026-10-16 11:14:30.694 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.698 -07:00 [INF] Chapter name: 007: Chapter 3
+2026-10-16 11:14:30.709 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 30, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.712 -07:00 [INF] Chapter name: 035: Chapter 30
+2026-10-16 11:14:30.724 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 31, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.727 -07:00 [INF] Chapter name: 036: Chapter 31
+2026-10-16 11:14:30.739 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 32, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.746 -07:00 [INF] Chapter name: 037: Chapter 32
+2026-10-16 11:14:30.755 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 33, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.759 -07:00 [INF] Chapter name: 038: Chapter 33
+2026-10-16 11:14:30.771 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 34, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.774 -07:00 [INF] Chapter name: 039: Chapter 34
+2026-10-16 11:14:30.786 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 35, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.790 -07:00 [INF] Chapter name: 040: Chapter 35
+2026-10-16 11:14:30.802 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 36, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.806 -07:00 [INF] Chapter name: 041: Chapter 36
+2026-10-16 11:14:30.817 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 37, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.821 -07:00 [INF] Chapter name: 042: Chapter 37
+2026-10-16 11:14:30.832 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 38, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.836 -07:00 [INF] Chapter name: 043: Chapter 38
+2026-10-16 11:14:30.848 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3_ Prologue_ Part Three, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.851 -07:00 [INF] Chapter name: 003: Prologue: Part Three
+2026-10-16 11:14:30.864 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.868 -07:00 [INF] Chapter name: 008: Chapter 4
+2026-10-16 11:14:30.879 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4_ Prologue_ Part Four, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.882 -07:00 [INF] Chapter name: 004: Prologue: Part Four
+2026-10-16 11:14:30.894 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 5, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.897 -07:00 [INF] Chapter name: 009: Chapter 5
+2026-10-16 11:14:30.910 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 6, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.913 -07:00 [INF] Chapter name: 010: Chapter 6
+2026-10-16 11:14:30.925 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 7, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.928 -07:00 [INF] Chapter name: 011: Chapter 7
+2026-10-16 11:14:30.941 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 8, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.943 -07:00 [INF] Chapter name: 012: Chapter 8
+2026-10-16 11:14:30.956 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 9, a worm fanfic _ FanFiction.html
+2026-10-16 11:14:30.963 -07:00 [INF] Chapter name: 013: Chapter 9
+2026-10-16 11:14:55.254 -07:00 [INF] Processing Folder: ayotd
+2026-10-16 11:15:59.636 -07:00 [INF] Processing multiple files:
+2026-10-16 11:16:11.701 -07:00 [INF] Processing Folder: aw
+2026-10-16 11:16:11.751 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.790 -07:00 [INF] Chapter name: 005: Chapter 1
+2026-10-16 11:16:11.805 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 10, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.810 -07:00 [INF] Chapter name: 014: Chapter 10
+2026-10-16 11:16:11.827 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 11, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.832 -07:00 [INF] Chapter name: 015: Chapter 11
+2026-10-16 11:16:11.843 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 12, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.847 -07:00 [INF] Chapter name: 016: Chapter 12
+2026-10-16 11:16:11.859 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 13, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.866 -07:00 [INF] Chapter name: 017: Chapter 13
+2026-10-16 11:16:11.875 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 14, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.885 -07:00 [INF] Chapter name: 018: Chapter 14
+2026-10-16 11:16:11.891 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 15, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.894 -07:00 [INF] Chapter name: 019: Chapter 15
+2026-10-16 11:16:11.906 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 16, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.912 -07:00 [INF] Chapter name: 020: Chapter 16
+2026-10-16 11:16:11.922 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 17, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.928 -07:00 [INF] Chapter name: 022: Chapter 17
+2026-10-16 11:16:11.938 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 18, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.945 -07:00 [INF] Chapter name: 023: Chapter 18
+2026-10-16 11:16:11.954 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 19, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.960 -07:00 [INF] Chapter name: 024: Chapter 19
+2026-10-16 11:16:11.969 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 1_ Prologue, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.976 -07:00 [INF] Chapter name: 001: Prologue
+2026-10-16 11:16:11.985 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:11.992 -07:00 [INF] Chapter name: 006: Chapter 2
+2026-10-16 11:16:12.001 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 20, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.013 -07:00 [INF] Chapter name: 025: Chapter 20
+2026-10-16 11:16:12.017 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.023 -07:00 [INF] Chapter name: 026: Chapter 21
+2026-10-16 11:16:12.033 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 21_ Intermission, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.036 -07:00 [INF] Chapter name: 021: Intermission
+2026-10-16 11:16:12.049 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 22, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.052 -07:00 [INF] Chapter name: 027: Chapter 22
+2026-10-16 11:16:12.065 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 23, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.068 -07:00 [INF] Chapter name: 028: Chapter 23
+2026-10-16 11:16:12.080 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 24, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.083 -07:00 [INF] Chapter name: 029: Chapter 24
+2026-10-16 11:16:12.096 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 25, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.100 -07:00 [INF] Chapter name: 030: Chapter 25
+2026-10-16 11:16:12.112 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 26, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.115 -07:00 [INF] Chapter name: 031: Chapter 26
+2026-10-16 11:16:12.127 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 27, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.136 -07:00 [INF] Chapter name: 032: Chapter 27
+2026-10-16 11:16:12.142 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 28, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.145 -07:00 [INF] Chapter name: 033: Chapter 28
+2026-10-16 11:16:12.157 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 29, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.160 -07:00 [INF] Chapter name: 034: Chapter 29
+2026-10-16 11:16:12.172 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 2_ Prologue_ Part Two, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.175 -07:00 [INF] Chapter name: 002: Prologue: Part Two
+2026-10-16 11:16:12.188 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.191 -07:00 [INF] Chapter name: 007: Chapter 3
+2026-10-16 11:16:12.204 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 30, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.207 -07:00 [INF] Chapter name: 035: Chapter 30
+2026-10-16 11:16:12.220 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 31, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.224 -07:00 [INF] Chapter name: 036: Chapter 31
+2026-10-16 11:16:12.236 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 32, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.252 -07:00 [INF] Chapter name: 037: Chapter 32
+2026-10-16 11:16:12.266 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 33, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.273 -07:00 [INF] Chapter name: 038: Chapter 33
+2026-10-16 11:16:12.282 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 34, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.285 -07:00 [INF] Chapter name: 039: Chapter 34
+2026-10-16 11:16:12.298 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 35, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.301 -07:00 [INF] Chapter name: 040: Chapter 35
+2026-10-16 11:16:12.303 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 36, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.310 -07:00 [INF] Chapter name: 041: Chapter 36
+2026-10-16 11:16:12.311 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 37, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.315 -07:00 [INF] Chapter name: 042: Chapter 37
+2026-10-16 11:16:12.328 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 38, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.332 -07:00 [INF] Chapter name: 043: Chapter 38
+2026-10-16 11:16:12.344 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 3_ Prologue_ Part Three, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.347 -07:00 [INF] Chapter name: 003: Prologue: Part Three
+2026-10-16 11:16:12.359 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.365 -07:00 [INF] Chapter name: 008: Chapter 4
+2026-10-16 11:16:12.375 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 4_ Prologue_ Part Four, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.380 -07:00 [INF] Chapter name: 004: Prologue: Part Four
+2026-10-16 11:16:12.390 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 5, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.394 -07:00 [INF] Chapter name: 009: Chapter 5
+2026-10-16 11:16:12.405 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 6, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.409 -07:00 [INF] Chapter name: 010: Chapter 6
+2026-10-16 11:16:12.421 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 7, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.424 -07:00 [INF] Chapter name: 011: Chapter 7
+2026-10-16 11:16:12.437 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 8, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.440 -07:00 [INF] Chapter name: 012: Chapter 8
+2026-10-16 11:16:12.453 -07:00 [DBG] Currently processing file: data\aw\Another Way Chapter 9, a worm fanfic _ FanFiction.html
+2026-10-16 11:16:12.460 -07:00 [INF] Chapter name: 013: Chapter 9
+2026-10-16 11:16:12.492 -07:00 [INF] Processing Folder: ayaotd
+2026-10-16 11:16:12.496 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 1, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.499 -07:00 [INF] Chapter name: 001: Chapter 1
+2026-10-16 11:16:12.517 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 10, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.519 -07:00 [INF] Chapter name: 010: Chapter 10
+2026-10-16 11:16:12.532 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 11, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.535 -07:00 [INF] Chapter name: 011: Chapter 11
+2026-10-16 11:16:12.548 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 12, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.551 -07:00 [INF] Chapter name: 012: Chapter 12
+2026-10-16 11:16:12.565 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 13, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.568 -07:00 [INF] Chapter name: 013: Chapter 13
+2026-10-16 11:16:12.580 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 14, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.583 -07:00 [INF] Chapter name: 014: Chapter 14
+2026-10-16 11:16:12.595 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 15, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.603 -07:00 [INF] Chapter name: 015: Chapter 15
+2026-10-16 11:16:12.611 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 16, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.614 -07:00 [INF] Chapter name: 016: Chapter 16
+2026-10-16 11:16:12.627 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 2, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.630 -07:00 [INF] Chapter name: 002: Chapter 2
+2026-10-16 11:16:12.642 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 3, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.645 -07:00 [INF] Chapter name: 003: Chapter 3
+2026-10-16 11:16:12.657 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 4, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.660 -07:00 [INF] Chapter name: 004: Chapter 4
+2026-10-16 11:16:12.672 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 5, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.676 -07:00 [INF] Chapter name: 005: Chapter 5
+2026-10-16 11:16:12.688 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 6, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.692 -07:00 [INF] Chapter name: 006: Chapter 6
+2026-10-16 11:16:12.704 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 7, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.707 -07:00 [INF] Chapter name: 007: Chapter 7
+2026-10-16 11:16:12.719 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 8, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.725 -07:00 [INF] Chapter name: 008: Chapter 8
+2026-10-16 11:16:12.735 -07:00 [DBG] Currently processing file: data\ayaotd\Are You Afraid of the Dark_ Chapter 9, a Worm + John Wick Crossover fanfic _ FanFiction.html
+2026-10-16 11:16:12.739 -07:00 [INF] Chapter name: 009: Chapter 9
