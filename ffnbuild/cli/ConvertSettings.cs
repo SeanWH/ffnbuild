@@ -6,7 +6,11 @@ using Spectre.Console.Cli;
 
 public class ConvertSettings : CommandSettings
 {
+    [CommandOption("-d|--date")]
+    [Description("The date to filter folders by in YYYY-MM-DD format. Use '!' to process current date. Leave blank to process all dates.")]
+    public string? Date { get; init; } = string.Empty;
+
     [CommandArgument(0, "<sourcePath>")]
     [Description("The name of the folder containing the files to convert.  Multiple folders may be comma-separated.")]
-    public string SourcePath { get; set; } = string.Empty;
+    public string[] SourcePath { get; init; } = Array.Empty<string>();
 }

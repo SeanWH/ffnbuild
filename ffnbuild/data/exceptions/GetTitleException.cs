@@ -1,4 +1,4 @@
-﻿namespace ffnbuild;
+﻿namespace ffnbuild.data.exceptions;
 
 using System;
 

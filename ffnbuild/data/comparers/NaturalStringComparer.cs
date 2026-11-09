@@ -1,4 +1,4 @@
-﻿namespace ffnbuild;
+﻿namespace ffnbuild.data.comparers;
 
 using System;
 using System.Collections.Generic;
@@ -9,17 +9,17 @@ public class NaturalStringComparer : IComparer<string>
     public int Compare(string? x, string? y)
     {
         // Handle nulls safely
-        if (x == null && y == null)
+        if( x == null && y == null )
         {
             return 0;
         }
 
-        if (x == null)
+        if( x == null )
         {
             return -1;
         }
 
-        if (y == null)
+        if( y == null )
         {
             return 1;
         }
@@ -31,15 +31,15 @@ public class NaturalStringComparer : IComparer<string>
 
         int maxParts = Math.Max(xParts.Count, yParts.Count);
 
-        for (int i = 0; i < maxParts; i++)
+        for( int i = 0; i < maxParts; i++ )
         {
             // If one string has fewer parts, it comes first
-            if (i >= xParts.Count)
+            if( i >= xParts.Count )
             {
                 return -1;
             }
 
-            if (i >= yParts.Count)
+            if( i >= yParts.Count )
             {
                 return 1;
             }
@@ -48,10 +48,10 @@ public class NaturalStringComparer : IComparer<string>
             string yPart = yParts[i].Value;
 
             // If both parts are numbers, compare numerically
-            if (int.TryParse(xPart, out int xNum) && int.TryParse(yPart, out int yNum))
+            if( int.TryParse(xPart, out int xNum) && int.TryParse(yPart, out int yNum) )
             {
                 int numCompare = xNum.CompareTo(yNum);
-                if (numCompare != 0)
+                if( numCompare != 0 )
                 {
                     return numCompare;
                 }
@@ -60,7 +60,7 @@ public class NaturalStringComparer : IComparer<string>
             {
                 // Compare text parts case-insensitively
                 int textCompare = string.Compare(xPart, yPart, StringComparison.OrdinalIgnoreCase);
-                if (textCompare != 0)
+                if( textCompare != 0 )
                 {
                     return textCompare;
                 }

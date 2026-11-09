@@ -1,12 +1,14 @@
-﻿namespace ffnbuild;
+﻿namespace ffnbuild.data.converters;
 
 using System.Collections.Generic;
+
+using ffnbuild.data.extensions;
 
 public static class TextToDigitConverter
 {
     public static string Convert(string? input)
     {
-        if (string.IsNullOrEmpty(input))
+        if( string.IsNullOrEmpty(input) )
         {
             return string.Empty;
         }
@@ -46,34 +48,56 @@ public static class TextToDigitConverter
 
         List<string> numberParts = [];
 
-        foreach (var word in words)
+        foreach( var word in words )
         {
             var lowerWord = word.ToLowerInvariant();
-            if (digitMap.ContainsKey(lowerWord))
+            if( digitMap.ContainsKey(lowerWord) )
             {
                 numberParts.Add(lowerWord);
             }
         }
 
-        if (numberParts.Count == 0)
+        if( numberParts.Count == 0 )
         {
             return input;
         }
 
         int total = 0;
 
-        if (numberParts.Count == 1)
+        if( numberParts.Count == 1 )
         {
             total = digitMap[numberParts[0]];
         }
         else
         {
-            foreach (var word in numberParts)
+            foreach( var word in numberParts )
             {
                 total += digitMap[word];
             }
         }
 
         return total.ToString("00");
+    }
+
+    public static bool IsANumber(this string? input)
+    {
+        if( string.IsNullOrEmpty(input) )
+        {
+            return false;
+        }
+        string[] digits = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
+
+        if( input.Contains("-") )
+        {
+            var parts = input.Split('-');
+            bool isANumber = false;
+            foreach( var part in parts )
+            {
+                isANumber |= part.ToLower().IsIn(digits);
+            }
+            return isANumber;
+        }
+
+        return input.ToLower().IsIn(digits);
     }
 }

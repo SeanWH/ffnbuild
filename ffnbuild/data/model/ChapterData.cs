@@ -1,4 +1,4 @@
-﻿namespace ffnbuild;
+﻿namespace ffnbuild.data.model;
 
 using System.Collections.Generic;
 
