@@ -182,6 +182,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
         {
             SaveTextFile(_storyName.Trim(), _storyMetaData);
             AnsiConsole.MarkupLine($"[green]Successfully created text file for story:[/] {_storyName}");
+            AnsiConsole.MarkupLine("[green]================================================================================[/]");
         }
         else
         {
