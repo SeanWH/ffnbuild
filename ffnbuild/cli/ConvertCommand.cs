@@ -253,7 +253,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
         }
     }
 
-    protected override int Execute(CommandContext context, ConvertSettings settings, CancellationToken cancellationToken)
+    public override int Execute(CommandContext context, ConvertSettings settings, CancellationToken cancellationToken)
     {
         Log.Logger = new LoggerConfiguration()
            .MinimumLevel.Verbose()
