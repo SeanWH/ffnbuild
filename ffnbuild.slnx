@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="ffnbuild.Tests/ffnbuild.Tests.csproj" Id="2bcc5d84-580f-446c-9fda-715553b30acb" />
+  <Folder Name="/Solution Items/" />
   <Project Path="ffnbuild/ffnbuild.csproj" />
-  <Project Path="ffnparser.tests/ffnparser.tests.csproj" Id="46d468f9-e269-4ad0-93f1-5926352ab772" />
+  <Project Path="ffnparser.tests/ffnparser.tests.csproj" Id="b5b90c1a-541e-4447-b79b-cd4531911388" />
   <Project Path="ffnparser/ffnparser.csproj" Id="da5f6453-0f10-4617-9728-01c43726dae5" />
 </Solution>

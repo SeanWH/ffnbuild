@@ -4,11 +4,11 @@ using System;
 
 using ffnparser.data.extensions;
 
-public interface IFfnUrl : IComparable<IFfnUrl>, IEquatable<IFfnUrl>
+public interface IFfnAddress : IComparable<IFfnAddress>, IEquatable<IFfnAddress>
 {
     string Address { get; }
-    string LinkedId { get; }
-    LinkType LinkType { get; }
+    int LinkedId { get; }
+    string LinkType { get; }
     string Text { get; }
 
     public static string FormatText(string? text)

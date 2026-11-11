@@ -1,4 +1,4 @@
-﻿namespace ffnparser.tests;
+﻿namespace ffnparser.tests.extensions;
 
 using ffnparser.data.extensions;
 

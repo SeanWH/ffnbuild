@@ -2,23 +2,58 @@
 
 using ffnparser.data.extensions;
 
-public sealed class UserAddress : IFfnUrl
+public sealed class UserAddress : IFfnAddress
 {
     public string Address { get; private set; }
-    public string LinkedId { get; private set; }
-    public LinkType LinkType { get; private set; }
-    public string Text => IFfnUrl.FormatText(UserName);
+    public int LinkedId { get; private set; }
+    public string LinkType => "user";
+    public string Text => IFfnAddress.FormatText(UserName);
     public string UserName { get; private set; }
 
-    public UserAddress(string address, string linkedId, LinkType linkType, string userName)
+    public UserAddress(string address, int linkedId, string userName)
     {
         Address = address;
         LinkedId = linkedId;
-        LinkType = linkType;
+
         UserName = userName;
     }
 
-    public int CompareTo(IFfnUrl? other)
+    public static bool operator !=(UserAddress left, UserAddress right)
+    {
+        return !(left == right);
+    }
+
+    public static bool operator <(UserAddress left, UserAddress right)
+    {
+        return ReferenceEquals(left, null) ? !ReferenceEquals(right, null) : left.CompareTo(right) < 0;
+    }
+
+    public static bool operator <=(UserAddress left, UserAddress right)
+    {
+        return ReferenceEquals(left, null) || left.CompareTo(right) <= 0;
+    }
+
+    public static bool operator ==(UserAddress left, UserAddress right)
+    {
+        if( ReferenceEquals(left, null) )
+        {
+            return ReferenceEquals(right, null);
+        }
+
+        return left.Equals(right);
+    }
+
+    public static bool operator >(UserAddress left, UserAddress right)
+    {
+        return !ReferenceEquals(left, null) && left.CompareTo(right) > 0;
+    }
+
+    public static bool operator >=(UserAddress left, UserAddress right)
+    {
+        return ReferenceEquals(left, null) ? ReferenceEquals(right, null) : left.CompareTo(right) >= 0;
+    }
+
+    public int CompareTo(IFfnAddress? other)
     {
         if( ReferenceEquals(this, other) )
         {
@@ -27,13 +62,13 @@ public sealed class UserAddress : IFfnUrl
 
         if( other is UserAddress otherUser )
         {
-            return string.CompareOrdinal(LinkedId, otherUser.LinkedId);
+            return LinkedId.CompareTo(otherUser.LinkedId);
         }
 
         return -1;
     }
 
-    public bool Equals(IFfnUrl? other)
+    public bool Equals(IFfnAddress? other)
     {
         if( other is UserAddress otherUser )
         {

@@ -1,4 +1,4 @@
-﻿namespace ffnparser.tests;
+﻿namespace ffnparser.tests.addresses;
 
 using ffnparser.data.model.addresses;
 
@@ -11,7 +11,7 @@ public class IFfnUrlTests
         string input = "Hello-World_This-Is_A-Test";
         string expected = "Hello World This Is A Test";
         // Act
-        var actual = IFfnUrl.FormatText(input);
+        var actual = IFfnAddress.FormatText(input);
         // Assert
         Assert.Equal(expected, actual);
     }
@@ -24,9 +24,9 @@ public class IFfnUrlTests
         string whitespaceInput = "   ";
         string emptyInput = "";
         // Act
-        var resultNull = IFfnUrl.FormatText(nullInput);
-        var resultWhitespace = IFfnUrl.FormatText(whitespaceInput);
-        var resultEmpty = IFfnUrl.FormatText(emptyInput);
+        var resultNull = IFfnAddress.FormatText(nullInput);
+        var resultWhitespace = IFfnAddress.FormatText(whitespaceInput);
+        var resultEmpty = IFfnAddress.FormatText(emptyInput);
         // Assert
         Assert.Equal(string.Empty, resultNull);
         Assert.Equal(string.Empty, resultWhitespace);
