@@ -1,4 +1,4 @@
-﻿namespace ffnbuild.data.model;
+﻿namespace ffnparser.data.model;
 
 using System.Collections.Generic;
 

@@ -4,7 +4,6 @@ using ffnparser.data.extensions;
 
 public static class FfnAddressFactory
 {
-    private const int AUTHOR_ID = 2;
     private const int AUTHOR_NAME = 3;
     private const int CHAPTER_IDX = 3;
     private const int STORY_ID = 2;
@@ -12,14 +11,14 @@ public static class FfnAddressFactory
 
     private static string RemoveProtocol(string address)
     {
-        if (address.StartsWith("https://"))
+        if( address.StartsWith("https://") )
         {
             //removes https://www.
             //Used to be 12
             address = address.Substring(8);
         }
 
-        if (address.StartsWith("http://"))
+        if( address.StartsWith("http://") )
         {
             //removes http://www.
             //Used to be 11
@@ -38,20 +37,20 @@ public static class FfnAddressFactory
 
     public static IFfnAddress? GetAddress(string address)
     {
-        if (string.IsNullOrWhiteSpace(address))
+        if( string.IsNullOrWhiteSpace(address) )
         {
             return null;
         }
 
         string[] parts = SplitAddress(address);
 
-        if (parts.Length == 1)
+        if( parts.Length == 1 )
         {
             //This type of author address does not contain all the required parts.
             return new PageAddress(address);
         }
 
-        if (parts.Length < 4 && parts[0] == "u")
+        if( parts.Length < 4 && parts[0] == "u" )
         {
             address = $"https://www.fanfiction.net/{address}";
             var linkedId = Convert.ToInt32(parts[AUTHOR_NAME - 2]);
@@ -59,17 +58,17 @@ public static class FfnAddressFactory
             return new UserAddress(address, linkedId, userName);
         }
 
-        if (parts[1].IsIn("s", "u"))
+        if( parts[1].IsIn("s", "u") )
         {
-            if (parts[1] == "s")
+            if( parts[1] == "s" )
             {
                 var storyId = Convert.ToInt32(parts[STORY_ID]);
                 return new StoryAddress(address, storyId, parts[STORY_NAME], parts[CHAPTER_IDX], "");
             }
 
-            if (parts[1] == "u")
+            if( parts[1] == "u" )
             {
-                if (string.IsNullOrWhiteSpace(parts[0]))
+                if( string.IsNullOrWhiteSpace(parts[0]) )
                 {
                     return new PageAddress(address);
                 }

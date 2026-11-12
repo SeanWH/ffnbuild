@@ -5,9 +5,10 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-using ffnbuild.data.comparers;
 using ffnbuild.data.exceptions;
-using ffnbuild.data.model;
+
+using ffnparser.data.comparers;
+using ffnparser.data.model;
 
 using Serilog;
 
@@ -140,8 +141,8 @@ public partial class ConvertCommand : Command<ConvertSettings>
             }
             _storyMetaData = new StoryMetaData
             {
-                AuthorUrl = htmlProcessor.GetAuthorAddress()!.Address,
-                Author = htmlProcessor.GetAuthorName(),
+                AuthorUrl = htmlProcessor.GetUserAddress()!.Address,
+                Author = htmlProcessor.GetUserName() ?? string.Empty,
                 StoryUrl = htmlProcessor.GetUrl(),
                 Title = _storyName
             };

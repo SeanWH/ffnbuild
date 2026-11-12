@@ -1,4 +1,4 @@
-﻿namespace ffnbuild.data.model;
+﻿namespace ffnparser.data.model;
 
 public record StoryMetaData
 {
