@@ -1,11 +1,11 @@
 ﻿namespace ffnparser.data.model.pages;
 
-using System.Collections.Generic;
-
 using ffnparser.data.model.addresses;
 using ffnparser.data.model.story;
 
 using HtmlAgilityPack;
+
+using System.Collections.Generic;
 
 public class UserPage : PageBase
 {
@@ -13,22 +13,22 @@ public class UserPage : PageBase
     {
         var favAuthors = Document?.DocumentNode?.SelectNodes("//div[@id='fa']")?[0] ?? null;
         var authorNodes = favAuthors?.SelectNodes(".//a[contains(@href,'/u/')]/@href");
-        if( authorNodes == null )
+        if (authorNodes == null)
         {
             return;
         }
-        foreach( HtmlNode author in authorNodes )
+        foreach (HtmlNode author in authorNodes)
         {
-            if( author == null )
+            if (author == null)
             {
                 continue;
             }
 
-            if( author.HasAttributes && author?.Attributes["href"] != null )
+            if (author.HasAttributes && author?.Attributes["href"] != null)
             {
                 var userAddress = author?.Attributes["href"]?.Value ?? string.Empty;
                 var address = FfnAddressFactory.GetAddress(userAddress);
-                if( address is UserAddress authorAddress )
+                if (address is UserAddress authorAddress)
                 {
                     FavoriteAuthors.Add(authorAddress);
                 }
@@ -40,7 +40,7 @@ public class UserPage : PageBase
     {
         var storyNodes = Document.DocumentNode
            .SelectNodes("//div[@class='z-list favstories']");
-        if( storyNodes == null )
+        if (storyNodes == null)
         {
             return;
         }
@@ -60,12 +60,23 @@ public class UserPage : PageBase
     {
         List<StoryData> storyDataList = new List<StoryData>();
 
-        foreach( HtmlNode storyNode in storyNodes )
+        foreach (HtmlNode storyNode in storyNodes)
         {
             var storyUrl = storyNode?.SelectNodes(".//a[@class='stitle']")?[0]?.Attributes["href"]?.Value ?? string.Empty;
+
+            if (storyUrl.StartsWith('/'))
+            {
+                storyUrl = $"https://www.fanfiction.net{storyUrl}";
+            }
+            else if (storyUrl.StartsWith('s'))
+            {
+                storyUrl = $"https://www.fanfiction.net/{storyUrl}";
+            }
+
+
             var storyTitle = storyNode?.Attributes["data-title"]?.Value ?? string.Empty;
 
-            if( string.IsNullOrEmpty(storyUrl) || string.IsNullOrEmpty(storyTitle) )
+            if (string.IsNullOrEmpty(storyUrl) || string.IsNullOrEmpty(storyTitle))
             {
                 continue;
             }
@@ -73,7 +84,7 @@ public class UserPage : PageBase
             var storyAddress = FfnAddressFactory.GetAddress(storyUrl);
             var authorAddress = FfnAddressFactory.GetAddress(CanonicalUrl);
 
-            if( storyAddress is StoryAddress sAddress && authorAddress is UserAddress aAddress )
+            if (storyAddress is StoryAddress sAddress && authorAddress is UserAddress aAddress)
             {
                 storyDataList.Add(
                     new StoryData(
@@ -91,7 +102,7 @@ public class UserPage : PageBase
         var storyNodes = Document.DocumentNode
             .SelectNodes("//div[@class='z-list mystories']");
 
-        if( storyNodes == null )
+        if (storyNodes == null)
         {
             return;
         }

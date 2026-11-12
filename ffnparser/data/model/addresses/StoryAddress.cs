@@ -37,7 +37,7 @@ public sealed class StoryAddress : IFfnAddress
 
     public static bool operator ==(StoryAddress left, StoryAddress right)
     {
-        if( ReferenceEquals(left, null) )
+        if (ReferenceEquals(left, null))
         {
             return ReferenceEquals(right, null);
         }
@@ -57,11 +57,11 @@ public sealed class StoryAddress : IFfnAddress
 
     public int CompareTo(IFfnAddress? other)
     {
-        if( ReferenceEquals(this, other) )
+        if (ReferenceEquals(this, other))
         {
             return 0;
         }
-        if( other is StoryAddress otherStory )
+        if (other is StoryAddress otherStory)
         {
             return LinkedId.CompareTo(otherStory.LinkedId);
         }
@@ -70,7 +70,7 @@ public sealed class StoryAddress : IFfnAddress
 
     public bool Equals(IFfnAddress? other)
     {
-        if( other is StoryAddress otherStory )
+        if (other is StoryAddress otherStory)
         {
             return LinkedId == otherStory.LinkedId;
         }
@@ -79,11 +79,11 @@ public sealed class StoryAddress : IFfnAddress
 
     public override bool Equals(object? obj)
     {
-        if( ReferenceEquals(this, obj) )
+        if (ReferenceEquals(this, obj))
         {
             return true;
         }
-        if( obj is StoryAddress otherStory )
+        if (obj is StoryAddress otherStory)
         {
             return Equals(otherStory);
         }

@@ -32,7 +32,7 @@ public sealed class PageAddress : IFfnAddress
 
     public static bool operator ==(PageAddress left, PageAddress right)
     {
-        if( ReferenceEquals(left, null) )
+        if (ReferenceEquals(left, null))
         {
             return ReferenceEquals(right, null);
         }
@@ -52,7 +52,7 @@ public sealed class PageAddress : IFfnAddress
 
     public int CompareTo(IFfnAddress? other)
     {
-        if( other is null )
+        if (other is null)
         {
             return 1;
         }
@@ -63,17 +63,17 @@ public sealed class PageAddress : IFfnAddress
 
     public override bool Equals(object? obj)
     {
-        if( ReferenceEquals(this, obj) )
+        if (ReferenceEquals(this, obj))
         {
             return true;
         }
 
-        if( ReferenceEquals(obj, null) )
+        if (ReferenceEquals(obj, null))
         {
             return false;
         }
 
-        if( obj is PageAddress pageAddress )
+        if (obj is PageAddress pageAddress)
         {
             return Equals(pageAddress);
         }
@@ -83,7 +83,7 @@ public sealed class PageAddress : IFfnAddress
 
     public bool Equals(IFfnAddress? other)
     {
-        if( other is null )
+        if (other is null)
         {
             return false;
         }
@@ -91,5 +91,14 @@ public sealed class PageAddress : IFfnAddress
         return LinkType.Equals(other.LinkType) && Address.Equals(other.Address) && LinkedId.Equals(other.LinkedId);
     }
 
-    public override int GetHashCode() => Address.Hash256() ^ LinkedId.Hash256() ^ LinkType.Hash256();
+    public override int GetHashCode()
+    {
+        var addrHash = Address.Hash256();
+        var linkedIdHash = LinkedId.Hash256();
+        var linkTypeHash = LinkType.Hash256();
+
+        var hashCode = addrHash ^ linkedIdHash ^ linkTypeHash;
+
+        return hashCode;
+    }
 }

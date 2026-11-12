@@ -1,8 +1,8 @@
 ﻿namespace ffnparser.tests.addresses;
 
-using System;
-
 using ffnparser.data.model.addresses;
+
+using System;
 
 using Xunit;
 
@@ -32,11 +32,11 @@ public class StoryAddressTests
     }
 
     [Theory]
-    [InlineData(100, 200, -1)] // Ordinal: 100 < 200
-    [InlineData(200, 100, 1)]  // Ordinal: 200 > 100
-    [InlineData(10, 2, -1)]    // Ordinal comparison checks char-by-char ('1' < '2')
-    [InlineData(123, 123, 0)]  // Equal LinkedIds
-    public void CompareTo_AnotherStoryAddress_ComparesLinkedIdOrdinally(int idA, int idB, int expectedSign)
+    [InlineData(100, 200, -1)]
+    [InlineData(200, 100, 1)]
+    [InlineData(10, 2, 1)]
+    [InlineData(123, 123, 0)]
+    public void CompareTo_AnotherStoryAddress_ComparesLinkedIdNumerically(int idA, int idB, int expectedSign)
     {
         var storyA = CreateDefault(linkedId: idA, chapterId: "1");
         var storyB = CreateDefault(linkedId: idB, chapterId: "99"); // Different chapterId to prove only LinkedId matters

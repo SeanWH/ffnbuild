@@ -26,7 +26,7 @@ public sealed class GroupAddress : IFfnAddress
 
     public static bool operator ==(GroupAddress left, GroupAddress right)
     {
-        if( ReferenceEquals(left, null) )
+        if (ReferenceEquals(left, null))
         {
             return ReferenceEquals(right, null);
         }
@@ -40,12 +40,12 @@ public sealed class GroupAddress : IFfnAddress
 
     public int CompareTo(IFfnAddress? other)
     {
-        if( ReferenceEquals(this, other) )
+        if (ReferenceEquals(this, other))
         {
             return 0;
         }
 
-        if( other is GroupAddress otherGroup )
+        if (other is GroupAddress otherGroup)
         {
             int val = string.CompareOrdinal(GroupName, otherGroup.GroupName);
             val = val == 0 ? string.CompareOrdinal(Address, otherGroup.Address) : val;
@@ -57,7 +57,7 @@ public sealed class GroupAddress : IFfnAddress
 
     public bool Equals(IFfnAddress? other)
     {
-        if( other is GroupAddress otherGroup )
+        if (other is GroupAddress otherGroup)
         {
             return GroupName.Equals(otherGroup.GroupName) && Address.Equals(otherGroup.Address) && LinkedId.Equals(otherGroup.LinkedId);
         }
@@ -67,17 +67,17 @@ public sealed class GroupAddress : IFfnAddress
 
     public override bool Equals(object? obj)
     {
-        if( ReferenceEquals(this, obj) )
+        if (ReferenceEquals(this, obj))
         {
             return true;
         }
 
-        if( ReferenceEquals(obj, null) )
+        if (ReferenceEquals(obj, null))
         {
             return false;
         }
 
-        if( obj is GroupAddress address )
+        if (obj is GroupAddress address)
         {
             return Equals(address);
         }
@@ -85,5 +85,15 @@ public sealed class GroupAddress : IFfnAddress
         return false;
     }
 
-    public override int GetHashCode() => GroupName.Hash256() ^ Address.Hash256() ^ LinkType.Hash256() ^ LinkedId.Hash256();
+    public override int GetHashCode()
+    {
+        var gNameHash = GroupName.Hash256();
+        var addrHash = Address.Hash256();
+        var linkTypeHash = LinkType.Hash256();
+        var linkedIdHash = LinkedId.Hash256();
+
+        var hashCode = gNameHash ^ addrHash ^ linkTypeHash ^ linkedIdHash;
+
+        return hashCode;
+    }
 }

@@ -1,9 +1,9 @@
 ﻿namespace ffnparser.tests.addresses;
 
-using System;
-
 using ffnparser.data.extensions;
 using ffnparser.data.model.addresses;
+
+using System;
 
 using Xunit;
 
@@ -220,9 +220,16 @@ public sealed class PageAddressTests
     public void GetHashCode_ComputesExpectedXorHash()
     {
         var sut = new PageAddress("https://example.com", 1);
-        var expected = "https://example.com".Hash256() ^ 1.GetHashCode() ^ "page".Hash256();
 
-        Assert.Equal(expected, sut.GetHashCode());
+        var addrHash = "https://example.com".Hash256();
+        var linkedIdHash = 1.Hash256();
+        var linkTypeHash = "page".Hash256();
+
+        var expected = addrHash ^ linkedIdHash ^ linkTypeHash;
+        var actual = sut.GetHashCode();
+
+
+        Assert.Equal(expected, actual);
     }
 
     [Fact]

@@ -163,7 +163,7 @@ public class UserPageTests
         string html = """
             <html>
                 <head>
-                    <link rel="canonical" href="https://fanfiction.net" />
+                    <link rel="canonical" href="https://fanfiction.net/u/12345/JohnDoe" />
                 </head>
                 <body>
                     <div class="z-list mystories" data-title="My First Story">

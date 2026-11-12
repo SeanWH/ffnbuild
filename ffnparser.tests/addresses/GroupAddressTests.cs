@@ -191,9 +191,16 @@ public class GroupAddressTests
     public void GetHashCode_ComputesExpectedXorHash()
     {
         var sut = new GroupAddress("addr", "Writers Guild", 42);
-        var expected = "Writers Guild".Hash256() ^ "addr".Hash256() ^ "group".Hash256() ^ 42.GetHashCode();
 
-        Assert.Equal(expected, sut.GetHashCode());
+        var gNameHash = "Writers Guild".Hash256();
+        var addrHash = "addr".Hash256();
+        var linkTypeHash = "group".Hash256();
+        var linkedIdHash = 42.Hash256();
+
+        var expected = gNameHash ^ addrHash ^ linkTypeHash ^ linkedIdHash;
+        var actual = sut.GetHashCode();
+
+        Assert.Equal(expected, actual);
     }
 
     [Fact]
