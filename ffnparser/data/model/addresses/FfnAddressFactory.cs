@@ -1,13 +1,11 @@
 ﻿namespace ffnparser.data.model.addresses;
 
-using ffnparser.data.extensions;
-
 public static class FfnAddressFactory
 {
     private const int AUTHOR_NAME = 3;
     private const int CHAPTER_IDX = 3;
     private const int STORY_ID = 2;
-    private const int STORY_NAME = 4;
+    private const int STORY_NAME = 3;
 
     private static string RemoveProtocol(string address)
     {
@@ -58,23 +56,16 @@ public static class FfnAddressFactory
             return new UserAddress(address, linkedId, userName);
         }
 
-        if( parts[1].IsIn("s", "u") )
+        if( parts[1] == "s" )
         {
-            if( parts[1] == "s" )
-            {
-                var storyId = Convert.ToInt32(parts[STORY_ID]);
-                return new StoryAddress(address, storyId, parts[STORY_NAME], parts[CHAPTER_IDX], "");
-            }
+            var storyId = Convert.ToInt32(parts[STORY_ID]);
+            return new StoryAddress(address, storyId, parts[parts.Length - 1], parts[CHAPTER_IDX], "");
+        }
 
-            if( parts[1] == "u" )
-            {
-                if( string.IsNullOrWhiteSpace(parts[0]) )
-                {
-                    return new PageAddress(address);
-                }
-                var linkedId = Convert.ToInt32(parts[AUTHOR_NAME - 1]);
-                return new UserAddress(address, linkedId, parts[AUTHOR_NAME]);
-            }
+        if( parts[1] == "u" )
+        {
+            var linkedId = Convert.ToInt32(parts[AUTHOR_NAME - 1]);
+            return new UserAddress(address, linkedId, parts[AUTHOR_NAME]);
         }
 
         return new PageAddress(address);

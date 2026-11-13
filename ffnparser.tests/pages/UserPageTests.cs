@@ -6,6 +6,12 @@ using Xunit;
 
 public class UserPageTests
 {
+    private string LoadTestFile(string fileName)
+    {
+        var filePath = Path.Combine("test_files", fileName);
+        return File.ReadAllText(filePath);
+    }
+
     [Fact]
     public void Constructor_EmptyHtml_LeavesAllCollectionsEmpty()
     {
@@ -22,15 +28,7 @@ public class UserPageTests
     {
         // Hits: if (authorNodes == null) return; when div#fa exists but has no
         // /u/ anchors
-        string html = """
-            <html>
-                <body>
-                    <div id="fa">
-                        <p>This user has no favorite authors.</p>
-                    </div>
-                </body>
-            </html>
-            """;
+        string html = LoadTestFile("UserPageTestFileNoFavAuthors.html");
 
         var sut = new UserPage(html);
 
@@ -40,24 +38,13 @@ public class UserPageTests
     [Fact]
     public void Constructor_FavoriteAuthorsSectionWithValidAndInvalidLinks_PopulatesOnlyUserAddresses()
     {
-        string html = """
-            <html>
-                <body>
-                    <div id="fa">
-                        <a href="https://fanfiction.net/u/44444/Fav-Author-One">Fav Author One</a>
-                        <a href="https://fanfiction.net/u/55555/Fav-Author-Two">Fav Author Two</a>
-                        <a href="https://fanfiction.net/s/66666/1/Not-An-Author">Story Link</a>
-                        <a>Anchor Without Href</a>
-                    </div>
-                </body>
-            </html>
-            """;
+        string html = LoadTestFile("UserPageTestFile.html");
 
         var sut = new UserPage(html);
 
-        Assert.Equal(2, sut.FavoriteAuthors.Count);
-        Assert.Equal(44444, sut.FavoriteAuthors[0].LinkedId);
-        Assert.Equal(55555, sut.FavoriteAuthors[1].LinkedId);
+        Assert.Equal(143, sut.FavoriteAuthors.Count);
+        Assert.Equal(4713765, sut.FavoriteAuthors[0].LinkedId);
+        Assert.Equal(5180580, sut.FavoriteAuthors[1].LinkedId);
     }
 
     [Fact]
@@ -160,35 +147,27 @@ public class UserPageTests
     [Fact]
     public void Constructor_ValidUserStoriesAndFavoriteStories_PopulatesBothLists()
     {
-        string html = """
-            <html>
-                <head>
-                    <link rel="canonical" href="https://fanfiction.net/u/12345/JohnDoe" />
-                </head>
-                <body>
-                    <div class="z-list mystories" data-title="My First Story">
-                        <a class="stitle" href="/s/11111/1/My-First-Story">My First Story</a>
-                    </div>
-                    <div class="z-list mystories" data-title="My Second Story">
-                        <a class="stitle" href="/s/22222/1/My-Second-Story">My Second Story</a>
-                    </div>
-
-                    <div class="z-list favstories" data-title="Favorite Story One">
-                        <a class="stitle" href="/s/33333/1/Favorite-Story-One">Favorite Story One</a>
-                    </div>
-                </body>
-            </html>
-            """;
+        string html = LoadTestFile("UserPageTestFile.html");
 
         var sut = new UserPage(html);
 
-        Assert.Equal(2, sut.UserStories.Count);
-        Assert.Equal("My First Story", sut.UserStories[0].StoryTitle);
-        Assert.Equal(11111, sut.UserStories[0].StoryAddress.LinkedId);
-        Assert.Equal(12345, sut?.UserStories[0]?.AuthorAddress?.LinkedId);
+        Assert.Single(sut.UserStories);
+        Assert.Equal("A Life Resumed", sut.UserStories[0].StoryTitle);
+        Assert.Equal(1904279, sut.UserStories[0].StoryAddress.LinkedId);
+        Assert.Equal(596419, sut?.UserStories[0]?.AuthorAddress?.LinkedId);
 
-        Assert.Single(sut.FavoriteStories);
-        Assert.Equal("Favorite Story One", sut.FavoriteStories[0].StoryTitle);
-        Assert.Equal(33333, sut.FavoriteStories[0].StoryAddress.LinkedId);
+        Assert.Equal(500, sut?.FavoriteStories.Count);
+        Assert.Equal("Worldwar: Establishing A Balance", sut?.FavoriteStories[0].StoryTitle);
+        Assert.Equal(11827512, sut?.FavoriteStories[0].StoryAddress.LinkedId);
+    }
+
+    [Fact]
+    public void ProcessStoryNodes_MissingSTitleNodeAndMissingDataTitle_ReturnsEmptyStrings()
+    {
+        string html = LoadTestFile("UserPageTestFileMissingTagsForUserStory.html");
+
+        var sut = new UserPage(html);
+
+        Assert.Single(sut.UserStories);
     }
 }
