@@ -121,9 +121,12 @@ public class UserPage : PageBase
 
     public List<StoryData> UserStories { get; set; } = new();
 
-    public UserPage(string pageHtml)
+    public UserPage(string? pageHtml)
     {
-        PageSource = pageHtml;
-        ProcessPage();
+        if (!string.IsNullOrEmpty(pageHtml))
+        {
+            PageSource = pageHtml;
+            ProcessPage();
+        }
     }
 }

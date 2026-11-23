@@ -18,6 +18,19 @@ public class UserPageTests
     }
 
     [Fact]
+    public void Constructor_WhenHtmlIsNull_DoesNotThrowAndListsAreEmpty()
+    {
+        // Arrange & Act
+        var page = new UserPage(null);
+
+        // Assert
+        Assert.NotNull(page);
+        Assert.Empty(page.UserStories);
+        Assert.Empty(page.FavoriteStories);
+        Assert.Empty(page.FavoriteAuthors);
+    }
+
+    [Fact]
     public void Constructor_FavoriteAuthorsDivWithNoUserLinks_LeavesFavoriteAuthorsEmpty()
     {
         // Hits: if (authorNodes == null) return; when div#fa exists but has no
@@ -190,5 +203,125 @@ public class UserPageTests
         Assert.Single(sut.FavoriteStories);
         Assert.Equal("Favorite Story One", sut.FavoriteStories[0].StoryTitle);
         Assert.Equal(33333, sut.FavoriteStories[0].StoryAddress.LinkedId);
+    }
+
+    [Fact]
+    public void ProcessUserStories_ValidNodeWithLeadingSlashUrl_PopulatesUserStories()
+    {
+        // Arrange
+        string html = @"
+                <html>
+                  <head>
+                    <link rel='canonical' href='https://www.fanfiction.net/u/123456/AuthorName' />
+                  </head>
+                  <body>
+                    <div class='z-list mystories' data-title='Test Story Title'>
+                      <a class='stitle' href='/s/987654/1/Story-Name'>Story Name</a>
+                    </div>
+                  </body>
+                </html>";
+
+        // Act
+        var page = new UserPage(html);
+
+        // Assert
+        Assert.Single(page.UserStories);
+        var story = page.UserStories[0];
+        Assert.Equal("Test Story Title", story.StoryTitle);
+        Assert.Equal("https://www.fanfiction.net/s/987654/1/Story-Name", story.StoryAddress.Address);
+    }
+
+    [Fact]
+    public void ProcessUserStories_ValidNodeWithRelativeUrl_PopulatesUserStories()
+    {
+        // Arrange
+        string html = @"
+                <html>
+                  <head>
+                    <link rel='canonical' href='https://www.fanfiction.net/u/123456/AuthorName' />
+                  </head>
+                  <body>
+                    <div class='z-list mystories' data-title='Relative URL Story'>
+                      <a class='stitle' href='s/111222/1/Relative-Story'>Story</a>
+                    </div>
+                  </body>
+                </html>";
+
+        // Act
+        var page = new UserPage(html);
+
+        // Assert
+        Assert.Single(page.UserStories);
+        var story = page.UserStories[0];
+        Assert.Equal("Relative URL Story", story.StoryTitle);
+        Assert.Equal("https://www.fanfiction.net/s/111222/1/Relative-Story", story.StoryAddress.Address);
+    }
+
+    [Fact]
+    public void ProcessFavoriteStories_ValidNode_PopulatesFavoriteStories()
+    {
+        // Arrange
+        string html = @"
+                <html>
+                  <head>
+                    <link rel='canonical' href='https://www.fanfiction.net/u/123456/AuthorName' />
+                  </head>
+                  <body>
+                    <div class='z-list favstories' data-title='Fav Story Title'>
+                      <a class='stitle' href='/s/555444/1/Fav-Story'>Fav Story</a>
+                    </div>
+                  </body>
+                </html>";
+
+        // Act
+        var page = new UserPage(html);
+
+        // Assert
+        Assert.Single(page.FavoriteStories);
+        var story = page.FavoriteStories[0];
+        Assert.Equal("Fav Story Title", story.StoryTitle);
+        Assert.Equal("https://www.fanfiction.net/s/555444/1/Fav-Story", story.StoryAddress.Address);
+    }
+
+    [Fact]
+    public void ProcessFavoriteAuthors_ValidAuthorNode_PopulatesFavoriteAuthors()
+    {
+        // Arrange
+        string html = @"
+                <html>
+                  <body>
+                    <div id='fa'>
+                      <a href='/u/789012/FavoriteAuthor'>Favorite Author</a>
+                    </div>
+                  </body>
+                </html>";
+
+        // Act
+        var page = new UserPage(html);
+
+        // Assert
+        Assert.Single(page.FavoriteAuthors);
+        // Assumes UserAddress properly parses/exposes the path or identifier
+        Assert.Contains("789012", page.FavoriteAuthors[0].Address);
+    }
+
+    [Fact]
+    public void ProcessPage_WithMissingDataNodes_DoesNotThrowAndLeavesListsEmpty()
+    {
+        // Arrange - HTML structure lacks mystories, favstories, and fav authors div
+        string html = @"
+                <html>
+                  <body>
+                    <div>Some unrelated content</div>
+                  </body>
+                </html>";
+
+        // Act
+        var page = new UserPage(html);
+
+        // Assert
+        Assert.Empty(page.UserStories);
+        Assert.Empty(page.FavoriteStories);
+        Assert.Empty(page.FavoriteAuthors);
     }
 }
