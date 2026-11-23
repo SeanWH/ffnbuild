@@ -73,6 +73,43 @@ internal partial class HtmlProcessor
         _doc.Load(filePath);
     }
 
+    public string GetA03AuthorAddress()
+    {
+        var linkNode = _doc.DocumentNode.SelectSingleNode("//div[@class='byline']/a[@rel='author']");
+        if( linkNode != null )
+        {
+            return linkNode.GetAttributeValue("href", string.Empty);
+        }
+
+        return string.Empty;
+    }
+
+    public string GetA03AuthorName()
+    {
+        var linkNode = _doc.DocumentNode.SelectSingleNode("//div[@class='byline']/a[@rel='author']");
+    }
+
+    public string GetA03StoryTitle()
+    {
+        var titleNode = _doc.DocumentNode.SelectSingleNode("//div[@id='preface']/p[@class='message']/b");
+        if( titleNode != null )
+        {
+            return HtmlEntity.DeEntitize(titleNode.InnerText).Trim();
+        }
+        return string.Empty;
+    }
+
+    public string GetA03Url()
+    {
+        var linkNode = _doc.DocumentNode.SelectSingleNode("//div[@id='preface']/p[@class='message']/a[contains(@href, 'works')]");
+        if( linkNode != null )
+        {
+            return linkNode.GetAttributeValue("href", string.Empty);
+        }
+
+        return string.Empty;
+    }
+
     public AuthorAddress? GetAuthorAddress()
     {
         var a_s = _doc.DocumentNode.SelectNodes("//a[@class='xcontrast_txt']");
@@ -137,6 +174,10 @@ internal partial class HtmlProcessor
         }
 
         return string.Empty;
+    }
+
+    public StoryMetaData GetStoryMetaData()
+    {
     }
 
     public string GetStoryTitle()

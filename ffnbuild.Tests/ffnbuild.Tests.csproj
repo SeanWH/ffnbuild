@@ -32,4 +32,8 @@
     <ProjectReference Include="..\ffnbuild\ffnbuild.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="test_data\" />
+  </ItemGroup>
+
 </Project>

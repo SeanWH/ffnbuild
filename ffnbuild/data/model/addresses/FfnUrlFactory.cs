@@ -4,34 +4,54 @@ using ffnbuild.data.extensions;
 
 public static class FfnUrlFactory
 {
-    private const int AUTHOR_ID = 2;
-    private const int AUTHOR_NAME = 3;
-    private const int CHAPTER_IDX = 3;
-    private const int STORY_ID = 2;
-    private const int STORY_NAME = 4;
+    private record NormalizedAddress(string site, string address);
+    private record AddressParts(string site, string[] parts);
 
-    private static string RemoveProtocol(string address)
+    private static IFfnUrl? GetA03Address(AddressParts parts)
     {
-        if( address.StartsWith("https://") )
-        {
-            //removes https://www.
-            address = address.Substring(12);
-        }
-
-        if( address.StartsWith("http://") )
-        {
-            //removes http://www.
-            address = address.Substring(11);
-        }
-
-        return address;
     }
 
-    private static string[] SplitAddress(string address)
+    private static NormalizedAddress NormalizeAddress(string address)
     {
-        address = RemoveProtocol(address);
+        string site = "";
 
-        return address.Split('/');
+        if( address.StartsWith("https:") )
+        {
+            address = address.Replace("https:", string.Empty);
+        }
+
+        if( address.StartsWith("http:") )
+        {
+            address = address.Replace("http:", string.Empty);
+        }
+
+        if( address.StartsWith("//www.fanfiction.net") )
+        {
+            address = address.Replace("//www.fanfiction.net/", string.Empty);
+            site = "ffn";
+        }
+
+        if( address.StartsWith("//www.fanfiction.net") )
+        {
+            address = address.Replace("//www.fanfiction.net/", string.Empty);
+            site = "ffn";
+        }
+
+        if( address.StartsWith("//archiveofourown.org") )
+        {
+            address = address.Replace("//archiveofourown.org/", string.Empty);
+            site = "a03";
+        }
+
+        return new NormalizedAddress(site, address);
+    }
+
+    private static AddressParts SplitAddress(string address)
+    {
+        var normalized = NormalizeAddress(address);
+        var parts = normalized.address.Split('/', StringSplitOptions.RemoveEmptyEntries);
+
+        return new AddressParts(normalized.site, parts);
     }
 
     public static IFfnUrl? GetAddress(string address)
@@ -41,30 +61,37 @@ public static class FfnUrlFactory
             return null;
         }
 
-        string[] parts = SplitAddress(address);
+        var addressParts = SplitAddress(address);
+
+        if( address.StartsWith("https://archiveofourown.org") )
+        {
+            return GetA03Address(addressParts);
+        }
+
+        var parts = addressParts.parts;
+        var site = addressParts.site;
 
         if( parts.Length == 1 )
         {
-            //This type of author address does not contain all the required parts.
+            //This type of author address does not contain all the required parts
+            // or this isn't a recognized fanfiction page.
             return new PageAddress(address);
         }
 
-        if( parts.Length < 4 && parts[0] == "u" )
+        if( parts.Length == 4 && parts[0] == "s" )
         {
-            address = $"https://www.fanfiction.net{address}";
-            return new AuthorAddress(address, parts[AUTHOR_NAME - 1], parts[AUTHOR_ID - 1]);
+            return new StoryAddress(address, site, parts);
         }
 
-        if( parts[1].IsIn("s", "u") )
+        if( parts.Length == 3 && parts[0].IsIn("community", "u") )
         {
-            if( parts[1] == "s" )
+            if( parts[0] == "u" )
             {
-                return new StoryAddress(address, parts[STORY_ID], parts[STORY_NAME], "", parts[CHAPTER_IDX]);
+                return new AuthorAddress(address, site, parts);
             }
-
-            if( parts[1] == "u" )
+            if( parts[1] == "community" )
             {
-                return new AuthorAddress(address, parts[AUTHOR_NAME], parts[AUTHOR_ID]);
+                return new GroupAddress(address, site, parts);
             }
         }
 

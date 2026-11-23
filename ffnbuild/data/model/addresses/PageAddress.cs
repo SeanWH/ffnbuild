@@ -10,6 +10,7 @@ public sealed class PageAddress : IFfnUrl
 
     public string LinkTarget => "ffnpage";
 
+    public string Site => "";
     public string Text => Address;
 
     public PageAddress(string address, string linkedId = "")

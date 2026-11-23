@@ -12,13 +12,19 @@ public sealed class AuthorAddress : IFfnUrl
 
     public string LinkTarget => "author";
 
+    public string Site { get; }
     public string Text => IFfnUrl.FormatText(AuthorName);
 
-    public AuthorAddress(string address, string authorName, string linkedId)
+    public AuthorAddress(string address, string authorName, string linkedId, string site)
     {
         Address = address;
         AuthorName = authorName;
         LinkedId = linkedId;
+        Site = site;
+    }
+
+    public AuthorAddress(string address, string site, string[] parts) : this(address, parts[2], parts[1], site)
+    {
     }
 
     public static bool operator !=(AuthorAddress left, AuthorAddress right) => !(left == right);

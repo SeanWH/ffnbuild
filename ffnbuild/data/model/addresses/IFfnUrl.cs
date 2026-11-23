@@ -9,6 +9,7 @@ public interface IFfnUrl : IComparable<IFfnUrl>, IEquatable<IFfnUrl>
     string Address { get; }
     string LinkedId { get; }
     string LinkTarget { get; }
+    string Site { get; }
     string Text { get; }
 
     public static string FormatText(string textToFormat)

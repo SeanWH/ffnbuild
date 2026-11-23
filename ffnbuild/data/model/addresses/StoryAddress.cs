@@ -14,17 +14,22 @@ public sealed class StoryAddress : IFfnUrl
 
     public string LinkTarget => "story";
 
+    public string Site { get; }
     public string StoryTitle { get; }
-
     public string Text => IFfnUrl.FormatText(StoryTitle);
 
-    public StoryAddress(string address, string linkedId, string storyTitle, string chapterTitle, string chapterIndex)
+    public StoryAddress(string address, string linkedId, string storyTitle, string chapterTitle, string chapterIndex, string site)
     {
         Address = address;
         LinkedId = linkedId;
         StoryTitle = storyTitle;
         ChapterTitle = chapterTitle;
         ChapterIndex = chapterIndex;
+        Site = site;
+    }
+
+    public StoryAddress(string address, string site, string[] parts) : this(address, parts[1], parts[3], "", parts[2], site)
+    {
     }
 
     public static bool operator !=(StoryAddress left, StoryAddress right) => !(left == right);
