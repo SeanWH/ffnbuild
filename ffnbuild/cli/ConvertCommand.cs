@@ -5,9 +5,10 @@ using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 
-using ffnbuild.data.comparers;
 using ffnbuild.data.exceptions;
-using ffnbuild.data.model;
+
+using ffnparser.data.comparers;
+using ffnparser.data.model;
 
 using Serilog;
 
@@ -16,7 +17,7 @@ using Spectre.Console.Cli;
 
 public partial class ConvertCommand : Command<ConvertSettings>
 {
-    private readonly SortedDictionary<string, ChapterData> _chapterData = new SortedDictionary<string, ChapterData>(new NaturalStringComparer());
+    private readonly SortedDictionary<string, ChapterText> _chapterData = new SortedDictionary<string, ChapterText>(new NaturalStringComparer());
     private StoryMetaData _storyMetaData = new StoryMetaData();
     private string _storyName = string.Empty;
 
@@ -55,7 +56,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             return;
         }
 
-        _chapterData.Add(chapterName, new ChapterData(chapterName, lines));
+        _chapterData.Add(chapterName, new ChapterText(chapterName, lines));
     }
 
     private void AppendStoryData(string chapterName, List<string?> lines)
@@ -66,7 +67,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             return;
         }
 
-        ChapterData existing = _chapterData[chapterName];
+        ChapterText existing = _chapterData[chapterName];
         List<string?> existingLines = existing.Paragraphs;
         foreach( var line in lines )
         {
@@ -74,7 +75,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
         }
 
         _ = _chapterData.Remove(chapterName);
-        _chapterData.Add(chapterName, new ChapterData(chapterName, existingLines));
+        _chapterData.Add(chapterName, new ChapterText(chapterName, existingLines));
     }
 
     private async Task<int> ConvertDirectory(string sourcePath)
@@ -140,8 +141,8 @@ public partial class ConvertCommand : Command<ConvertSettings>
             }
             _storyMetaData = new StoryMetaData
             {
-                AuthorUrl = htmlProcessor.GetAuthorAddress()!.Address,
-                Author = htmlProcessor.GetAuthorName(),
+                AuthorUrl = htmlProcessor.GetUserAddress()!.Address,
+                Author = htmlProcessor.GetUserName() ?? string.Empty,
                 StoryUrl = htmlProcessor.GetUrl(),
                 Title = _storyName
             };
@@ -233,7 +234,7 @@ public partial class ConvertCommand : Command<ConvertSettings>
             outFile.WriteLine($"Story URL: {storyMetaData.StoryUrl}");
             outFile.WriteLine();
 
-            foreach( ChapterData chapterData in _chapterData.Values )
+            foreach( ChapterText chapterData in _chapterData.Values )
             {
                 outFile.WriteLine(chapterData.Title);
                 outFile.WriteLine();

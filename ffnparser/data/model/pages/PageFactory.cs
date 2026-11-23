@@ -22,11 +22,6 @@ public static class PageFactory
             return new UserPage(htmlCode);
         }
 
-        if( address is GroupAddress )
-        {
-            return new GroupPage(htmlCode);
-        }
-
         if( address is StoryAddress )
         {
             return new StoryPage(htmlCode);

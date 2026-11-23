@@ -18,22 +18,22 @@ public sealed class UserAddress : IFfnAddress
         UserName = userName;
     }
 
-    public static bool operator !=(UserAddress left, UserAddress right)
+    public static bool operator !=(UserAddress? left, UserAddress? right)
     {
         return !(left == right);
     }
 
-    public static bool operator <(UserAddress left, UserAddress right)
+    public static bool operator <(UserAddress? left, UserAddress? right)
     {
         return ReferenceEquals(left, null) ? !ReferenceEquals(right, null) : left.CompareTo(right) < 0;
     }
 
-    public static bool operator <=(UserAddress left, UserAddress right)
+    public static bool operator <=(UserAddress? left, UserAddress? right)
     {
         return ReferenceEquals(left, null) || left.CompareTo(right) <= 0;
     }
 
-    public static bool operator ==(UserAddress left, UserAddress right)
+    public static bool operator ==(UserAddress? left, UserAddress? right)
     {
         if( ReferenceEquals(left, null) )
         {
@@ -43,12 +43,12 @@ public sealed class UserAddress : IFfnAddress
         return left.Equals(right);
     }
 
-    public static bool operator >(UserAddress left, UserAddress right)
+    public static bool operator >(UserAddress? left, UserAddress? right)
     {
         return !ReferenceEquals(left, null) && left.CompareTo(right) > 0;
     }
 
-    public static bool operator >=(UserAddress left, UserAddress right)
+    public static bool operator >=(UserAddress? left, UserAddress? right)
     {
         return ReferenceEquals(left, null) ? ReferenceEquals(right, null) : left.CompareTo(right) >= 0;
     }

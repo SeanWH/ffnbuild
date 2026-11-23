@@ -36,7 +36,7 @@ public class StoryPage : PageBase
 
         foreach( var line in splitLines )
         {
-            string cleanedLine = quotes.Replace(line, string.Empty).Trim();
+            string cleanedLine = quotes.Replace(line.Trim(), string.Empty).Trim();
             if( !string.IsNullOrWhiteSpace(cleanedLine) )
             {
                 string[] subLines = lineBreaks.Split(cleanedLine);
@@ -71,7 +71,7 @@ public class StoryPage : PageBase
         }
         else
         {
-            return string.Empty;
+            throw new ArgumentNullException(nameof(Document), "Critical Error: Document is null. Cannot get chapter title.");
         }
     }
 
@@ -103,7 +103,7 @@ public class StoryPage : PageBase
             }
         }
 
-        return (string.Empty, string.Empty);
+        throw new ArgumentNullException(nameof(Document), "Critical Error: Document is null. Cannot get media type and genre.");
     }
 
     private StoryData? GetPageStoryData()
@@ -174,11 +174,19 @@ public class StoryPage : PageBase
         {
             var temp = CanonicalUrl.
                 Split("/s/", System.StringSplitOptions.None)[1];
-            storyId = temp.Split('/', StringSplitOptions.TrimEntries)[0];
-            storyTitle = temp.Split('/', StringSplitOptions.TrimEntries)[2];
-            chapterIdx = Convert.ToInt32(temp.Split('/', StringSplitOptions.TrimEntries)[1]);
+            var idAndName = temp.Split('/', StringSplitOptions.TrimEntries);
+            if( idAndName.Length == 2 )
+            {
+                storyId = idAndName[0];
+                storyTitle = idAndName[1];
+            }
+            else if( idAndName.Length == 3 )
+            {
+                storyId = idAndName[0];
+                chapterIdx = Convert.ToInt32(idAndName[1]);
+                storyTitle = idAndName[2];
+            }
         }
-
         return (storyTitle, storyId, chapterIdx);
     }
 

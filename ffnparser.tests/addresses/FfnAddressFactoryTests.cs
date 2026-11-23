@@ -21,14 +21,11 @@ public sealed class FfnAddressFactoryTests
     }
 
     [Fact]
-    public void GetAddress_LeadingSlashUserPath_HitsShortCircuitAndFallsThroughToPageAddress()
+    public void GetAddress_NonFanfictionNetUrl_ReturnsPageAddress()
     {
-        // Splits into ["", "u", "12345"] -> parts.Length == 3 (< 4), but
-        // parts[0] == "" (covers && false branch)
-        var result = FfnAddressFactory.GetAddress("/u/12345");
-
+        var result = FfnAddressFactory.GetAddress("https://example.com/some/path");
         var page = Assert.IsType<PageAddress>(result);
-        Assert.Equal("/u/12345", page.Address);
+        Assert.Equal("https://example.com/some/path", page.Address);
     }
 
     [Theory]
