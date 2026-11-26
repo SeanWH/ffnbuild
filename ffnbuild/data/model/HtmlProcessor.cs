@@ -84,11 +84,6 @@ internal partial class HtmlProcessor
         return string.Empty;
     }
 
-    public string GetA03AuthorName()
-    {
-        var linkNode = _doc.DocumentNode.SelectSingleNode("//div[@class='byline']/a[@rel='author']");
-    }
-
     public string GetA03StoryTitle()
     {
         var titleNode = _doc.DocumentNode.SelectSingleNode("//div[@id='preface']/p[@class='message']/b");
@@ -110,30 +105,9 @@ internal partial class HtmlProcessor
         return string.Empty;
     }
 
-    public AuthorAddress? GetAuthorAddress()
+    public string GetA03UserName()
     {
-        var a_s = _doc.DocumentNode.SelectNodes("//a[@class='xcontrast_txt']");
-        if( a_s != null && a_s.Count > 0 )
-        {
-            foreach( var a in a_s )
-            {
-                var href = a.Attributes["href"].Value;
-                if( href != null && href.Contains("/u/") )
-                {
-                    return FfnUrlFactory.GetAddress(href) as AuthorAddress;
-                }
-            }
-        }
-        return null;
-    }
-
-    public string GetAuthorName()
-    {
-        var authorAddress = GetAuthorAddress();
-        if( authorAddress is not null )
-        {
-            return authorAddress.AuthorName;
-        }
+        var linkNode = _doc.DocumentNode.SelectSingleNode("//div[@class='byline']/a[@rel='author']");
         return string.Empty;
     }
 
@@ -178,6 +152,7 @@ internal partial class HtmlProcessor
 
     public StoryMetaData GetStoryMetaData()
     {
+        return null;
     }
 
     public string GetStoryTitle()
@@ -194,5 +169,32 @@ internal partial class HtmlProcessor
     public string GetUrl()
     {
         return _doc.DocumentNode.SelectNodes("//link[@rel='canonical']")[0].Attributes["href"].Value;
+    }
+
+    public UserAddress? GetUserAddress()
+    {
+        var a_s = _doc.DocumentNode.SelectNodes("//a[@class='xcontrast_txt']");
+        if( a_s != null && a_s.Count > 0 )
+        {
+            foreach( var a in a_s )
+            {
+                var href = a.Attributes["href"].Value;
+                if( href != null && href.Contains("/u/") )
+                {
+                    return FfnUrlFactory.GetAddress(href) as UserAddress;
+                }
+            }
+        }
+        return null;
+    }
+
+    public string GetUserName()
+    {
+        var authorAddress = GetUserAddress();
+        if( authorAddress is not null )
+        {
+            return authorAddress.UserName;
+        }
+        return string.Empty;
     }
 }

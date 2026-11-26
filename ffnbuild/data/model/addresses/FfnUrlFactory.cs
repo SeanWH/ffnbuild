@@ -4,12 +4,8 @@ using ffnbuild.data.extensions;
 
 public static class FfnUrlFactory
 {
-    private record NormalizedAddress(string site, string address);
-    private record AddressParts(string site, string[] parts);
-
-    private static IFfnUrl? GetA03Address(AddressParts parts)
-    {
-    }
+    private sealed record NormalizedAddress(string site, string address);
+    private sealed record AddressParts(string site, string[] parts);
 
     private static NormalizedAddress NormalizeAddress(string address)
     {
@@ -23,12 +19,6 @@ public static class FfnUrlFactory
         if( address.StartsWith("http:") )
         {
             address = address.Replace("http:", string.Empty);
-        }
-
-        if( address.StartsWith("//www.fanfiction.net") )
-        {
-            address = address.Replace("//www.fanfiction.net/", string.Empty);
-            site = "ffn";
         }
 
         if( address.StartsWith("//www.fanfiction.net") )
@@ -63,11 +53,6 @@ public static class FfnUrlFactory
 
         var addressParts = SplitAddress(address);
 
-        if( address.StartsWith("https://archiveofourown.org") )
-        {
-            return GetA03Address(addressParts);
-        }
-
         var parts = addressParts.parts;
         var site = addressParts.site;
 
@@ -78,8 +63,9 @@ public static class FfnUrlFactory
             return new PageAddress(address);
         }
 
-        if( parts.Length == 4 && parts[0] == "s" )
+        if( parts.Length == 2 && parts[0] == "works" )
         {
+            // A03 Story
             return new StoryAddress(address, site, parts);
         }
 
@@ -87,11 +73,24 @@ public static class FfnUrlFactory
         {
             if( parts[0] == "u" )
             {
-                return new AuthorAddress(address, site, parts);
+                return new UserAddress(address, site, parts);
             }
             if( parts[1] == "community" )
             {
                 return new GroupAddress(address, site, parts);
+            }
+        }
+
+        if( parts.Length == 4 )
+        {
+            if( parts[0] == "s" )
+            {
+                return new StoryAddress(address, site, parts);
+            }
+            if( parts[0] == "users" )
+            {
+                // A03 User
+                return new UserAddress(address, site, parts);
             }
         }
 

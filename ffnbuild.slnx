@@ -2,4 +2,6 @@
   <Project Path="AddressParsing/AddressParsing.csproj" Id="02aee410-57be-45e9-a836-dbc21321f75e" />
   <Project Path="ffnbuild.Tests/ffnbuild.Tests.csproj" Id="2bcc5d84-580f-446c-9fda-715553b30acb" />
   <Project Path="ffnbuild/ffnbuild.csproj" />
+  <Project Path="parser_lib.Tests/parser_lib.Tests.csproj" Id="a8d6972a-ff51-4bad-a620-ea0092f0c0f1" />
+  <Project Path="parser_lib/parser_lib.csproj" Id="9a3c812b-3617-49e5-bca8-b2567d3e5bfd" />
 </Solution>
